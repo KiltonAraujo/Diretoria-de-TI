@@ -44,13 +44,20 @@ As pessoas que frequentam, ou estão começando a frequentar, o IFRN CNAT sente 
 A partir das informações acima seria interessante a existência de um site onde os usuários podem acessar tutoriais que possam sanar suas dúvidas e os ensinar a utilizar as ferramentas.
 
 ### 6.	Alternativas concorrentes
-Como alternativas concorrentes podemos colocar o próprio site do IFRN, que oferece informações dentro de seu sistema.
+Como alternativas concorrentes podemos colocar o próprio site do IFRN e o site de suporte da Apple.
+#### Site do IFRN
+Oferece informações dentro de seu próprio sistema.
 
-Pontos fortes: Apresenta uma ampla gama de informações sobre diversos tópicos.
+Pontos Fortes: O site do IFRN cobre uma ampla gama de tópicos, oferecendo informações gerais que podem ser úteis para diversos membros da comunidade acadêmica.
 
-Pontos fracos: Carece de foco em suas tecnologias específicas, não oferecendo detalhes precisos sobre elas. Além disso, a busca por informações pode ser difícil e dispersa.
+Pontos Fracos: No entanto, o site carece de foco específico nas tecnologias utilizadas pela instituição, não fornecendo detalhes práticos ou tutoriais detalhados. A navegação para encontrar informações específicas também pode ser confusa e pouco intuitiva, tornando o processo mais difícil e demorado para usuários com menos experiência.
 
+#### Suporte Oficial da Apple
+Fornece suporte técnico detalhado e instruções para os usuários de dispositivos Apple.
 
+Pontos fortes: Oferece uma vasta quantidade de tutoriais e guias detalhados sobre os produtos e serviços da Apple, com uma interface intuitiva e um sistema de busca eficiente.
+
+Pontos fracos: Foca exclusivamente em produtos Apple, o que limita seu uso para outras tecnologias. Além disso, as instruções podem ser técnicas demais para usuários com pouca experiência, dificultando o entendimento de conceitos básicos e a resolução de problemas relacionados a outras plataformas tecnológicas não Apple.
 
 
 ### 7.	Visão geral do produto
