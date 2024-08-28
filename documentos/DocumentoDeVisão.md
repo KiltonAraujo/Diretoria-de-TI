@@ -70,8 +70,10 @@ O site tem 2 tipos de usuário. O aluno/servidor irá poder acessar o site e bus
 
 | Código | Nome | Descrição |
 |:---  |:--- |:--- |
-| RF01 | Fazer o login de usuário | Para fazer o primeiro login o usuário precisará preencher um campo formulário com sua matrícula ou e-mail escolar e senha. Os logins seguintes poderão ser feitos inserindo a matrícula, o e-mail escolar ou se 
-| RF02| Nome | Descrição muito foda |
+| RF01 | nome| | descrição
+| RF02| Realizar buscas |O usuário, ao usar o site, poderá pesquisar os tutorias em um página dedicada a isto. |
+| RF02| Nome | Descrição|
+| RF02| Nome | Descrição|
 
 ### 9. Requisitos não-funcionais
 
