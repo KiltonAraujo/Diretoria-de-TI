@@ -1,28 +1,28 @@
 # Documento de visão
 
-## DTI Helps
+## DTI - Diretoria de Tecnologia da Informação
 
 ### Histórico da Revisão 
 
 |  Data  | Versão | Descrição | Autores |
 |:-------|:-------|:----------|:------|
 | 22/08/2024 |  **`1.0`** | Início do documento de visão do projeto  | Kilton J. Araújo.|
+| 07/10/2024 |  **`1.2`** | Atualização do projeto  | Kilton J. Araújo.|
 
 
 ### 1. Objetivo do Projeto 
 
-O objetivo do DTI Help's é mitigar as dúvidas por tecnologia dos docentes da instituição oferecendo tutoriais simples e didáticos para facilitar a utilização de ferramentas tecnológicas essenciais.
-
+O objetivo do site da Diretoria de TI (DTI) é aumentar o contato com o público em relação à nossa equipe e, ao mesmo tempo, mitigar as dúvidas tecnológicas dos docentes da instituição, oferecendo tutoriais simples e didáticos para facilitar a utilização de ferramentas tecnológicas essenciais.
  
 
 ### 2. Descrição do problema 
 
 |         __        | __   |
 |:------------------|:-----|
-| **_O problema_**    | Existe muita demanda por informação sobre a tecnologia, o que gera desafios significativos para os docentes e alunos do IFRN, especialmente para aqueles que são novatos, possuem idade avançada ou não possuem experiência com informática.|
+| **_O problema_**    | Há uma grande demanda por informações sobre o uso de ferramentas tecnológicas no IFRN, o que gera desafios tanto para docentes quanto para alunos, especialmente aqueles novatos, com idade avançada ou com pouca familiaridade com informática.|
 | **_afetando_**      | Servidores das diretorias e alunos. |
-| **_cujo impacto é_**| Causa a decepção por parte dos alunos e servidores, pois não podem várias pessoas tem dificuldade em usar as ferramentas, principalmente os alunos novatos e/ou pessoas em idade avançada.|
-| **_Uma boa solução seria_** | Criar um sistema onde os usuários poderão obter informações sobre as ferramentas do IFRN, tal como tutoriais e suporte, afim de aumentar a proximidade dos servidores/alunos com a tecnologia.|
+| **_cujo impacto é_**| Gera frustração e limitações no uso das ferramentas essenciais, dificultando a realização de atividades acadêmicas e administrativas, principalmente para novos alunos e pessoas com menor fluência digital.|
+| **_Uma boa solução seria_** | Desenvolver uma plataforma que ofereça tutoriais e suporte técnico, facilitando o acesso e uso das ferramentas tecnológicas do IFRN, promovendo maior inclusão e eficiência no ambiente educacional.|
 
 
 ### 3. Descrição dos usuários
