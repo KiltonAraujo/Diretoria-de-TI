@@ -1,0 +1,36 @@
+*{
+  margin:0;
+  padding:0;
+  border:0;
+}
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 1em;
+  
+  
+}
+
+.carousel .slider-container {
+  display: flex;
+  width: 100%;
+}
+
+.carousel .slide {
+  flex: 0 0 100%;
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: transform 0.5s;
+}
+
+.slide img{
+  height: 422px;
+  width: 100%;
+  
+}
+
