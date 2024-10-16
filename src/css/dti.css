@@ -8,7 +8,7 @@
     --main-bg-branco: #FFFFFF;
     --main-bg--azul-escuro: #081544;
 
-    
+
     --main-roxo-enfeitado: #9A92FF;
 
     --font-color2-cinza: #82849A;
@@ -16,7 +16,7 @@
     --font-color4-lilas: #EDDBFE;
     --font-color5-branco2: #FFFFFF;
     --font-color6-ciano: #475070;
-    
+
     /* outros */
 
     --padding-section: 2em 20%;
@@ -26,7 +26,7 @@
     --font-size-subtitulo: 19px;
     --font-size-titulo: 50px;
     -font-size-texto-padrao: 20px;
-    
+
 }
 *{
     margin:0;
@@ -149,7 +149,7 @@ main #destaque-home{
     background-position: center;
     background-image: url('../imagens/backgrounds/destaque-home.svg');
 }
-    
+
 
 main #destaque-home div h1{
     font-size: 90px;
@@ -169,7 +169,7 @@ main #destaque-home div p{
     color: var(--font-color2-cinza);
 }
 
-main #destaque-home div a{
+main #destaque-home div .botao{
     margin-top: 1.7em;
     display: flex;
     justify-content: space-between;
@@ -183,7 +183,7 @@ main #destaque-home div a{
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
 }
 
-main #destaque-home div a p{
+main #destaque-home div .botao p{
     color: var(--font-color5-branco2);
     font-size: 18px;
     font-weight: 300;
@@ -210,29 +210,43 @@ main #tutoriais-home .lista-tutoriais{
 
 }
 
-main #tutoriais-home .lista-tutoriais li{
+main #tutoriais-home .lista-tutoriais li {
     width: 270px;
     height: 328.5px;
     background-color: var(--main-bg-branco);
     box-sizing: border-box;
     border-radius: 11.7px;
     padding: 2em;
-    opacity: 0.92;
-    transition: opacity 0.3s ease, width 0.3 ease, height 0.3 ease;
-    
+    opacity: 0.86;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Para manter o conteúdo centralizado e sem quebrar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-main #tutoriais-home .lista-tutoriais li p{
+/* Efeito hover para aumentar o card */
+main #tutoriais-home .lista-tutoriais li:hover {
+    transform: scale(1.07);
+    opacity: 1;
+}
+
+/* Estilos para o parágrafo dentro do card */
+main #tutoriais-home .lista-tutoriais li p {
     color: var(--font-color2-cinza);
     font-size: 17.3px;
     font-weight: 400;
+    width: 223.2px;
+    text-align: left;
+    transition: transform 0.3s ease; 
 }
 
-main #tutoriais-home .lista-tutoriais li:hover{
-    opacity: 1;
-    width: 275px;
-    height: 333.5px;
+/* Faz com que o texto também aumente */
+main #tutoriais-home .lista-tutoriais li:hover p {
+    transform: scale(1.04); 
 }
+
 
 main #tutoriais-home .lista-tutoriais li figure{
     height: 63px;
@@ -256,6 +270,27 @@ main #tutoriais-home .lista-tutoriais li .figure-seta{
     justify-content: end;
     align-items: center;
     background-color: var(--main-bg-branco);
+}
+
+main #tutoriais-home .botao{
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.4em;
+    align-items: center;
+    background-color: var(--main-roxo-enfeitado);
+    box-sizing: border-box;
+    width: 205.37px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+main #destaque-home div .botao p{
+    color: var(--font-color5-branco2);
+    font-size: 18px;
+    font-weight: 300;
+
 }
 
 /*                               footer                               */
@@ -286,7 +321,7 @@ footer .background-footer-responsivo{
     top: 0;
     width: 100%;
     min-height: 40%;
-   
+
 }
 
 footer .div-superior{
@@ -380,7 +415,7 @@ footer .div-inferior{
     justify-content: space-between;
     align-items: center;
     padding: 0.8em 0;
-  
+
 }
 
 footer .div-inferior figure{
@@ -407,7 +442,7 @@ footer .div-superior nav ol li a, footer .div-superior nav ol li p, .nav-respons
 /*                               footer responsivo                               */
 .nav-responsivo{
     display: none;
-    
+
 }
 
 .nav-responsivo ol li ol li a{
@@ -425,12 +460,27 @@ footer .footer-responsivo{display: none;}
 footer .footer-responsivo figure{
     padding: 1.5em 2em;
     justify-content: space-between;
-    
+
 }
 
 /*                               responsividade                               */
 
+@media screen and (max-width: 1476px){
+    main #destaque-home figure{
+        display: none;
+    }
+
+    main #tutoriais-home .lista-tutoriais li{
+        width: 45%;
+        min-width: 270px;
+    }
+}
+
 @media screen and (max-width: 1340px){
+    main #destaque-home figure{
+        display: none;
+    }
+
     footer .background-footer{
         position: absolute;
         z-index: 1;
@@ -455,10 +505,10 @@ footer .footer-responsivo figure{
         display: none;
     }
     footer .footer-responsivo{display: block;}
-    
+
     footer .footer-responsivo figure .logo-ifrn{
         padding-left: 1em;}
-    
+
     footer .footer-responsivo .background {
         height: 406.92px;
         box-sizing: border-box;
@@ -467,7 +517,7 @@ footer .footer-responsivo figure{
         background-position: center;
         background-image: url('../imagens/backgrounds/footer-responsivo.svg');
 
-    
+
     }
 
     footer .div-inferior, footer .div-superior{
@@ -483,11 +533,15 @@ footer .footer-responsivo figure{
         display: flex;
         flex-direction: column;
         align-items: start;
-        
+
         }
     }
 
 @media screen and (max-width: 1060px){
+    :root{
+        --padding-section: 2em 10%;
+    }
+    
     header{display: none;}
     footer .footer-responsivo figure{
         width: 40%;
@@ -496,7 +550,7 @@ footer .footer-responsivo figure{
         box-sizing: border-box;
 
     }
-    
+
     footer .footer-responsivo figure img{
         width: 10em;
     }
@@ -512,8 +566,8 @@ footer .footer-responsivo figure{
         background-size: cover;
         padding: 1.5em 2em;
         background-image: url('../imagens/backgrounds/footer-mobile.svg');
-        
+
     }
     footer .footer-responsivo figure{width: 100%;}
-        
+
 }
