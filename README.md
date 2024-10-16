@@ -6,3 +6,17 @@ O objetivo do site da Diretoria de TI (DTI) é aumentar o contato com o público
 
 ### Artefatos do Projeto
 * [Documento de visão](./documentos/DocumentoDeVisão.md)
+
+## Layout
+![Imagem da home do projeto.](./documentos/Home-layout.png)
+
+## Tecnologias utilizadas
+* HTML
+* CSS
+* Figma
+* Fontes do google
+
+## Autor
+  ### Kilton Jhonathan de Araújo.
+Github: [Kilton.araujo](https://github.com/KiltonAraujo)
+Email: Kilton.araujo@gmail.com
