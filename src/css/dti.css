@@ -180,7 +180,12 @@ main #destaque-home div .botao{
     width: 205.37px;
     height: 50px;
     border-radius: 25px;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+main #destaque-home div .botao:hover{
+    transform: scale(1.05);
+    background-color: #8780e9;
 }
 
 main #destaque-home div .botao p{
@@ -196,6 +201,7 @@ main #destaque-home div .botao p{
 main #tutoriais-home{
     padding: var(--padding-section);
     padding-top: 0;
+    margin-bottom: 2em;
 }
 
 main #tutoriais-home p{
@@ -208,7 +214,7 @@ main #tutoriais-home .lista-tutoriais{
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1em;
-
+    padding-top: 2em;
 }
 
 main #tutoriais-home .lista-tutoriais li {
@@ -219,7 +225,7 @@ main #tutoriais-home .lista-tutoriais li {
     border-radius: 11.7px;
     padding: 2em;
     opacity: 0.86;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -230,6 +236,7 @@ main #tutoriais-home .lista-tutoriais li {
 main #tutoriais-home .lista-tutoriais li:hover {
     transform: scale(1.07);
     opacity: 1;
+    background-color: var(--font-color5-branco2);
 }
 
 main #tutoriais-home .lista-tutoriais li p {
@@ -278,12 +285,16 @@ main #tutoriais-home .botao{
     padding: 0 2.4em;
     align-items: center;
     background-color: var(--main-bg-branco);
-    
+    transition: transform 0.3s ease;
     box-sizing: border-box;
     width: 205.37px;
     height: 50px;
     border-radius: 25px;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+main #tutoriais-home .botao:hover{
+    transform: scale(1.05);
 }
 
 main #tutoriais-home .botao p{
@@ -303,6 +314,12 @@ main #servicos-prestados{
     padding: var(--padding-section);
 }
 
+main #servicos-prestados .subtitulo{
+    font-size: var(--font-size-subtitulo);
+    font-weight: 500;
+    color: var(--font-color2-cinza);
+}
+
 main #servicos-prestados ol{
     display: flex;
     justify-content: space-between;
@@ -317,6 +334,7 @@ main #servicos-prestados ol li{
     min-width: 279px;
     border-radius: 36.04px;
     background-position: right;
+    background-repeat: no-repeat;
     padding: 1.3em;
     box-sizing: border-box;
     flex-wrap: wrap;
@@ -343,11 +361,24 @@ main #servicos-prestados ol li p{
     color: rgba(255, 255, 255, 0.8);
 }
 
-main #servicos-prestados ol li:nth-child(1){background-image: url(../imagens/backgrounds/card-servico-manutencao.svg);}
-main #servicos-prestados ol li:nth-child(2){background-image: url(../imagens/backgrounds/card-servico-redes.svg);}
-main #servicos-prestados ol li:nth-child(3){background-image: url(../imagens/backgrounds/card-servico-compras.svg);}
-main #servicos-prestados ol li:nth-child(4){background-image: url(../imagens/backgrounds/card-servico-analise.svg);
+main #servicos-prestados ol li:nth-child(1){background-image: url(../imagens/backgrounds/card-manutencao.png);}
+main #servicos-prestados ol li:nth-child(2){background-image: url(../imagens/backgrounds/card-redes.png);}
+main #servicos-prestados ol li:nth-child(3){background-image: url(../imagens/backgrounds/card-compras.png);}
+main #servicos-prestados ol li:nth-child(4){background-image: url(../imagens/backgrounds/card-analise.png);
     background-position: left;
+}
+
+/*                               home(seção 4)*/
+
+mani #sec-numeros{
+    padding: var(--padding-section);
+}
+
+mani #sec-numeros ol li figure{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: transparent;
 }
 
 /*                               footer                               */
@@ -564,6 +595,7 @@ footer .footer-responsivo figure{
 
     main #servicos-prestados ol li{
         height: 240px;
+        border-radius: 50px;
     }
 
     
@@ -580,7 +612,6 @@ footer .footer-responsivo figure{
 
     main #servicos-prestados ol li{
         height: 275px;
-        box-sizing: ;
     }
 
     footer .background-footer{
