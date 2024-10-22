@@ -315,7 +315,7 @@ main #servicos-prestados{
 }
 
 main #servicos-prestados .subtitulo{
-    font-size: var(--font-size-subtitulo);
+    font-size: 20px;
     font-weight: 500;
     color: var(--font-color2-cinza);
 }
@@ -330,18 +330,23 @@ main #servicos-prestados ol{
 
 main #servicos-prestados ol li{
     height: 266px;
-    width: 279px;
-    min-width: 279px;
-    border-radius: 36.04px;
     background-position: right;
     background-repeat: no-repeat;
     padding: 1.3em;
     box-sizing: border-box;
     flex-wrap: wrap;
+    background-size: cover;
+    padding: 1.8em;
+    width: 23%;
+    height: auto;
+    border-radius: 50px;
 }
+
+
 
 main #servicos-prestados ol li div{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 0.6em;
     border-bottom: solid 1px #ffffff;
@@ -353,7 +358,7 @@ main #servicos-prestados ol li h2{
     color: #FFFFFF;
     font-family: poppins, 'sans serif';
     font-weight: 600;
-    font-size: 24.3px;
+    font-size: 20.3px;
 }
 
 main #servicos-prestados ol li p{
@@ -370,16 +375,50 @@ main #servicos-prestados ol li:nth-child(4){background-image: url(../imagens/bac
 
 /*                               home(seção 4)*/
 
-mani #sec-numeros{
+main #sec-numeros{
     padding: var(--padding-section);
 }
 
-mani #sec-numeros ol li figure{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: transparent;
+main #sec-numeros ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 6em 0;
+    justify-content: space-between;
 }
+
+main #sec-numeros ol li {
+    width: calc(20% - 1em);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #sec-numeros ol li figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 137px;
+    min-height: 137px;
+    border-radius: 50%;
+    background-color: #3960EC;
+    margin-bottom: 0.6em;
+}
+
+main #sec-numeros ol li h2 {
+    font-size: 42px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: var(--font-color4-lilas);
+}
+
+main #sec-numeros ol li p {
+    width: 163px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--font-color4-lilas);}
+
 
 /*                               footer                               */
 
@@ -554,9 +593,9 @@ footer .footer-responsivo figure{
 /*                               responsividade                               */
 
 /* listas da home (tutoriais e serviços)*/
-@media  screen and (max-width: 1835px){
+@media  screen and (max-width: 1850px){
     main #tutoriais-home .lista-tutoriais li{
-        width: 49%;
+        width: 23%;
         align-items: start;
         position: relative;
     }
@@ -574,13 +613,7 @@ footer .footer-responsivo figure{
     }
 
     main #servicos-prestados ol li{
-        padding: 2em;
-        width: 48.5%;
-        height: 220px;
-    }
-
-    main #servicos-prestados ol li figure{
-        padding-left: 1em;
+        width: 23.5%;
     }
 
     main #servicos-prestados ol li p{
@@ -588,17 +621,10 @@ footer .footer-responsivo figure{
     }
 }
 
-@media screen and (max-width: 1476px){
-    main #destaque-home figure{
-        display: none;
-    }
-
+@media screen and (max-width: 1730px){
     main #servicos-prestados ol li{
-        height: 240px;
-        border-radius: 50px;
+        width: 49%;
     }
-
-    
 }
 
 @media screen and (max-width: 1340px){
@@ -610,8 +636,17 @@ footer .footer-responsivo figure{
         width: 46%;
     }
 
+    main #servicos-prestados ol{justify-content: center;}
     main #servicos-prestados ol li{
-        height: 275px;
+        width: 48%;
+    }
+
+    main #sec-numeros ol {
+        justify-content: center;
+    }
+
+    main #sec-numeros ol li {
+        width: calc(29% - 1em);
     }
 
     footer .background-footer{
@@ -674,7 +709,10 @@ footer .footer-responsivo figure{
     :root{
         --padding-section: 2em 10%;
     }
-    
+
+    main #sec-numeros ol li {
+        width: calc(27% - 1em);
+    }
     header{display: none;}
     footer .footer-responsivo figure{
         width: 40%;
@@ -702,15 +740,46 @@ footer .footer-responsivo figure{
     
     main #servicos-prestados ol li{
         width:100%;
-        height: (255px + padding); 
+        padding: 3em 2.3em;
     }
 
+    main #servicos-prestados ol li div{
+        flex-direction: row-reverse;
+        justify-content: left;
+
+    }
+
+    main #servicos-prestados ol li div h2{
+        padding-left: 1em;
+    }
+
+    main #servicos-prestados ol li p{
+        width: 90%;
+    }
+
+    main #sec-numeros ol{
+        padding: 0;
+    }
+
+    main #sec-numeros ol li {
+        width: calc(33.33% - 1em);/* mini gambiarra*/
+        transform: scale(0.78);
+
+    }
+
+    main #sec-numeros ol li:nth-child(4), main #sec-numeros ol li:nth-child(5) {
+        width: calc(50% - 1em);
+        margin-top: -3em; 
+    }
 }
 
 @media screen and (max-width: 428px){
     :root{
         --padding-section: 2em 7%;
     }
+
+    main #destaque-home div h1{
+        font-size: 75px;}
     
     main #servicos-prestados ol li{
         height: 300px; 
