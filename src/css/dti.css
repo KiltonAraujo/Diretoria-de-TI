@@ -34,11 +34,6 @@
     border:0;
     box-sizing: border-box;
 }
-p,a {font-family: 'Poppins', sans-serif;}
-
-a{text-decoration: none;}
-li{list-style-type: none;}
-
 
 /*                               header                               */
 
@@ -62,6 +57,7 @@ header {
     color: var(--main-roxo-enfeitado);
     font-size: 17px;
     font-weight: 500;
+    z-index: 2;
 }
 
 header a{color: var(--main-roxo-enfeitado)}
@@ -119,57 +115,42 @@ header nav .nav-principal ol li:hover a{
     color: var(--main-bg-branco);
 }
 
-/*                               main                               */
+/*                               pre-definições                               */
+
+p,a {font-family: 'Poppins', sans-serif;}
+
+a{text-decoration: none;}
+li{list-style-type: none;}
+
 
 .titulo{
+    position: relative;
     font-size: var(--font-size-titulo);
     color: var(--main-roxo-enfeitado);
     font-family: 'Anton', sans-serif;
     font-weight: 500;
+    z-index: 2;
 
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--main-bg--azul-escuro);
-    min-height: 30em;
-    font-weight: 300;
-}
-
-main #destaque-home{
-    display: flex;
-    justify-content: space-between;
-    padding: var(--padding-section);
-    min-height: 600px;
-    box-sizing: border-box;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('../imagens/backgrounds/destaque-home.svg');
-}
-
-
-main #destaque-home div h1{
-    font-size: 90px;
-    font-family: 'Anton', sans-serif;
-    font-weight: 500;
-    line-height: 88px;
-    color: var(--main-roxo-enfeitado);
-    padding-bottom: .15em;
-}
-
-main #destaque-home div h1 span{color: var(--main-bg--azul-escuro);}
-
-main #destaque-home div p{
-    font-size: 19px;
+.subtitulo{
+    position: relative;
+    font-size: var(--font-size-subtitulo);
     line-height: 26px;
     font-family: 'Poppins', sans-serif;
     color: var(--font-color2-cinza);
+    z-index: 1;
+    font-weight: 400;
 }
 
-main #destaque-home div .botao{
+.background-bolhas{
+    z-index: 0;
+}
+
+.background-bolhas img{position: absolute;}
+
+/* botão pre feito */
+.botao{
     margin-top: 1.7em;
     display: flex;
     justify-content: space-between;
@@ -183,16 +164,76 @@ main #destaque-home div .botao{
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-main #destaque-home div .botao:hover{
+.botao p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.botao:hover{
     transform: scale(1.05);
+}
+
+/*                               home                               */
+
+/*                               main                               */
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--main-bg--azul-escuro);
+    min-height: 30em;
+    font-weight: 300;
+    width: 100%;
+    overflow: hidden;
+}
+
+main #destaque-home{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-section);
+    min-height: 600px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../imagens/backgrounds/destaque-home.svg');
+}
+
+main #destaque-home .background-bolhas{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(87px);
+}
+
+main #destaque-home div{
+    z-index: 1;
+}
+
+main #destaque-home #destaque-desktop{
+    z-index: 1;
+}
+
+main #destaque-home div h1{
+    font-size: 90px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 500;
+    line-height: 88px;
+    color: var(--main-roxo-enfeitado);
+    padding-bottom: .15em;
+}
+
+main #destaque-home div h1 span{color: var(--main-bg--azul-escuro);}
+
+
+main #destaque-home div .botao:hover{
     background-color: #8780e9;
 }
 
 main #destaque-home div .botao p{
     color: var(--font-color5-branco2);
-    font-size: 18px;
-    font-weight: 300;
-
 }
 
 
@@ -202,14 +243,22 @@ main #tutoriais-home{
     padding: var(--padding-section);
     padding-top: 0;
     margin-bottom: 2em;
+    position: relative;
 }
 
+main #tutoriais-home .background-bolhas{
+    left: 0;
+    top: -37%;
+    position: absolute;
+}
+
+
 main #tutoriais-home p{
-    font-size: var(--font-size-subtitulo);
     color: var(--font-color4-lilas);
 }
 
 main #tutoriais-home .lista-tutoriais{
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -279,6 +328,7 @@ main #tutoriais-home .lista-tutoriais li .figure-seta{
 }
 
 main #tutoriais-home .botao{
+    z-index: 1;
     margin-top: 1.7em;
     display: flex;
     justify-content: space-between;
@@ -299,7 +349,6 @@ main #tutoriais-home .botao:hover{
 
 main #tutoriais-home .botao p{
     color: var(--main-roxo-enfeitado);
-    font-weight: 400;
 }
 
 
@@ -312,12 +361,8 @@ main #tutoriais-home .botao p{
 main #servicos-prestados{
     background-color: var(--main-bg-branco);
     padding: var(--padding-section);
-}
-
-main #servicos-prestados .subtitulo{
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--font-color2-cinza);
+    position: relative;
+    z-index: 2;
 }
 
 main #servicos-prestados ol{
@@ -377,14 +422,33 @@ main #servicos-prestados ol li:nth-child(4){background-image: url(../imagens/bac
 
 main #sec-numeros{
     padding: var(--padding-section);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+main #sec-numeros .background-bolhas-superior{
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    top: -20%;
+}
+main #sec-numeros .background-bolhas-inferior{
+    position: absolute;
+    left: -4%;
+    bottom: -15%;
+    z-index: 0;
 }
 
 main #sec-numeros ol {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    padding: 6em 0;
+    padding: 3em 0;
     justify-content: space-between;
+    z-index: 1;
 }
 
 main #sec-numeros ol li {
@@ -393,6 +457,11 @@ main #sec-numeros ol li {
     align-items: center;
     flex-direction: column;
 }
+
+main #sec-numeros p{
+    color: var(--font-color4-lilas);
+}
+
 
 main #sec-numeros ol li figure {
     display: flex;
@@ -405,11 +474,13 @@ main #sec-numeros ol li figure {
     margin-bottom: 0.6em;
 }
 
-main #sec-numeros ol li h2 {
+main #sec-numeros ol li h2, main #sec-numeros ol li h2 span {
     font-size: 42px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     color: var(--font-color4-lilas);
+    display: flex;
+    flex-direction: row;
 }
 
 main #sec-numeros ol li p {
@@ -417,7 +488,26 @@ main #sec-numeros ol li p {
     text-align: center;
     font-size: 22px;
     font-weight: 400;
-    color: var(--font-color4-lilas);}
+    color: var(--font-color4-lilas);
+}
+
+/*                               home (5)                               */
+
+main #conheca-campus{
+    padding: var(--padding-section);
+}
+
+main #conheca-campus div p{
+    color: var(--font-color4-lilas);
+}
+
+main #conheca-campus .botao{
+    background-color: var(--main-bg-branco);
+}
+
+main #conheca-campus .botao p{
+    color: var(--main-roxo-enfeitado);
+}
 
 
 /*                               footer                               */
@@ -628,7 +718,10 @@ footer .footer-responsivo figure{
 }
 
 @media screen and (max-width: 1340px){
-    main #destaque-home figure{
+    main #destaque-home .background-bolhas{
+        width: 20%;
+    }
+    main #destaque-home #destaque-desktop{
         display: none;
     }
 
@@ -710,6 +803,15 @@ footer .footer-responsivo figure{
         --padding-section: 2em 10%;
     }
 
+    main #tutoriais-home #background-bolhas{
+        left: -4%;
+        top: -40%;
+    }
+
+    main #sec-numeros .background-bolhas-superior{
+        right: -8%;
+    }
+
     main #sec-numeros ol li {
         width: calc(27% - 1em);
     }
@@ -733,9 +835,22 @@ footer .footer-responsivo figure{
 
 /* mini lista de tutoriais de home - isso aqui quebra muita facil:( */
 @media screen and (max-width: 718px){
+
+    main #destaque-home .background-bolhas{
+        width: 30%;
+    }
+
+    main #tutoriais-home .background-bolhas {
+        left: -21%;
+        top: -36%;
+    }
+
     main #tutoriais-home .lista-tutoriais li{
         width:100%;
         opacity: 1;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 268.5px;
     }
     
     main #servicos-prestados ol li{
@@ -755,6 +870,14 @@ footer .footer-responsivo figure{
 
     main #servicos-prestados ol li p{
         width: 90%;
+    }
+
+    main #sec-numeros{
+        align-items: flex-start;
+    }
+
+    main #sec-numeros .background-bolhas-superior{
+        right: -22%;
     }
 
     main #sec-numeros ol{
@@ -785,6 +908,10 @@ footer .footer-responsivo figure{
         height: 300px; 
     }
 
+    main #sec-numeros .background-bolhas-superior{
+        right: -40%;
+    }
+
     footer .footer-responsivo .background {
         height: 420px;
         background-size: cover;
@@ -794,4 +921,25 @@ footer .footer-responsivo figure{
     }
     footer .footer-responsivo figure{width: 100%;}
 
+}
+
+/*                               Sobre nós                               */
+/*                               sobre main                               */
+#sobre main{
+    background-color: var(--main-bg-branco);
+}
+/*                                  sobre (1)                               */
+#sobre main #sobre-dti{
+    padding: var(--padding-section);
+}
+
+#sobre main #sobre-dti div .dti-superior{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sobre main #sobre-dti div .dti-superior{
+    background-color: var(--main-bg--azul-escuro);
+    width: 400px;
+    height: 400px;
 }
