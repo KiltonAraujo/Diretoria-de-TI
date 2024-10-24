@@ -931,15 +931,67 @@ footer .footer-responsivo figure{
 /*                                  sobre (1)                               */
 #sobre main #sobre-dti{
     padding: var(--padding-section);
+    position: relative;
 }
 
-#sobre main #sobre-dti div .dti-superior{
+#sobre main #sobre-dti #dti-superior{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 5em;
+    
 }
 
-#sobre main #sobre-dti div .dti-superior{
-    background-color: var(--main-bg--azul-escuro);
-    width: 400px;
-    height: 400px;
+#sobre main #sobre-dti #dti-superior .subtitulo{
+    padding-bottom: 1em;
 }
+
+#sobre main #sobre-dti #dti-superior p{
+    font-size: var(--font-size-texto-padrao);
+    color: var(--font-color2-cinza);
+    font-weight: 400;
+    width: 65%;
+}
+
+#sobre main #sobre-dti #dti-superior figure{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -150px;
+    background-color: var(--main-bg--azul-escuro);
+    padding: 3em;
+    border-radius: 300px;
+    width: 800px;
+    height: auto;
+    box-sizing: border-box;
+    padding-left: 6em;
+
+}
+
+#sobre main #sobre-dti #dti-inferior ol{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+#sobre main #sobre-dti #dti-inferior ol li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 162px;
+    text-align: center;
+}
+
+#sobre main #sobre-dti #dti-inferior ol figure{
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre main #sobre-dti #dti-inferior ol li:nth-child(1) figure{background-color: #8681FF;}
+#sobre main #sobre-dti #dti-inferior ol li:nth-child(2) figure{background-color: #FF9281;}
+#sobre main #sobre-dti #dti-inferior ol li:nth-child(3) figure{background-color: #61AD92;}
+#sobre main #sobre-dti #dti-inferior ol li:nth-child(4) figure{background-color: #A3B4E8;}
