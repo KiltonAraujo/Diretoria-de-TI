@@ -78,6 +78,7 @@ header nav .nav-principal li {
 }
 
 header nav .nav-principal li ol {
+    z-index: 100;
     display: block;
     position: absolute;
     top: 100%;
@@ -140,6 +141,7 @@ li{list-style-type: none;}
     font-family: 'Poppins', sans-serif;
     color: var(--font-color2-cinza);
     z-index: 1;
+    margin-top: -0.5em;
     font-weight: 400;
 }
 
@@ -925,6 +927,7 @@ footer .footer-responsivo figure{
 
 /*                               Sobre nós                               */
 /*                               sobre main                               */
+
 #sobre main{
     background-color: var(--main-bg-branco);
 }
@@ -949,7 +952,7 @@ footer .footer-responsivo figure{
     font-size: var(--font-size-texto-padrao);
     color: var(--font-color2-cinza);
     font-weight: 400;
-    width: 65%;
+    width: 60%;
 }
 
 #sobre main #sobre-dti #dti-superior figure{
@@ -967,14 +970,18 @@ footer .footer-responsivo figure{
 
 }
 
-#sobre main #sobre-dti #dti-inferior ol{
+#sobre main #sobre-dti #dti-inferior{
+    padding-bottom: 3em;
+}
+
+.servicos-gerais{
     display: flex;
     width: 100%;
     justify-content: space-between;
-
+    padding-top: 2em;
 }
 
-#sobre main #sobre-dti #dti-inferior ol li{
+.servicos-gerais li{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -982,7 +989,14 @@ footer .footer-responsivo figure{
     text-align: center;
 }
 
-#sobre main #sobre-dti #dti-inferior ol figure{
+.servicos-gerais li p{
+    font-size: var(--font-size-subtitulo);
+    color: var(--font-color2-cinza);
+    font-weight: 400;
+    padding-top: 0.6em;
+}
+
+.servicos-gerais figure{
     width: 90px;
     height: 90px;
     border-radius: 100px;
@@ -991,7 +1005,45 @@ footer .footer-responsivo figure{
     justify-content: center;
 }
 
-#sobre main #sobre-dti #dti-inferior ol li:nth-child(1) figure{background-color: #8681FF;}
-#sobre main #sobre-dti #dti-inferior ol li:nth-child(2) figure{background-color: #FF9281;}
-#sobre main #sobre-dti #dti-inferior ol li:nth-child(3) figure{background-color: #61AD92;}
-#sobre main #sobre-dti #dti-inferior ol li:nth-child(4) figure{background-color: #A3B4E8;}
+#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(1) figure{background-color: #8681FF;}
+#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(2) figure{background-color: #FF9281;}
+#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(3) figure{background-color: #61AD92;}
+#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(4) figure{background-color: #A3B4E8;}
+
+/*                                  sobre (2)                               */
+
+#sobre main #sobre-colabinf{
+    padding: var(--padding-section);
+    background-color: var(--main-bg--azul-escuro);
+}
+
+#sobre main #sobre-colabinf #colabinf-superior{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5em;
+    padding-top: 4em;
+}
+
+#sobre main #sobre-colabinf #colabinf-inferior{
+    padding-bottom: 4em;
+}
+
+#sobre main #sobre-colabinf #colabinf-superior .subtitulo, #sobre main #sobre-colabinf #colabinf-inferior .subtitulo{
+    color: var(--font-color4-lilas);
+    padding-bottom: 1em;
+}
+
+#sobre main #sobre-colabinf #colabinf-superior p{
+    font-size: var(--font-size-texto-padrao);
+    color: var(--font-color4-lilas);
+    font-weight: 400;
+}
+
+#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li p, #sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li p{
+    color: var(--font-color4-lilas);
+}
+
+#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(4) figure{background-color: #8681FF;}
+#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(3) figure{background-color: #FF9281;}
+#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(2) figure{background-color: #61AD92;}
+#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(1) figure{background-color: #A3B4E8;}
