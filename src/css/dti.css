@@ -20,13 +20,6 @@
     /* outros */
 
     --padding-section: 2em 19%;
-
-    /* tamanho das fontes */
-
-    --font-size-subtitulo: 19px;
-    --font-size-titulo: 50px;
-    --font-size-texto-padrao: 20px;
-
 }
 *{
     margin:0;
@@ -34,6 +27,75 @@
     border:0;
     box-sizing: border-box;
 }
+
+/*                               pre-definições                               */
+
+p,a {font-family: 'Poppins', sans-serif;}
+
+a{text-decoration: none;}
+li{list-style-type: none;}
+
+
+.titulo{
+    position: relative;
+    font-size: 50px;
+    color: var(--main-roxo-enfeitado);
+    font-family: 'Anton', sans-serif;
+    font-weight: 500;
+    z-index: 2;
+
+}
+
+.subtitulo{
+    position: relative;
+    font-size: 19px;
+    line-height: 26px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--font-color2-cinza);
+    z-index: 1;
+    margin-top: -0.5em;
+    font-weight: 400;
+}
+
+.texto{
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--font-color2-cinza);
+}
+
+.background-bolhas{
+    z-index: 0;
+    position: absolute;
+}
+
+.background-bolhas img{position: absolute;}
+
+/* botão pre feito */
+.botao{
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.4em;
+    align-items: center;
+    background-color: var(--main-roxo-enfeitado);
+    box-sizing: border-box;
+    width: 205.37px;
+    height: 50px;
+    border-radius: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.botao p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.botao:hover{
+    transform: scale(1.05);
+}
+
 
 /*                               header                               */
 
@@ -116,64 +178,7 @@ header nav .nav-principal ol li:hover a{
     color: var(--main-bg-branco);
 }
 
-/*                               pre-definições                               */
 
-p,a {font-family: 'Poppins', sans-serif;}
-
-a{text-decoration: none;}
-li{list-style-type: none;}
-
-
-.titulo{
-    position: relative;
-    font-size: var(--font-size-titulo);
-    color: var(--main-roxo-enfeitado);
-    font-family: 'Anton', sans-serif;
-    font-weight: 500;
-    z-index: 2;
-
-}
-
-.subtitulo{
-    position: relative;
-    font-size: var(--font-size-subtitulo);
-    line-height: 26px;
-    font-family: 'Poppins', sans-serif;
-    color: var(--font-color2-cinza);
-    z-index: 1;
-    margin-top: -0.5em;
-    font-weight: 400;
-}
-
-.background-bolhas{
-    z-index: 0;
-}
-
-.background-bolhas img{position: absolute;}
-
-/* botão pre feito */
-.botao{
-    margin-top: 1.7em;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2.4em;
-    align-items: center;
-    background-color: var(--main-roxo-enfeitado);
-    box-sizing: border-box;
-    width: 205.37px;
-    height: 50px;
-    border-radius: 25px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.botao p{
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.botao:hover{
-    transform: scale(1.05);
-}
 
 /*                               home                               */
 
@@ -204,7 +209,6 @@ main #destaque-home{
 }
 
 main #destaque-home .background-bolhas{
-    position: absolute;
     right: 0;
     top: 0;
     transform: rotate(87px);
@@ -255,7 +259,7 @@ main #tutoriais-home .background-bolhas{
 }
 
 
-main #tutoriais-home p{
+main #tutoriais-home .subtitulo{
     color: var(--font-color4-lilas);
 }
 
@@ -270,41 +274,52 @@ main #tutoriais-home .lista-tutoriais{
 
 main #tutoriais-home .lista-tutoriais li {
     width: 270px;
-    height: 328.5px;
-    background-color: var(--main-bg-branco);
-    box-sizing: border-box;
-    border-radius: 11.7px;
+    min-height: 328.5px;
+}
+
+main #tutoriais-home .lista-tutoriais li a{
+    width: 100%;
+    height: 100%;
     padding: 2em;
+    border-radius: 11.7px;
+    box-sizing: border-box;
+    background-color: var(--main-bg-branco);
     opacity: 0.86;
     transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Efeito hover para aumentar o card */
-main #tutoriais-home .lista-tutoriais li:hover {
+main #tutoriais-home .lista-tutoriais li a:hover {
     transform: scale(1.07);
     opacity: 1;
     background-color: var(--font-color5-branco2);
 }
 
-main #tutoriais-home .lista-tutoriais li p {
+main #tutoriais-home .lista-tutoriais li a div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+main #tutoriais-home .lista-tutoriais li a div p {
     color: var(--font-color2-cinza);
     font-size: 17.3px;
     font-weight: 400;
-    width: 223.2px;
     text-align: left;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
-main #tutoriais-home .lista-tutoriais li:hover p {
+main #tutoriais-home .lista-tutoriais li a div:hover p {
     transform: scale(1.04); 
 }
 
 
-main #tutoriais-home .lista-tutoriais li figure{
+main #tutoriais-home .lista-tutoriais li a div figure{
     height: 63px;
     width: 63px;
     background-color: #E6F3FC;
@@ -313,7 +328,7 @@ main #tutoriais-home .lista-tutoriais li figure{
     align-items: center;
     border-radius: 11.7px;
 }
-main #tutoriais-home .lista-tutoriais li h2{
+main #tutoriais-home .lista-tutoriais li a div h2{
     font-size: 24.3px;
     color: var(--font-color6-ciano);
     font-family: 'Anton', sans-serif;
@@ -321,13 +336,16 @@ main #tutoriais-home .lista-tutoriais li h2{
     margin: 0.2em 0;
 }
 
-main #tutoriais-home .lista-tutoriais li .figure-seta{
+main #tutoriais-home .lista-tutoriais li a .figure-seta{
     width: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
     background-color: var(--main-bg-branco);
 }
+
+
+
 
 main #tutoriais-home .botao{
     z-index: 1;
@@ -436,7 +454,7 @@ main #sec-numeros .background-bolhas-superior{
     right: 0;
     top: -20%;
 }
-main #sec-numeros .background-bolhas-inferior{
+main #sec-numeros .background-bolhas-inferior img{
     position: absolute;
     left: -4%;
     bottom: -15%;
@@ -499,7 +517,7 @@ main #conheca-campus{
     padding: var(--padding-section);
 }
 
-main #conheca-campus div p{
+main #conheca-campus div .subtitulo{
     color: var(--font-color4-lilas);
 }
 
@@ -682,6 +700,177 @@ footer .footer-responsivo figure{
 
 }
 
+
+
+/*                               Sobre nós                               */
+/*                               sobre main                               */
+
+#sobre main{
+    background-color: var(--main-bg-branco);
+}
+/*                                  sobre (1)                               */
+#sobre main #sobre-dti{
+    position: relative;
+}
+
+#sobre main #sobre-dti .background-bolhas{
+    left: 0;
+    top: 40%;
+}
+
+#sobre main #sobre-dti .background-bolhas img{
+    width: 200px;}
+
+#sobre main #sobre-dti .background-bolhas2 img{position: absolute;}
+
+#sobre main #sobre-dti .background-bolhas2 img{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(87px);
+}
+
+#sobre main #sobre-dti #dti-superior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5em;
+    padding: var(--padding-section);
+    padding-right: 0;
+    
+}
+
+#sobre main #sobre-dti #dti-superior .subtitulo{
+    padding-bottom: 1em;
+}
+
+#sobre main #sobre-dti #dti-superior .texto{
+    color: var(--font-color2-cinza);
+    width: 95%;
+}
+
+#sobre main #sobre-dti #dti-superior figure{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-bg--azul-escuro);
+    padding: 3em;
+    border-radius: 300px 0 0 300px;
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 0 19% 0 10%;
+}
+
+#sobre main #sobre-dti #dti-superior figure img{
+    padding: 2.4em;
+    height: 226px;
+}
+
+#sobre main #sobre-dti #dti-inferior{
+    padding: var(--padding-section);
+    padding-bottom: 3em;
+}
+
+#sobre main #sobre-dti #dti-inferior .servicos-gerais li p{
+    color: var(--font-color2-cinza);
+}
+
+.servicos-gerais{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+.servicos-gerais li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 162px;
+    text-align: center;
+}
+
+.servicos-gerais li p{
+    width: 140px;
+    padding-top: 0.5em;
+}
+
+
+.servicos-gerais li .subtitulo{
+    color: var(--font-color2-cinza);
+    padding-top: 0.6em;
+}
+
+.servicos-gerais figure{
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(1) figure{background-color: #8681FF;}
+#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(2) figure{background-color: #FF9281;}
+#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(3) figure{background-color: #61AD92;}
+#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(4) figure{background-color: #A3B4E8;}
+
+/*                                  sobre (2)                               */
+
+#sobre main #sobre-colabinf{
+    padding: var(--padding-section);
+    background-color: var(--main-bg--azul-escuro);
+}
+
+#sobre main #sobre-colabinf #colabinf-superior{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5em;
+    padding-top: 4em;
+}
+
+#sobre main #sobre-colabinf #colabinf-superior div{
+    width: 55%;
+}
+
+#sobre main #sobre-colabinf #colabinf-superior figure{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    padding-right: 1em;
+}
+
+#sobre main #sobre-colabinf #colabinf-superior figure img{
+    width: 100%;
+}
+
+#sobre main #sobre-colabinf #colabinf-inferior{
+    padding-bottom: 4em;
+}
+
+#sobre main #sobre-colabinf #colabinf-superior .subtitulo, #sobre main #sobre-colabinf #colabinf-inferior .subtitulo{
+    color: var(--font-color4-lilas);
+    padding-bottom: 1em;
+}
+
+#sobre main #sobre-colabinf #colabinf-superior .texto{
+    color: var(--font-color4-lilas);
+}
+
+
+
+#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li p{
+    color: var(--font-color4-lilas);
+}
+
+#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(4) figure{background-color: #8681FF;}
+#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(3) figure{background-color: #FF9281;}
+#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(2) figure{background-color: #61AD92;}
+#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(1) figure{background-color: #A3B4E8;}
+
+
 /*                               responsividade                               */
 
 /* listas da home (tutoriais e serviços)*/
@@ -691,24 +880,12 @@ footer .footer-responsivo figure{
         align-items: start;
         position: relative;
     }
-    
-    
-    main #tutoriais-home .lista-tutoriais li .figure-seta{
-        position: absolute;
-        width: 0;
-        height: 0;
-        right: 7%;
-    }
 
-    main #tutoriais-home .lista-tutoriais li p{
-        width: 90%;
-    }
-
-    main #servicos-prestados ol li{
+    main #servicos-prestados .lista-tutoriais li{
         width: 23.5%;
     }
 
-    main #servicos-prestados ol li p{
+    main #servicos-prestados .lista-tutoriais li p{
         font-size: 18px;
     }
 }
@@ -719,7 +896,7 @@ footer .footer-responsivo figure{
     }
 }
 
-@media screen and (max-width: 1340px){
+@media screen and (max-width: 1480px){
     main #destaque-home .background-bolhas{
         width: 20%;
     }
@@ -750,6 +927,23 @@ footer .footer-responsivo figure{
         left: -24%;
         height: 260px;
         box-sizing: border-box;
+    }
+
+    #sobre main #sobre-dti #dti-superior figure{
+        height: 200px;
+        padding: 0 10% 0 5%;
+        box-sizing: border-box;
+    }
+    #sobre main #sobre-dti #dti-superior figure img{
+        height: 100%;
+    }
+
+    /* sobre nós - (1 - dti) */
+
+    #sobre main #sobre-dti .background-bolhas2 img{
+        width: 20%;
+        right: -90px;
+        hei
     }
 }
 
@@ -833,6 +1027,26 @@ footer .footer-responsivo figure{
         padding-left: 1em;
         height: 37px;
     }
+
+    /* pagina sobre nós - (1 - dti)*/
+
+    #sobre main #sobre-dti .background-bolhas{
+        left: -106px;
+    }
+
+    #sobre main #sobre-dti .background-bolhas2 img {
+        width: 20%;
+        right: -31px;
+    }
+    
+    #sobre main #sobre-dti #dti-superior p {
+        width: 100%;}
+    
+
+    #sobre main #sobre-dti #dti-superior figure img{
+        height: 180px;
+        padding: 2em;
+    }
 }
 
 /* mini lista de tutoriais de home - isso aqui quebra muita facil:( */
@@ -853,6 +1067,10 @@ footer .footer-responsivo figure{
         padding-top: 0;
         padding-bottom: 0;
         height: 268.5px;
+    }
+
+    main #tutoriais-home .lista-tutoriais li a div p{
+        width: 86%;
     }
     
     main #servicos-prestados ol li{
@@ -896,6 +1114,42 @@ footer .footer-responsivo figure{
         width: calc(50% - 1em);
         margin-top: -3em; 
     }
+
+    /* pagina sobre nós - (1 - dti) */
+
+    #sobre main #sobre-dti .background-bolhas{
+        left: -142px;
+        top: 38%;
+    }
+
+    #sobre main #sobre-dti .background-bolhas2{
+        width: 30%;
+    }
+
+    #sobre main #sobre-dti #dti-superior figure, #sobre main #sobre-colabinf #colabinf-superior figure{
+        display: none;
+    }
+
+    #sobre main #sobre-dti #dti-inferior .servicos-gerais, #sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais{
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    #sobre main #sobre-dti #dti-inferior .servicos-gerais li, #sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li{
+        width: 45%;
+        max-width: none;
+    }
+
+    #sobre main #sobre-dti #dti-inferior .servicos-gerais li p{
+        max-width: 160px;
+    }
+
+    /* pagina sobre nós - (2 - colabinf) */
+
+    #sobre main #sobre-colabinf #colabinf-superior div{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 428px){
@@ -924,126 +1178,3 @@ footer .footer-responsivo figure{
     footer .footer-responsivo figure{width: 100%;}
 
 }
-
-/*                               Sobre nós                               */
-/*                               sobre main                               */
-
-#sobre main{
-    background-color: var(--main-bg-branco);
-}
-/*                                  sobre (1)                               */
-#sobre main #sobre-dti{
-    padding: var(--padding-section);
-    position: relative;
-}
-
-#sobre main #sobre-dti #dti-superior{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5em;
-    
-}
-
-#sobre main #sobre-dti #dti-superior .subtitulo{
-    padding-bottom: 1em;
-}
-
-#sobre main #sobre-dti #dti-superior p{
-    font-size: var(--font-size-texto-padrao);
-    color: var(--font-color2-cinza);
-    font-weight: 400;
-    width: 60%;
-}
-
-#sobre main #sobre-dti #dti-superior figure{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    right: -150px;
-    background-color: var(--main-bg--azul-escuro);
-    padding: 3em;
-    border-radius: 300px;
-    width: 800px;
-    height: auto;
-    box-sizing: border-box;
-    padding-left: 6em;
-
-}
-
-#sobre main #sobre-dti #dti-inferior{
-    padding-bottom: 3em;
-}
-
-.servicos-gerais{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding-top: 2em;
-}
-
-.servicos-gerais li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 162px;
-    text-align: center;
-}
-
-.servicos-gerais li p{
-    font-size: var(--font-size-subtitulo);
-    color: var(--font-color2-cinza);
-    font-weight: 400;
-    padding-top: 0.6em;
-}
-
-.servicos-gerais figure{
-    width: 90px;
-    height: 90px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(1) figure{background-color: #8681FF;}
-#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(2) figure{background-color: #FF9281;}
-#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(3) figure{background-color: #61AD92;}
-#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(4) figure{background-color: #A3B4E8;}
-
-/*                                  sobre (2)                               */
-
-#sobre main #sobre-colabinf{
-    padding: var(--padding-section);
-    background-color: var(--main-bg--azul-escuro);
-}
-
-#sobre main #sobre-colabinf #colabinf-superior{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5em;
-    padding-top: 4em;
-}
-
-#sobre main #sobre-colabinf #colabinf-inferior{
-    padding-bottom: 4em;
-}
-
-#sobre main #sobre-colabinf #colabinf-superior .subtitulo, #sobre main #sobre-colabinf #colabinf-inferior .subtitulo{
-    color: var(--font-color4-lilas);
-    padding-bottom: 1em;
-}
-
-#sobre main #sobre-colabinf #colabinf-superior p{
-    font-size: var(--font-size-texto-padrao);
-    color: var(--font-color4-lilas);
-    font-weight: 400;
-}
-
-#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li p, #sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li p{
-    color: var(--font-color4-lilas);
-}
-
-#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(4) figure{background-color: #8681FF;}
-#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(3) figure{background-color: #FF9281;}
-#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(2) figure{background-color: #61AD92;}
-#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(1) figure{background-color: #A3B4E8;}
