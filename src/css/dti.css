@@ -126,7 +126,7 @@ header a{color: var(--main-roxo-enfeitado)}
 
 header h1 {justify-self: start;}
 header nav {justify-self: center;}
-header a:last-child {justify-self: end;}
+header #dark-light-mode:last-child {justify-self: end;}
 
 header nav .nav-principal {
     list-style: none;
