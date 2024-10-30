@@ -178,6 +178,38 @@ header nav .nav-principal ol li:hover a{
     color: var(--main-bg-branco);
 }
 
+/*                               menu - hamburguer                               */
+
+body #menu-hamburguer{
+    position: absolute;
+    width: 308px;
+    padding: 1.5em;
+    height: 100%;
+    background-color: var(--main-bg-branco);
+    z-index: 100;
+}
+
+body #menu-hamburguer h1 img{
+    width: 192.09px;
+}
+
+body #menu-hamburguer li span{
+    display: flex;
+    color: var(--main-roxo-enfeitado);
+    align-items: center;
+}
+
+body #menu-hamburguer li a{
+    color: var(--main-roxo-enfeitado);
+    width: 200px;
+    justify-content: space-between;
+}
+
+body #menu-hamburguer li ol li .subtitulo{
+    font-weight: 300;
+    font-size: 19px;
+}
+
 
 
 /*                               home                               */
