@@ -96,6 +96,11 @@ li{list-style-type: none;}
     transform: scale(1.05);
 }
 
+body{
+    height: 100%;
+    position: relative;
+}
+
 
 /*                               header                               */
 
@@ -178,38 +183,84 @@ header nav .nav-principal ol li:hover a{
     color: var(--main-bg-branco);
 }
 
-/*                               menu - hamburguer                               */
+/*  menu hamburguer */
+
+body #sombra-menu-hamburguer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #101c4928;
+    z-index: 10;
+}
 
 body #menu-hamburguer{
-    position: absolute;
-    width: 308px;
-    padding: 1.5em;
-    height: 100%;
+    position: relative;
     background-color: var(--main-bg-branco);
+    padding: 2em;
+    box-sizing: border-box;
+    position: absolute;
+    width: 300px;
+    height: 100%;
     z-index: 100;
 }
 
-body #menu-hamburguer h1 img{
-    width: 192.09px;
+body #menu-hamburguer h1 a img{
+    width: 192px;
+    margin-bottom: 1em;
 }
 
-body #menu-hamburguer li span{
+body #menu-hamburguer nav{
+    height: auto;
+    display: block;
+}
+
+body #menu-hamburguer nav .nav-principal{
     display: flex;
-    color: var(--main-roxo-enfeitado);
-    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    height: 153px;
 }
 
-body #menu-hamburguer li a{
-    color: var(--main-roxo-enfeitado);
-    width: 200px;
-    justify-content: space-between;
+body #menu-hamburguer nav .nav-principal li{
+    width: 160px;
+    height: auto;
+    padding-bottom: 1em;
 }
 
-body #menu-hamburguer li ol li .subtitulo{
-    font-weight: 300;
-    font-size: 19px;
+body #menu-hamburguer nav .nav-principal li div{
+    margin-bottom: 1em;
+    display: flex;
 }
 
+body #menu-hamburguer nav .nav-principal li div span{
+    display: flex;
+}
+
+body #menu-hamburguer nav .nav-principal li a img, body #menu-hamburguer nav .nav-principal li div img:nth-child(1){
+    max-width: 40px;
+    padding-right: 20px;
+}
+
+body #menu-hamburguer nav .nav-principal li #lista-deslizavel{
+    display: none;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+body #menu-hamburguer nav .nav-principal li #lista-deslizavel li{
+    padding-bottom: 0.4em;
+}
+
+body #menu-hamburguer nav .nav-principal li:hover  {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+body #menu-hamburguer #botao-lateral{
+    position: absolute;
+    right: 0;
+    top: 350lh;
+}
 
 
 /*                               home                               */

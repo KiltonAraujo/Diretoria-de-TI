@@ -51,3 +51,36 @@ document.addEventListener('DOMContentLoaded', () => {
         animarContador(7 , 'porcentagem-unidade', 5000);
     }
 });
+
+
+/* menu hamburguer */
+
+/*
+function fechar_menuHamburguer(){document.getElementById("menu-hamburguer").style.display = "none"}
+
+var hamburger = false;
+
+function menuHamburger(){
+  hamburger = !hamburger;
+  if(hamburger){
+    document.getElementById("menu-hamburguer").style.display = "flex";
+  }
+  else{
+    document.getElementById("menu-hamburguer").style.display = "none";
+  }
+}*/
+
+var deslizavel = false;
+
+function listaDeslizavel(){
+    deslizavel = !deslizavel;
+    if(deslizavel){
+      document.getElementById("lista-deslizavel").style.display = "block";
+    }
+    else{
+      document.getElementById("lista-deslizavel").style.display = "none";
+    }
+  }
+
+/* menu hamburguer - lista interior */
+
