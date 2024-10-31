@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* menu hamburguer */
 
-function fechar_menuHamburguer(){document.getElementById("menu-hamburguer").style.display = "none"}
+
 
 var hamburguer = false;
 var botao_lateral = document.getElementById("botao-lateral")
@@ -74,7 +74,7 @@ function menuHamburger(){
     background_bolhas.style.transform = "translateX(0)"
   } 
   else {
-    menu_hamburger.style.transform = "translateX(-300px)";
+    menu_hamburger.style.transform = "translateX(-301px";
     botao_lateral.style.transform = "rotateY(180deg)";
     botao_lateral.style.right = "-26px";
     sombra_hamburguer.style.right = "100vw";
@@ -83,10 +83,6 @@ function menuHamburger(){
 
   }
 }
-
-
-
-
 
 var deslizavel = false;
 

@@ -190,6 +190,7 @@ body #sombra-menu-hamburguer{
     height: 100%;
     opacity: 0;
     position: absolute;
+    right: 100vw;
     background-color: #101c4928;
     z-index: 10;
     transition: all 0.4s ease;
@@ -197,14 +198,13 @@ body #sombra-menu-hamburguer{
 
 body #menu-hamburguer{
     display: none;
-    position: relative;
+    position: fixed;
     background-color: var(--main-bg-branco);
     box-sizing: border-box;
-    position: absolute;
     width: 300px;
     height: 100%;
     z-index: 100;
-    transform: translateX(-300px);
+    transform: translateX(-301px);
     transition: transform 0.5s ease;
 }
 
@@ -258,8 +258,6 @@ body #menu-hamburguer nav .nav-principal li div span{
     display: flex;
 }
 
-
-
 body #menu-hamburguer nav .nav-principal li a img, body #menu-hamburguer nav .nav-principal li div img:nth-child(1){
     max-width: 40px;
     padding-right: 20px;
@@ -272,7 +270,6 @@ body #menu-hamburguer nav .nav-principal li #lista-deslizavel{
 }
 
 body #menu-hamburguer nav .nav-principal li #lista-deslizavel li{
-    
     transform: translateY(-10px);
 }
 
@@ -297,7 +294,7 @@ body #menu-hamburguer nav .nav-principal li:hover  {
 
 body #menu-hamburguer #botao-lateral{
     transform: rotateY(180grad);
-    position: absolute;
+    position: fixed;
     right: -26px;
     top: 350px;
     transition: transform 0.5s ease;
@@ -340,11 +337,18 @@ main #destaque-home{
     background-position: center;
     background-image: url('../imagens/backgrounds/destaque-home.svg');
 }
-
 main #destaque-home .background-bolhas{
+    position: absolute;
     right: 0;
     top: 0;
     transform: rotate(87px);
+}
+main #destaque-home .background-bolhas img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(87px);
+    
 }
 
 main #destaque-home div{
@@ -428,7 +432,7 @@ main #tutoriais-home .lista-tutoriais li a{
 main #tutoriais-home .lista-tutoriais li a:hover {
     transform: scale(1.07);
     opacity: 1;
-    background-color: var(--font-color5-branco2);
+    background-color: #E6F3FC;
 }
 
 main #tutoriais-home .lista-tutoriais li a div{
@@ -474,7 +478,6 @@ main #tutoriais-home .lista-tutoriais li a .figure-seta{
     display: flex;
     justify-content: end;
     align-items: center;
-    background-color: var(--main-bg-branco);
 }
 
 
@@ -1004,6 +1007,36 @@ footer .footer-responsivo figure{
 #sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(1) figure{background-color: #A3B4E8;}
 
 
+/* tutoriais */
+
+#tutoriais main section #pesquisar{
+    height: 40px;
+    width: 240px;
+    display: flex;
+    border-radius: 50px;
+    background-color: var(--font-color5-branco2);
+    box-sizing: border-box;
+    border: none;
+}
+
+#tutoriais main section #pesquisar input[type=image]{
+    padding: 10px;
+    background-color: var(--main-roxo-enfeitado);
+    border-radius: 50%;
+    height: 100%;
+}
+
+#tutoriais main section #pesquisar input[type=search]{
+    margin-left: 10px;
+    border-radius: 50px;
+    
+    
+}
+
+#tutoriais main section #pesquisar input[type=search]:focus{
+    outline: none;
+}
+
 /*                               responsividade                               */
 
 /* listas da home (tutoriais e serviços)*/
@@ -1030,11 +1063,15 @@ footer .footer-responsivo figure{
 }
 
 @media screen and (max-width: 1480px){
-    main #destaque-home .background-bolhas{
-        width: 20%;
+    main #destaque-home .background-bolhas img{
+        right: -50px;
     }
     main #destaque-home #destaque-desktop{
         display: none;
+    }
+
+    main #destaque-home div .subtitulo{
+        width: 70%;
     }
 
     main #tutoriais-home .lista-tutoriais li{
@@ -1143,8 +1180,13 @@ footer .footer-responsivo figure{
     main #sec-numeros ol li {
         width: calc(27% - 1em);
     }
-    body #menu-hamburguer{display: block;}
-    header{display: none;}
+    body #menu-hamburguer{
+        display: block;
+    }
+
+    header{
+        display: none;}
+
     footer .footer-responsivo figure{
         width: 40%;
         padding: 1em;
@@ -1185,8 +1227,13 @@ footer .footer-responsivo figure{
 /* mini lista de tutoriais de home - isso aqui quebra muita facil:( */
 @media screen and (max-width: 718px){
 
-    main #destaque-home .background-bolhas{
-        width: 30%;
+    main #destaque-home div h1{
+        font-size: 80px;}
+
+    main #destaque-home .background-bolhas img{
+        width: 300px;
+        right: -100px;
+        top: -50px;
     }
 
     main #tutoriais-home .background-bolhas {
