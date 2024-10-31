@@ -55,20 +55,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* menu hamburguer */
 
-/*
 function fechar_menuHamburguer(){document.getElementById("menu-hamburguer").style.display = "none"}
 
-var hamburger = false;
+var hamburguer = false;
+var botao_lateral = document.getElementById("botao-lateral")
+var menu_hamburger = document.getElementById("menu-hamburguer")
+var sombra_hamburguer = document.getElementById("sombra-menu-hamburguer")
 
 function menuHamburger(){
-  hamburger = !hamburger;
-  if(hamburger){
-    document.getElementById("menu-hamburguer").style.display = "flex";
+  hamburguer = !hamburguer;
+  if (hamburguer) {
+    menu_hamburger.style.transform = "translateX(0)";
+    botao_lateral.style.transform = "rotateY(0)";
+    botao_lateral.style.right = "0";
+    sombra_hamburguer.style.right = "0";
+    sombra_hamburguer.style.opacity = "1";
+  } 
+  else {
+    menu_hamburger.style.transform = "translateX(-300px)";
+    botao_lateral.style.transform = "rotateY(180deg)";
+    botao_lateral.style.right = "-30px";
+    sombra_hamburguer.style.right = "100vw";
+    sombra_hamburguer.style.opacity = "0";
+
   }
-  else{
-    document.getElementById("menu-hamburguer").style.display = "none";
-  }
-}*/
+}
+
+
+
+
 
 var deslizavel = false;
 

@@ -188,12 +188,15 @@ header nav .nav-principal ol li:hover a{
 body #sombra-menu-hamburguer{
     width: 100%;
     height: 100%;
+    opacity: 0;
     position: absolute;
     background-color: #101c4928;
     z-index: 10;
+    transition: all 0.4s ease;
 }
 
 body #menu-hamburguer{
+    display: none;
     position: relative;
     background-color: var(--main-bg-branco);
     padding: 2em;
@@ -202,6 +205,8 @@ body #menu-hamburguer{
     width: 300px;
     height: 100%;
     z-index: 100;
+    transform: translateX(-300px);
+    transition: transform 0.5s ease;
 }
 
 body #menu-hamburguer h1 a img{
@@ -227,6 +232,14 @@ body #menu-hamburguer nav .nav-principal li{
     padding-bottom: 1em;
 }
 
+body #menu-hamburguer nav .nav-principal li a, body #menu-hamburguer nav .nav-principal li div span p{
+    display: flex;
+    align-items: center;
+    color: var(--main-roxo-enfeitado);
+    font: 300;
+    font-size: 19px;
+}
+
 body #menu-hamburguer nav .nav-principal li div{
     margin-bottom: 1em;
     display: flex;
@@ -235,6 +248,8 @@ body #menu-hamburguer nav .nav-principal li div{
 body #menu-hamburguer nav .nav-principal li div span{
     display: flex;
 }
+
+
 
 body #menu-hamburguer nav .nav-principal li a img, body #menu-hamburguer nav .nav-principal li div img:nth-child(1){
     max-width: 40px;
@@ -250,6 +265,14 @@ body #menu-hamburguer nav .nav-principal li #lista-deslizavel li{
     padding-bottom: 0.4em;
 }
 
+body #menu-hamburguer nav .nav-principal li #lista-deslizavel li a{
+    display: flex;
+    align-items: center;
+    color: var(--main-roxo-enfeitado);
+    font: 200;
+    font-size: 18px;
+}
+
 body #menu-hamburguer nav .nav-principal li:hover  {
     opacity: 1;
     visibility: visible;
@@ -257,9 +280,11 @@ body #menu-hamburguer nav .nav-principal li:hover  {
 }
 
 body #menu-hamburguer #botao-lateral{
+    transform: rotateY(180grad);
     position: absolute;
-    right: 0;
-    top: 350lh;
+    right: -30px;
+    top: 350px;
+    transition: transform 0.5s ease;
 }
 
 
@@ -1093,6 +1118,7 @@ footer .footer-responsivo figure{
     main #sec-numeros ol li {
         width: calc(27% - 1em);
     }
+    body #menu-hamburguer{display: block;}
     header{display: none;}
     footer .footer-responsivo figure{
         width: 40%;
