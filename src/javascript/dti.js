@@ -61,6 +61,7 @@ var hamburguer = false;
 var botao_lateral = document.getElementById("botao-lateral")
 var menu_hamburger = document.getElementById("menu-hamburguer")
 var sombra_hamburguer = document.getElementById("sombra-menu-hamburguer")
+var background_bolhas = document.getElementById("bolhas")
 
 function menuHamburger(){
   hamburguer = !hamburguer;
@@ -70,13 +71,15 @@ function menuHamburger(){
     botao_lateral.style.right = "0";
     sombra_hamburguer.style.right = "0";
     sombra_hamburguer.style.opacity = "1";
+    background_bolhas.style.transform = "translateX(0)"
   } 
   else {
     menu_hamburger.style.transform = "translateX(-300px)";
     botao_lateral.style.transform = "rotateY(180deg)";
-    botao_lateral.style.right = "-30px";
+    botao_lateral.style.right = "-26px";
     sombra_hamburguer.style.right = "100vw";
     sombra_hamburguer.style.opacity = "0";
+    background_bolhas.style.transform = "translateX(-402px)"
 
   }
 }
@@ -91,11 +94,13 @@ function listaDeslizavel(){
     deslizavel = !deslizavel;
     if(deslizavel){
       document.getElementById("lista-deslizavel").style.display = "block";
+      document.getElementById("lista-deslizavel").style.transform = "translateY(0)";
+      
     }
     else{
       document.getElementById("lista-deslizavel").style.display = "none";
+      document.getElementById("lista-deslizavel").style.transform = "translateY(-10px)";
     }
   }
 
 /* menu hamburguer - lista interior */
-

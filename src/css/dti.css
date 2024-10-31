@@ -199,7 +199,6 @@ body #menu-hamburguer{
     display: none;
     position: relative;
     background-color: var(--main-bg-branco);
-    padding: 2em;
     box-sizing: border-box;
     position: absolute;
     width: 300px;
@@ -209,14 +208,24 @@ body #menu-hamburguer{
     transition: transform 0.5s ease;
 }
 
+body #menu-hamburguer h1{
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.6em;
+    margin-bottom: 0.6em;
+    border-bottom: solid 1px var(--main-roxo-enfeitado);
+}
+
 body #menu-hamburguer h1 a img{
     width: 192px;
-    margin-bottom: 1em;
+    
 }
 
 body #menu-hamburguer nav{
     height: auto;
     display: block;
+    padding: 0 2em;
 }
 
 body #menu-hamburguer nav .nav-principal{
@@ -241,7 +250,7 @@ body #menu-hamburguer nav .nav-principal li a, body #menu-hamburguer nav .nav-pr
 }
 
 body #menu-hamburguer nav .nav-principal li div{
-    margin-bottom: 1em;
+
     display: flex;
 }
 
@@ -257,12 +266,19 @@ body #menu-hamburguer nav .nav-principal li a img, body #menu-hamburguer nav .na
 }
 
 body #menu-hamburguer nav .nav-principal li #lista-deslizavel{
+    max-height: 70px;
     display: none;
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
 }
 
 body #menu-hamburguer nav .nav-principal li #lista-deslizavel li{
-    padding-bottom: 0.4em;
+    
+    transform: translateY(-10px);
+}
+
+body #menu-hamburguer nav .nav-principal li #lista-deslizavel li:nth-child(1){
+    margin-top: 1em;
+    margin-bottom: 0.1em;
 }
 
 body #menu-hamburguer nav .nav-principal li #lista-deslizavel li a{
@@ -282,9 +298,18 @@ body #menu-hamburguer nav .nav-principal li:hover  {
 body #menu-hamburguer #botao-lateral{
     transform: rotateY(180grad);
     position: absolute;
-    right: -30px;
+    right: -26px;
     top: 350px;
     transition: transform 0.5s ease;
+}
+
+body #menu-hamburguer #bolhas{
+    position: absolute;
+    left: 0;
+    top: 400px;
+    transform: translateX(-102px);
+    transition: transform 0.8s ease;
+
 }
 
 
@@ -1266,7 +1291,7 @@ footer .footer-responsivo figure{
     }
 
     main #destaque-home div h1{
-        font-size: 75px;}
+        font-size: 65px;}
     
     main #servicos-prestados ol li{
         height: 300px; 
@@ -1274,6 +1299,12 @@ footer .footer-responsivo figure{
 
     main #sec-numeros .background-bolhas-superior{
         right: -40%;
+    }
+
+    main #sec-numeros ol li {
+        width: calc(33.33% - 1em);/* mini gambiarra*/
+        transform: scale(0.6);
+
     }
 
     footer .footer-responsivo .background {
