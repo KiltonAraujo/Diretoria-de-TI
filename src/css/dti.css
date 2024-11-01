@@ -8,8 +8,8 @@
     --main-bg-branco: #FFFFFF;
     --main-bg--azul-escuro: #081544;
 
-
     --main-roxo-enfeitado: #9A92FF;
+    --main-cinza-claro: #F8F8FF;
 
     --font-color2-cinza: #82849A;
     --font-color3-branco1: rgba(255, 255, 255, 0.8);
@@ -65,7 +65,7 @@ li{list-style-type: none;}
     color: var(--font-color2-cinza);
 }
 
-.background-bolhas{
+.background-bolhas, .background-bolhas2, .background-bolhas3{
     z-index: 0;
     position: absolute;
 }
@@ -400,7 +400,9 @@ main #tutoriais-home .subtitulo{
     color: var(--font-color4-lilas);
 }
 
-main #tutoriais-home .lista-tutoriais{
+/* a formatação dos cards são usadas na pagina de tutoriais */
+
+main .lista-tutoriais{
     z-index: 1;
     display: flex;
     justify-content: space-between;
@@ -409,19 +411,20 @@ main #tutoriais-home .lista-tutoriais{
     padding-top: 2em;
 }
 
-main #tutoriais-home .lista-tutoriais li {
+main .lista-tutoriais li {
     width: 270px;
     min-height: 328.5px;
 }
 
-main #tutoriais-home .lista-tutoriais li a{
+main .lista-tutoriais li a{
+    position: relative;
+    z-index: 2;
     width: 100%;
     height: 100%;
     padding: 2em;
     border-radius: 11.7px;
     box-sizing: border-box;
-    background-color: var(--main-bg-branco);
-    opacity: 0.86;
+    background-color: var(--main-cinza-claro);
     transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
     display: flex;
     justify-content: space-between;
@@ -429,13 +432,12 @@ main #tutoriais-home .lista-tutoriais li a{
 }
 
 /* Efeito hover para aumentar o card */
-main #tutoriais-home .lista-tutoriais li a:hover {
+main .lista-tutoriais li a:hover {
     transform: scale(1.07);
-    opacity: 1;
     background-color: #E6F3FC;
 }
 
-main #tutoriais-home .lista-tutoriais li a div{
+main .lista-tutoriais li a div{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -443,7 +445,7 @@ main #tutoriais-home .lista-tutoriais li a div{
     width: 100%;
 }
 
-main #tutoriais-home .lista-tutoriais li a div p {
+main .lista-tutoriais li a div p {
     color: var(--font-color2-cinza);
     font-size: 17.3px;
     font-weight: 400;
@@ -451,12 +453,12 @@ main #tutoriais-home .lista-tutoriais li a div p {
     transition: transform 0.3s ease;
 }
 
-main #tutoriais-home .lista-tutoriais li a div:hover p {
+main .lista-tutoriais li a div:hover p {
     transform: scale(1.04); 
 }
 
 
-main #tutoriais-home .lista-tutoriais li a div figure{
+main .lista-tutoriais li a div figure{
     height: 63px;
     width: 63px;
     background-color: #E6F3FC;
@@ -465,7 +467,7 @@ main #tutoriais-home .lista-tutoriais li a div figure{
     align-items: center;
     border-radius: 11.7px;
 }
-main #tutoriais-home .lista-tutoriais li a div h2{
+main .lista-tutoriais li a div h2{
     font-size: 24.3px;
     color: var(--font-color6-ciano);
     font-family: 'Anton', sans-serif;
@@ -473,7 +475,7 @@ main #tutoriais-home .lista-tutoriais li a div h2{
     margin: 0.2em 0;
 }
 
-main #tutoriais-home .lista-tutoriais li a .figure-seta{
+main .lista-tutoriais li a .figure-seta{
     width: 100%;
     display: flex;
     justify-content: end;
@@ -849,15 +851,16 @@ footer .footer-responsivo figure{
     position: relative;
 }
 
-#sobre main #sobre-dti .background-bolhas{
+#sobre main #sobre-dti .background-bolhas img{
     left: 0;
-    top: 40%;
+    top: 368px;
 }
 
 #sobre main #sobre-dti .background-bolhas img{
-    width: 200px;}
+    width: 300px;
+    right: 0;
+}
 
-#sobre main #sobre-dti .background-bolhas2 img{position: absolute;}
 
 #sobre main #sobre-dti .background-bolhas2 img{
     z-index: 0;
@@ -1007,16 +1010,42 @@ footer .footer-responsivo figure{
 #sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(1) figure{background-color: #A3B4E8;}
 
 
-/* tutoriais */
+/*                                tutoriais                                */
+
+#tutoriais main{
+    background-color: var(--main-bg-branco);
+}
+
+#tutoriais main section{
+    padding: var(--padding-section);
+    min-height: 450px;
+    position: relative;
+}
+
+#tutoriais main section figure .background-bolhas{
+    top: 0;
+    right: 0;
+}
+
+#tutoriais main section figure .background-bolhas2{
+    left: 0;
+    top: 500px;
+}
+
+#tutoriais main section figure .background-bolhas3{
+    right: 0;
+    top: 900px;
+}
 
 #tutoriais main section #pesquisar{
     height: 40px;
     width: 240px;
     display: flex;
     border-radius: 50px;
-    background-color: var(--font-color5-branco2);
+    background-color: var(--main-cinza-claro);
     box-sizing: border-box;
     border: none;
+    margin-top: 2em;
 }
 
 #tutoriais main section #pesquisar input[type=image]{
@@ -1029,6 +1058,7 @@ footer .footer-responsivo figure{
 #tutoriais main section #pesquisar input[type=search]{
     margin-left: 10px;
     border-radius: 50px;
+    background-color: var(--main-cinza-claro);
     
     
 }
@@ -1037,9 +1067,37 @@ footer .footer-responsivo figure{
     outline: none;
 }
 
+#tutoriais main section #mensagem-erro{
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: -30px;
+    padding-bottom: 90px;
+    transition: all 0.5s ease; 
+
+}
+
+#tutoriais main section #mensagem-erro .titulo{
+    font-size: 290px;
+    font-weight: 500;
+    color: var(--main-roxo-enfeitado);
+    opacity: 0.6;
+}
+
+#tutoriais main section #mensagem-erro .subtitulo{
+    font-size: 40px;
+    color: var(--main-roxo-enfeitado);
+    margin-top: -1.6em;
+    margin-bottom: 0.3em;
+}
+
+
+
+
 /*                               responsividade                               */
 
-/* listas da home (tutoriais e serviços)*/
+/*                               listas da home (tutoriais e serviços)                               */
+
 @media  screen and (max-width: 1850px){
     main #tutoriais-home .lista-tutoriais li{
         width: 23%;

@@ -1,13 +1,12 @@
 // Animação dos numeros da home - sec-numeros
 
-let contadoresAnimados = false; // Variável de controle
+let contadoresAnimados = false;
 
 function animarContador(valorFinal, idElemento, duracaoTotal) {
     const elemento = document.getElementById(idElemento);
 
-    // Verifica se o elemento está visível na tela antes de começar a animação
     if (!elementoVisivelNaTela(elemento) || contadoresAnimados) {
-        return; // Se o elemento não estiver visível ou já foi animado, não faz nada
+        return;
     }
 
     let valorAtual = 0;
@@ -100,3 +99,26 @@ function listaDeslizavel(){
   }
 
 /* menu hamburguer - lista interior */
+
+// pesquisa de tutoriais
+
+const searchInput = document.getElementById('pesq_input');
+const divs = document.querySelectorAll('.card');
+const noResultsMessage = document.getElementById('mensagem-erro');
+
+searchInput.addEventListener('input', (event) => {
+    const searchTerms = event.target.value.toLowerCase().split(' ').filter(Boolean);
+    let anyFound = false;
+
+    divs.forEach(div => {
+        const divClasses = Array.from(div.classList).map(className => className.toLowerCase());
+        const found = searchTerms.every(term => divClasses.some(className => className.includes(term)));
+
+        div.style.display = found ? 'block' : 'none';
+        if (found) {
+            anyFound = true;
+        }
+    });
+
+    noResultsMessage.style.display = anyFound ? 'none' : 'block';
+});
