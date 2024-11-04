@@ -30,7 +30,7 @@
 
 /*                               pre-definições                               */
 
-p,a {font-family: 'Poppins', sans-serif;}
+p,a, span {font-family: 'Poppins', sans-serif;}
 
 a{text-decoration: none;}
 li{list-style-type: none;}
@@ -955,6 +955,12 @@ footer .footer-responsivo figure{
     z-index: 1;
 }
 
+#sobre main #sobre-colabinf .background-bolhas{
+    right: 0;
+    top: -101px;
+}
+
+
 #sobre main #sobre-colabinf #colabinf-superior{
     display: flex;
     justify-content: space-between;
@@ -1099,6 +1105,95 @@ footer .footer-responsivo figure{
     margin-bottom: 0.3em;
 }
 
+/*                               equipe                               */
+
+#equipe main{
+    background-color: var(--main-bg-branco);
+}
+
+#equipe main section{
+    padding: var(--padding-section);
+}
+
+#equipe main section ol{
+    padding-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+
+}
+
+#equipe main section ol li{
+    background-color: var(--main-cinza-claro);
+    width: 23%;
+    min-height: 378px;
+    border-radius: 33px;
+}
+
+#equipe main section ol li .perfil{
+    width: 100%;
+}
+
+#equipe main section ol li .perfil img{
+    width: 100%;
+}
+
+#equipe main section ol li figure img{
+    border-radius: 30px 30px 0 0;
+
+}
+
+#equipe main section ol li div{
+    padding: 0.2em 1em 1em 1em;
+    box-sizing: border-box;
+}
+
+#equipe main section ol li div span{
+    color: var(--font-color2-cinza);
+    font-size: 14.5px;
+    font-weight: 400;
+}
+
+
+
+#equipe main section ol li div h2{
+    font-size: 24.3px;
+    color: var(--font-color6-ciano);
+    margin-top: -6px;
+}
+
+
+
+
+#equipe main section ol li div p{
+    font-weight: 400;
+    color: var(--main-roxo-enfeitado);
+    font-size: 15px;
+}
+
+#equipe main section ol #diretor div p{
+    color: #FFFFFF;
+}
+
+#equipe main section ol #diretor div div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+#equipe main section ol #diretor div h2{
+    color: #FFFFFF; /* não vai mudar com o dark theme */
+}
+
+#equipe main section ol #diretor{
+    background-color: var(--main-roxo-enfeitado);
+}
+
+#equipe main section ol #diretor div span{
+    color: var(--main-bg--azul-escuro);
+}
 
 
 
@@ -1129,9 +1224,17 @@ footer .footer-responsivo figure{
     main #servicos-prestados ol li{
         width: 49%;
     }
+
+    /* equipe */
+
+    #equipe main section ol li{
+        min-height: 300px;
+    }
 }
 
 @media screen and (max-width: 1580px){
+
+    /* home */
     main #destaque-home .background-bolhas img{
         right: -50px;
     }
@@ -1187,6 +1290,13 @@ footer .footer-responsivo figure{
         right: -90px;
     }
 
+    /* equipe */
+
+    #equipe main section ol li{
+        min-height: 300px;
+        width: 30%;
+    }
+
     
 }
 
@@ -1198,6 +1308,10 @@ footer .footer-responsivo figure{
         top: 100px;
         right: -150px;
         width: 70%;
+    }
+
+    #sobre main #sobre-colabinf .background-bolhas{
+        right: -30px;
     }
     
 
@@ -1247,7 +1361,7 @@ footer .footer-responsivo figure{
         }
     }
 
-@media screen and (max-width: 1060px){
+@media screen and (max-width: 1100px){
     :root{
         --padding-section: 2em 10%;
     }
@@ -1306,6 +1420,29 @@ footer .footer-responsivo figure{
     #sobre main #sobre-dti #dti-superior figure img{
         height: 180px;
         padding: 2em;
+    }
+
+    /* equipe */
+
+    #equipe main section ol li{
+        min-height: 300px;
+        width: 30%;
+    }
+
+    #equipe main section ol li div span{
+        font-size: 13px;
+    }
+
+    #equipe main section ol li div h2{
+        font-size: 23px;
+    }
+}
+
+/*  caso especifico pra não quebrar a lista de pessoas */
+
+@media screen and (max-width: 870px){
+    #equipe main section ol li{
+        width: 48%;
     }
 }
 
@@ -1419,6 +1556,10 @@ footer .footer-responsivo figure{
         width: 100%;
     }
 
+    #sobre main #sobre-colabinf .background-bolhas{
+        right: -80px;
+    }
+
     /* pagina tutoriais */
 
     #tutoriais main section figure .background-bolhas{
@@ -1437,6 +1578,20 @@ footer .footer-responsivo figure{
 
     }
 
+}
+
+@media screen and (max-width: 520px){
+    #equipe main section ol li{
+        width: 100%;
+    }
+
+    #equipe main section ol li div span{
+        font-size: 15px;
+    }
+
+    #equipe main section ol li div h2{
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 428px){
