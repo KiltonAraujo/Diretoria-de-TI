@@ -368,7 +368,10 @@ main #destaque-home div h1{
     padding-bottom: .15em;
 }
 
-main #destaque-home div h1 span{color: var(--main-bg--azul-escuro);}
+main #destaque-home div h1 span{
+    color: var(--main-bg--azul-escuro);
+    font-family: 'Anton', sans-serif;
+}
 
 
 main #destaque-home div .botao:hover{
