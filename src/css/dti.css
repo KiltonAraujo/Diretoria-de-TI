@@ -412,7 +412,7 @@ main .lista-tutoriais{
 }
 
 main .lista-tutoriais li {
-    width: 270px;
+    width: 23%;
     min-height: 328.5px;
 }
 
@@ -1014,6 +1014,22 @@ footer .footer-responsivo figure{
     position: relative;
 }
 
+
+
+#tutoriais main section .lista-tutoriais li .destaque-tutorial{
+    background-color: #FF5627;
+    width: 89.56px;
+    height: 31px;
+    color: var(--font-color5-branco2);
+    font-size: 12.63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    position: absolute;
+    right: 32px;
+}
+
 #tutoriais main section figure .background-bolhas{
     top: 0;
     right: -30px;
@@ -1091,10 +1107,11 @@ footer .footer-responsivo figure{
 /*                               listas da home (tutoriais e serviços)                               */
 
 @media  screen and (max-width: 1850px){
-    main #tutoriais-home .lista-tutoriais li{
-        width: 23%;
-        align-items: start;
-        position: relative;
+    #tutoriais .lista-tutoriais li{
+        width: 31%;
+    }
+    #tutoriais .lista-tutoriais > li:nth-last-child(1), #tutoriais .lista-tutoriais > li:nth-last-child(2){
+        width: 49%;
     }
 
     main #servicos-prestados .lista-tutoriais li{
@@ -1104,6 +1121,8 @@ footer .footer-responsivo figure{
     main #servicos-prestados .lista-tutoriais li p{
         font-size: 18px;
     }
+
+    
 }
 
 @media screen and (max-width: 1730px){
@@ -1112,7 +1131,7 @@ footer .footer-responsivo figure{
     }
 }
 
-@media screen and (max-width: 1480px){
+@media screen and (max-width: 1580px){
     main #destaque-home .background-bolhas img{
         right: -50px;
     }
@@ -1125,6 +1144,9 @@ footer .footer-responsivo figure{
     }
 
     main #tutoriais-home .lista-tutoriais li, #tutoriais main section .lista-tutoriais li{
+        width: 46%;
+    }
+    #tutoriais .lista-tutoriais > li:nth-last-child(1), #tutoriais .lista-tutoriais > li:nth-last-child(2){
         width: 46%;
     }
 
@@ -1164,6 +1186,8 @@ footer .footer-responsivo figure{
         width: 20%;
         right: -90px;
     }
+
+    
 }
 
 @media screen and (max-width: 1200px){
@@ -1299,7 +1323,7 @@ footer .footer-responsivo figure{
 
     main #tutoriais-home .background-bolhas {
         left: -21%;
-        top: -36%;
+        top: 19%;
     }
 
     main #tutoriais-home .lista-tutoriais li, #tutoriais main section .lista-tutoriais li{
@@ -1308,6 +1332,10 @@ footer .footer-responsivo figure{
         padding-top: 0;
         padding-bottom: 0;
         height: 268.5px;
+    }
+
+    #tutoriais .lista-tutoriais > li:nth-last-child(1), #tutoriais .lista-tutoriais > li:nth-last-child(2){
+        width: 100%;
     }
 
     main #tutoriais-home .lista-tutoriais li a div p{
