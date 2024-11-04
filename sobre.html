@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Diretoria de TI</title>
+        <link rel="icon" type="image/x-icon" href="src/imagens/logos/icone-DTI.svg">
+        <link rel="stylesheet" href="src/css/dti.css"/>
+
+    </head>
+    <body id="sobre">
+        <div id="menu-hamburguer">
+            <h1><a href="index.html"><img src="src/imagens/logos/logotipo-dti.svg" alt="Logo da Diretoria de TI"></a></h1>
+            <nav>
+                <ol class="nav-principal">
+                    <li onclick="listaDeslizavel()">
+                        <div>
+                            <img src="src/imagens/icons/predio.svg">
+                            <span>
+                                <p>A diretoria</p>
+                                <img src="src/imagens/icons/seta-baixo.svg" alt="icone de seta para cima">
+                            </span>
+                            
+                        </div>
+                            
+                        <ol id="lista-deslizavel" >
+                            <li><a href="sobre.html"><img src="src/imagens/icons/about.svg"> Sobre</a></li>
+                            <li><a href="equipe.html"><img src="src/imagens/icons/people.svg"> Equipe</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="tutoriais.html"><img src="src/imagens/icons/book.svg">Tutoriais</a></li>
+                    <li><a href="contato.html"><img src="src/imagens/icons/phone.svg">Contato</a></li>
+                </ol>
+            </nav>
+            <a id="botao-lateral" onclick="menuHamburger()"><img src="src/imagens/icons/Botão lateral.svg" alt="botão lateral de menu"></a>
+            <figure><img id="bolhas" src="src/imagens/backgrounds/bolhas-detalhes-hamburger.svg"></figure>
+        </div>
+        <div id="sombra-menu-hamburguer" onclick="menuHamburger()"></div>
+        <header>
+            <h1><a href="index.html"><img src="src/imagens/logos/logotipo-dti.svg" alt="Logo da Diretoria de TI"></a></h1>
+            <nav>
+                <ol class="nav-principal">
+                    <li><p><img src="src/imagens/icons/seta-baixo.svg" alt="icone de seta para cima"> A diretoria</p>
+                        <ol>
+                            <li><a href="tutoriais.html">Sobre</a></li>
+                            <li><a href="equipe.html">Equipe</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="tutoriais.html">Tutoriais</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ol>
+            </nav>
+            <a id="dark-light-mode" href="#"><img src="src/imagens/icons/light_mode.svg" alt="icone de seta para baixo"></a>
+        </header>
+        <main>
+            <section id="sobre-dti">
+                <figure class="background-bolhas"><img src="src/imagens/backgrounds/bolhas-detalhes-mini.svg"></figure>
+                <figure"><img  class="background-bolhas2"src="src/imagens/backgrounds/bolhas-detalhes-1.svg"></figure>
+                <div id="dti-superior">
+                    <div>
+                        <h1 class="titulo">SOBRE NÓS</h1>
+                        <p class="subtitulo">A Diretoria de Tecnologia da Informação</p>
+                        <p class="texto">Na DTI do IFRN CNAT, garantimos o perfeito funcionamento de sistemas, redes e equipamentos para facilitar o seu dia a dia. Atuamos com eficiência, sempre buscando otimizar a experiência tecnológica da comunidade acadêmica. Desde nossa fundação, nos destacamos pela excelência, sendo a diretoria de TI mais eficaz entre todos os campi.</p>
+                    </div>
+                    <figure><img src="src/imagens/logos/logotipo-dti.png"></figure>
+                </div>
+
+                <div id="dti-inferior">
+                    <h2 class="titulo">SERVIÇOS GERAIS</h2>
+                    <p class="subtitulo">As categorias resumidas de trabalho</p>
+                    <ol class="servicos-gerais">
+                        <li>
+                            <figure><img src="src/imagens/icons/manutencao-icon.png"></figure>
+                            <p>Manutenção de Equipamentos</p>
+                        </li>
+
+                        <li>
+                            <figure><img src="src/imagens/icons/wifi.png"></figure>
+                            <p>Gestão de Redes e Internet</p>
+                        </li>
+
+                        <li>
+                            <figure><img src="src/imagens/icons/supermarket-kart.png"></figure>
+                            <p>Aquisição de Equipamentos</p>
+                        </li>
+
+                        <li>
+                            <figure><img src="src/imagens/icons/analise-icon.png"></figure>
+                            <p>Análise de Sistemas</p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="sobre-colabinf">
+                <div id="colabinf-superior">
+                    <figure><img src="src/imagens/atendente.png"></figure>
+                    <div>
+                        <h1 class="titulo">COLABINF</h1>
+                        <p class="subtitulo">Coordenação de Laboratórios da DIATINF</p>
+                        <p class="texto">A DTI e a COLABINF trabalham em conjunto para garantir que todas as necessidades do IFRN CNAT sejam atendidas. Enquanto a DTI cuida da infraestrutura tecnológica, a COLABINF atua diretamente na gestão e manutenção dos laboratórios para as atividades acadêmicas.</p>
+                    </div>
+                    
+                </div>
+
+                <div id="colabinf-inferior">
+                    <h2 class="titulo">SERVIÇOS GERAIS</h2>
+                    <p class="subtitulo">As categorias resumidas de trabalho</p>
+                    <ol class="servicos-gerais">
+                        <li>
+                            <figure><img src="src/imagens/icons/martelo.png"></figure>
+                            <p>Manutenção de Computadores</p>
+                        </li>
+
+                        <li>
+                            <figure><img src="src/imagens/icons/lista.png"></figure>
+                            <p>Gestão dos Laboratórios</p>
+                        </li>
+
+                        <li>
+                            <figure><img src="src/imagens/icons/key.png"></figure>
+                            <p>Registros de Chaves</p>
+                        </li>
+
+                        <li>
+                            <figure><img src="src/imagens/icons/download.png"></figure>
+                            <p>Instalação de Programas</p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <img class="background-footer" src="src/imagens/backgrounds/background-footer-pc.svg">
+            <div class="div-superior">
+                <h1><a href="index.html"><img src="src/imagens/logos/logotipo-dti.svg" alt="Logo da Diretoria de TI"></a></h1>
+                <nav>
+                    <ol class="nav-principal">
+                        <li>
+                            <ol>
+                                <li><a href="sobre.html">Sobre</a></li>
+                                <li><a href="equipe.html">Equipe</a></li>
+                            </ol>
+                            <p><img src="src/imagens/icons/seta-baixo.svg" alt="icone de seta para cima"> A diretoria</p>
+
+                        </li>
+                        <li><a href="tutoriais.html">Tutoriais</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="div-inferior">
+                <nav class="nav-responsivo">
+                    <ol>
+                        <li>
+                            <ol>
+                                <li><p>A diretoria</p></li>
+                                <li><a href="sobre.html">Sobre</a></li>
+                                <li><a href="equipe.html">Equipe</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="tutoriais.html">Tutoriais</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ol>
+                </nav>
+                <p>©2024 DTI, Todos os direitos reservados.</p>
+                <figure>
+                    <img src="src/imagens/logos/dti-identidade-antiga.png" alt="Identidade visual antiga da Diretoria de TI">
+                    <img class="logo-ifrn"  src="src/imagens/logos/Campus Natal-Central - Logo_Color Hor Compl  3.png" alt="Logotipo do IFRN-CNAT">
+                </figure>
+            </div>
+
+            <div class="footer-responsivo">
+                <div class="background">
+                    <div class="div-superior">
+                        <h1><a href="index.html"><img src="src/imagens/logos/logotipo-dti.svg" alt="Logo da Diretoria de TI"></a></h1> 
+                    </div>
+
+                    <div class="div-inferior">
+                        <nav class="nav-responsivo">
+                            <ol>
+                                <li>
+                                    <ol>
+                                        <li><p>A diretoria</p></li>
+                                        <li><a href="sobre.html">Sobre</a></li>
+                                        <li><a href="sobre.html">Equipe</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="tutoriais.html">Tutoriais</a></li>
+                                <li><a href="contato.html">Contato</a></li>
+                            </ol>
+                        </nav>
+                        <p>©2024 DTI, Todos os direitos reservados.</p>
+                    </div>
+                </div>
+
+                <figure>
+                    <img src="src/imagens/logos/dti-identidade-antiga.png" alt="Identidade visual antiga da Diretoria de TI">
+                    <img class="logo-ifrn" src="src/imagens/logos/Campus Natal-Central - Logo_Color Hor Compl  3.png" alt="Logotipo do IFRN-CNAT">
+                </figure>
+            </div>
+        </footer>
+
+    </body>
+</html>
+<script src="src/javascript/dti.js"></script>

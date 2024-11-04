@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diretoria de TI</title>
+    <link rel="icon" type="image/x-icon" href="src/imagens/logos/icone-DTI.svg">
+    <link rel="stylesheet" href="src/css/dti.css"/>
+
+</head>
+<body id="tutoriais">
+    <div id="menu-hamburguer">
+        <h1><a href="index.html"><img src="src/imagens/logos/logotipo-dti.svg" alt="Logo da Diretoria de TI"></a></h1>
+        <nav>
+            <ol class="nav-principal">
+                <li onclick="listaDeslizavel()">
+                    <div>
+                        <img src="src/imagens/icons/predio.svg">
+                        <span>
+                            <p>A diretoria</p>
+                            <img src="src/imagens/icons/seta-baixo.svg" alt="icone de seta para cima">
+                        </span>
+                        
+                    </div>
+                        
+                    <ol id="lista-deslizavel" >
+                        <li><a href="sobre.html"><img src="src/imagens/icons/about.svg"> Sobre</a></li>
+                        <li><a href="equipe.html"><img src="src/imagens/icons/people.svg"> Equipe</a></li>
+                    </ol>
+                </li>
+                <li><a href="tutoriais.html"><img src="src/imagens/icons/book.svg">Tutoriais</a></li>
+                <li><a href="contato.html"><img src="src/imagens/icons/phone.svg">Contato</a></li>
+            </ol>
+        </nav>
+        <a id="botao-lateral" onclick="menuHamburger()"><img src="src/imagens/icons/Botão lateral.svg" alt="botão lateral de menu"></a>
+        <figure><img id="bolhas" src="src/imagens/backgrounds/bolhas-detalhes-hamburger.svg"></figure>
+    </div>
+    <div id="sombra-menu-hamburguer" onclick="menuHamburger()"></div>
+    <header>
+        <h1><a href="index.html"><img src="src/imagens/logos/logotipo-dti.svg" alt="Logo da Diretoria de TI"></a></h1>
+        <nav>
+            <ol class="nav-principal">
+                <li><p><img src="src/imagens/icons/seta-baixo.svg" alt="icone de seta para cima"> A diretoria</p>
+                    <ol>
+                        <li><a href="tutoriais.html">Sobre</a></li>
+                        <li><a href="equipe.html">Equipe</a></li>
+                    </ol>
+                </li>
+                <li><a href="tutoriais.html">Tutoriais</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ol>
+        </nav>
+        <a id="dark-light-mode" href="#"><img src="src/imagens/icons/light_mode.svg" alt="icone de seta para baixo"></a>
+    </header>
+
+    <main>
+        <section>
+            <figure><img class="background-bolhas" src="src/imagens/backgrounds/bolhas-tutoriais.svg"></figure>
+            <figure><img class="background-bolhas2" src="src/imagens/backgrounds/bolhas-tutoriais-inferior.svg"></figure>
+            <figure><img class="background-bolhas3" src="src/imagens/backgrounds/bolhas-tutoriais.svg"></figure>
+            <h1 class="titulo">GUIA COMPLETO DE TUTORIAIS</h1>
+            <p class="subtitulo">Aprenda com nossa vasta gama de tutoriais.</p>
+            
+            <form id="pesquisar">
+                <input type="image" placeholder="Pesquisar" src="src/imagens/icons/search.svg">
+                
+                <input id="pesq_input" type="search" placeholder="Pesquisar">
+            </form>
+
+            <ol class="lista-tutoriais">
+                <li class="card | wifi eduroam | Um tutorial passo a passo para conectar ao wifi do IFRN">
+                    <a href="#">
+                        <div>
+                            <figure><img src="src/imagens/tutoriais/icons/wifi.png"></figure>
+                            <span class="destaque-tutorial">Destaque</span>
+                            <h2>Wifi<br>Eduroam</h2>
+                            <p>Um tutorial passo a passo para conectar ao wifi do IFRN.</p>
+                        </div>
+                        <figure class="figure-seta"><img src="src/imagens/icons/seta-fina.png"></figure>
+                    </a>   
+                </li>
+
+                <li class="card | Pacote office | instalar o office 365 word excel teams powerpoint">
+                    <a href="#">
+                        <div>
+                            <figure><img src="src/imagens/tutoriais/icons/office.png"></figure>
+                            <span class="destaque-tutorial">Destaque</span>
+                            <h2>Pacote<br>office 365</h2>
+                            <p>Aprenda a instalar esse recurso disponível gratuitamente.</p>
+                        </div>
+                        <figure class="figure-seta"><img src="src/imagens/icons/seta-fina.png"></figure>
+                    </a>   
+                </li>
+
+                <li class="card | Recuperar senha do suap | Crie ou recupere sua senha do SUAP">
+                    <a href="#">
+                        <div>
+                            <figure><img src="src/imagens/tutoriais/icons/key.png"></figure>
+                            <span class="destaque-tutorial">Destaque</span>
+                            <h2>Recuperar<br>senha do SUAP</h2>
+                            <p>Crie ou recupere sua senha e volte a ativa no SUAP.</p>
+                        </div>
+                        <figure class="figure-seta"><img src="src/imagens/icons/seta-fina.png"></figure>
+                    </a>   
+                </li>
+
+                <li class="card | wifi eduroam | Um tutorial passo a passo para conectar ao wifi do IFRN">
+                    <a href="#">
+                        <div>
+                            <figure><img src="src/imagens/tutoriais/icons/wifi.png"></figure>
+                            <span class="destaque-tutorial">Destaque</span>
+                            <h2>Wifi<br>Eduroam</h2>
+                            <p>Um tutorial passo a passo para conectar ao wifi do IFRN.</p>
+                        </div>
+                        <figure class="figure-seta"><img src="src/imagens/icons/seta-fina.png"></figure>
+                    </a>   
+                </li>
+                <li class="card">
+                    <a href="#">
+                        <div>
+                            <figure><img src="src/imagens/tutoriais/icons/wifi.png"></figure>
+                            <h2>Wifi<br>Eduroam</h2>
+                            <p>Um tutorial passo a passo para conectar ao wifi do IFRN.</p>
+                        </div>
+                        <figure class="figure-seta"><img src="src/imagens/icons/seta-fina.png"></figure>
+                    </a>   
+                </li>
+
+                <li class="card | wifi eduroam | Um tutorial passo a passo para conectar ao wifi do IFRN">
+                    <a href="#">
+                        <div>
+                            <figure><img src="src/imagens/tutoriais/icons/wifi.png"></figure>
+                            <h2>Wifi<br>Eduroam</h2>
+                            <p>Um tutorial passo a passo para conectar ao wifi do IFRN.</p>
+                        </div>
+                        <figure class="figure-seta"><img src="src/imagens/icons/seta-fina.png"></figure>
+                    </a>   
+                </li>
+
+                <li class="card | wifi eduroam | Como conectar ao wifi do IFRN EDUROAM">
+                    <a href="#">
+                        <div>
+                            <figure><img src="src/imagens/tutoriais/icons/wifi.png"></figure>
+                            <h2>Wifi<br>Eduroam</h2>
+                            <p>Um tutorial passo a passo para conectar ao wifi do IFRN.</p>
+                        </div>
+                        <figure class="figure-seta"><img src="src/imagens/icons/seta-fina.png"></figure>
+                    </a>   
+                </li>
+
+                <li class="card">
+                    <a href="#">
+                        <div>
+                            <figure><img src="src/imagens/tutoriais/icons/wifi.png"></figure>
+                            <h2>Wifi<br>Eduroam</h2>
+                            <p>Um tutorial passo a passo para conectar ao wifi do IFRN.</p>
+                        </div>
+                        <figure class="figure-seta"><img src="src/imagens/icons/seta-fina.png"></figure>
+                    </a>   
+                </li>
+            </ol>
+            <div id="mensagem-erro">
+                <h2 class="titulo">404</h2>
+                <p class="subtitulo">Ops, nada encontrado</p>
+                <p class="texto">Tente usar outras palavras em sua pesquisa</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <img class="background-footer" src="src/imagens/backgrounds/background-footer-pc.svg">
+        <div class="div-superior">
+            <h1><a href="index.html"><img src="src/imagens/logos/logotipo-dti.svg" alt="Logo da Diretoria de TI"></a></h1>
+            <nav>
+                <ol class="nav-principal">
+                    <li>
+                        <ol>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="equipe.html">Equipe</a></li>
+                        </ol>
+                        <p><img src="src/imagens/icons/seta-baixo.svg" alt="icone de seta para cima"> A diretoria</p>
+
+                    </li>
+                    <li><a href="tutoriais.html">Tutoriais</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="div-inferior">
+            <nav class="nav-responsivo">
+                <ol>
+                    <li>
+                        <ol>
+                            <li><p>A diretoria</p></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="equipe.html">Equipe</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="tutoriais.html">Tutoriais</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ol>
+            </nav>
+            <p>©2024 DTI, Todos os direitos reservados.</p>
+            <figure>
+                <img src="src/imagens/logos/dti-identidade-antiga.png" alt="Identidade visual antiga da Diretoria de TI">
+                <img class="logo-ifrn"  src="src/imagens/logos/Campus Natal-Central - Logo_Color Hor Compl  3.png" alt="Logotipo do IFRN-CNAT">
+            </figure>
+        </div>
+
+        <div class="footer-responsivo">
+            <div class="background">
+                <div class="div-superior">
+                    <h1><a href="index.html"><img src="src/imagens/logos/logotipo-dti.svg" alt="Logo da Diretoria de TI"></a></h1> 
+                </div>
+
+                <div class="div-inferior">
+                    <nav class="nav-responsivo">
+                        <ol>
+                            <li>
+                                <ol>
+                                    <li><p>A diretoria</p></li>
+                                    <li><a href="sobre.html">Sobre</a></li>
+                                    <li><a href="sobre.html">Equipe</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="tutoriais.html">Tutoriais</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ol>
+                    </nav>
+                    <p>©2024 DTI, Todos os direitos reservados.</p>
+                </div>
+            </div>
+
+            <figure>
+                <img src="src/imagens/logos/dti-identidade-antiga.png" alt="Identidade visual antiga da Diretoria de TI">
+                <img class="logo-ifrn" src="src/imagens/logos/Campus Natal-Central - Logo_Color Hor Compl  3.png" alt="Logotipo do IFRN-CNAT">
+            </figure>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script src="src/javascript/dti.js"></script>
