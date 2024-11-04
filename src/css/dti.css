@@ -716,8 +716,6 @@ footer .div-superior{
     100%{border-bottom: solid #ffffff .1em;}
   }
 
-
-
 footer .div-superior h1 a img{
     width: 230px;
 }
@@ -837,8 +835,6 @@ footer .footer-responsivo figure{
     justify-content: space-between;
 
 }
-
-
 
 /*                               Sobre nós                               */
 /*                               sobre main                               */
@@ -1020,17 +1016,17 @@ footer .footer-responsivo figure{
 
 #tutoriais main section figure .background-bolhas{
     top: 0;
-    right: 0;
+    right: -30px;
 }
 
 #tutoriais main section figure .background-bolhas2{
     left: 0;
-    top: 500px;
+    top: 600px;
 }
 
 #tutoriais main section figure .background-bolhas3{
     right: 0;
-    top: 900px;
+    top: 1000px;
 }
 
 #tutoriais main section #pesquisar{
@@ -1128,7 +1124,7 @@ footer .footer-responsivo figure{
         width: 70%;
     }
 
-    main #tutoriais-home .lista-tutoriais li{
+    main #tutoriais-home .lista-tutoriais li, #tutoriais main section .lista-tutoriais li{
         width: 46%;
     }
 
@@ -1171,6 +1167,16 @@ footer .footer-responsivo figure{
 }
 
 @media screen and (max-width: 1200px){
+
+    /* pagina tutoriais */
+
+    #tutoriais main section figure .background-bolhas{
+        top: 100px;
+        right: -150px;
+        width: 70%;
+    }
+    
+
     footer{
         background-color: var(--main-bg-branco);
         height: 500px;
@@ -1296,7 +1302,7 @@ footer .footer-responsivo figure{
         top: -36%;
     }
 
-    main #tutoriais-home .lista-tutoriais li{
+    main #tutoriais-home .lista-tutoriais li, #tutoriais main section .lista-tutoriais li{
         width:100%;
         opacity: 1;
         padding-top: 0;
@@ -1383,6 +1389,24 @@ footer .footer-responsivo figure{
 
     #sobre main #sobre-colabinf #colabinf-superior div{
         width: 100%;
+    }
+
+    /* pagina tutoriais */
+
+    #tutoriais main section figure .background-bolhas{
+        top: 300px;
+        right: -150px;
+        width: 70%;
+    }
+
+    #tutoriais main section figure .background-bolhas2{
+        top: 800px;
+
+    }
+
+    #tutoriais main section figure .background-bolhas3{
+        top: 1900px;
+
     }
 
 }
