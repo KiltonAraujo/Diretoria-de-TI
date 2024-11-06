@@ -90,6 +90,7 @@ li{list-style-type: none;}
 .botao p{
     font-size: 18px;
     font-weight: 400;
+    transform: scale(1.05);
 }
 
 .botao:hover{
@@ -1195,6 +1196,53 @@ footer .footer-responsivo figure{
 #equipe main section ol #diretor div span{
     color: var(--main-bg--azul-escuro);
 }
+
+/* contato */
+
+#contato main{
+    background-color: var(--main-bg-branco);
+}
+
+#contato main section{
+    padding: var(--padding-section);
+    display: flex;
+    align-items: center;
+}
+
+#contato main section div{
+    width: 50%;
+}
+
+#contato main section div #contactForm #from_name, #from_email, #message{
+    background-color: var(--main-cinza-claro);
+    width: 100%;
+    min-height: 61px;
+    border-radius: 15px;
+    color: var(--font-color2-cinza);
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 1em;
+    font-size: 16.5px;
+}
+
+#contato main section div #contactForm #from_name, #from_email, #message:focus{border: none;}
+
+#contato main section div #contactForm h2{
+    font-size: 25px;
+}
+
+#contato main section div #contactForm #message{
+}
+
+#contato main section div #contactForm .botao{
+    color: white;
+    font-size: 18px;
+}
+
+#contato main section div #contactForm .botao:hover{
+    cursor: pointer;
+}
+
 
 
 

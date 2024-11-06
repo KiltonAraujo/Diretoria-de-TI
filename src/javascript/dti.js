@@ -122,3 +122,25 @@ searchInput.addEventListener('input', (event) => {
 
     noResultsMessage.style.display = anyFound ? 'none' : 'block';
 });
+
+// servidor de emails
+
+
+function formSubmit(event) {
+    event.preventDefault(); // Previne o comportamento padrão de envio do formulário
+
+    // Verifique se a biblioteca EmailJS foi inicializada corretamente
+    if (typeof emailjs !== "undefined") {
+      // Envia os dados para o EmailJS
+      emailjs.sendForm('service_ihzda68', 'template_8uqvnzh', event.target)
+        .then(function(response) {
+          console.log('Sucesso:', response);
+          alert('Mensagem enviada com sucesso!');
+        }, function(error) {
+          console.error('Erro:', error);
+          alert('Erro ao enviar mensagem! Detalhes no console.');
+        });
+    } else {
+      alert("Erro: a biblioteca do EmailJS não foi carregada corretamente.");
+    }
+  }
