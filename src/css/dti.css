@@ -1197,6 +1197,135 @@ footer .footer-responsivo figure{
 }
 
 
+/* contato */
+
+#contato main section{
+    padding: var(--padding-section);
+    padding-bottom: 6em;
+    background-color: var(--main-bg-branco);
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+#contato main section figure #pc-logo-dti{
+    width: 25vw;
+}
+
+#contato main section div ol li{
+    display: flex;
+    align-items: center;
+    max-height: 62px;
+    max-width: 440px;
+    padding-right: 5px;
+}
+
+#contato main section div ol li:last-child{
+    margin-top: 1em;
+}
+
+#contato main section div{
+    min-height: 611px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contato main section div:last-child{
+    padding-left: 1em;
+}
+
+
+#contato main section div ol li figure{
+    width: 62px;
+    min-width: 62px;
+    height: 62px;
+    min-height: 62px;
+    border-radius: 62px;
+    background-color: var(--main-cinza-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contato main section div ol li span{
+    height: 62px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding-left: 15px;
+}
+
+#contato main section div ol li span p{
+    font-size: 17px;
+    font-weight: 450;
+}
+
+#contato main section div ol li span a{
+    font-size: 17px;
+    color: var(--main-roxo-enfeitado);
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: -3px;
+}
+
+#contato main section div form input{
+    height: 60px;
+    width: 100%;
+    background-color: var(--main-cinza-claro);
+    margin-bottom: 14px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 2em;
+    color: var(--font-color2-cinza);
+    font-family: poppins;
+    
+}
+
+#contato main section div form input::-webkit-input-placeholder, #contato main section div form input:-ms-input-placeholder{
+    color: var(--font-color2-cinza);
+    font-weight: 100;
+    font-family: poppins;
+}
+
+#contato main section div form input:focus, #contato main section div form #contato-mensagem:focus{
+   outline: none;
+}
+
+#contato main section div form #contato-mensagem{
+    color: var(--font-color2-cinza);
+    font-family: poppins;
+    width: 100%;
+    height: auto;
+    min-height: 220px; 
+    margin-top: 10px;
+    padding: 2em;
+    background-color: var(--main-cinza-claro);
+    border-radius: 30px;   
+    box-sizing: border-box; 
+    resize: vertical;
+    overflow: auto; 
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+#contato main section div form #contato-mensagem:-webkit-input-placeholder, #contato main section div form #contato-mensagem:-ms-input-placeholder{
+    color: red;
+}
+
+#contato main section div form h2{
+    font-size: 24px;
+}
+#contato main section div .botao{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+#contato main section div .botao p{
+    color: #FFFFFF;
+}
 
 /*                               responsividade                               */
 
@@ -1298,6 +1427,11 @@ footer .footer-responsivo figure{
         width: 30%;
     }
 
+
+    /* contato */
+    #contato main section div ol li span a{
+        font-size: 15px;
+    }
     
 }
 
@@ -1437,6 +1571,11 @@ footer .footer-responsivo figure{
     #equipe main section ol li div h2{
         font-size: 23px;
     }
+
+    /* contato */
+    #contato main section figure #pc-logo-dti{
+        width: 34vw;
+    }
 }
 
 /*  caso especifico pra não quebrar a lista de pessoas */
@@ -1444,6 +1583,12 @@ footer .footer-responsivo figure{
 @media screen and (max-width: 870px){
     #equipe main section ol li{
         width: 48%;
+    }
+
+    /* contato */
+
+    #contato main section figure #pc-logo-dti{
+        display: none;
     }
 }
 
