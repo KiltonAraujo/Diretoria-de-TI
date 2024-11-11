@@ -251,12 +251,16 @@ body #menu-hamburguer nav .nav-principal li a, body #menu-hamburguer nav .nav-pr
 }
 
 body #menu-hamburguer nav .nav-principal li div{
-
+    cursor: pointer;
     display: flex;
 }
 
 body #menu-hamburguer nav .nav-principal li div span{
     display: flex;
+}
+
+body #menu-hamburguer nav .nav-principal li div span p{
+    padding-right: 8px;
 }
 
 body #menu-hamburguer nav .nav-principal li a img, body #menu-hamburguer nav .nav-principal li div img:nth-child(1){
@@ -294,6 +298,7 @@ body #menu-hamburguer nav .nav-principal li:hover  {
 }
 
 body #menu-hamburguer #botao-lateral{
+    cursor: pointer;
     transform: rotateY(180grad);
     position: fixed;
     right: -26px;
@@ -1231,8 +1236,6 @@ footer .footer-responsivo figure{
     font-size: 25px;
 }
 
-#contato main section div #contactForm #message{
-}
 
 #contato main section div #contactForm .botao{
     color: white;
@@ -1257,9 +1260,7 @@ footer .footer-responsivo figure{
 
 }
 
-#contato main section figure #pc-logo-dti{
-    width: 25vw;
-}
+
 
 #contato main section div ol li{
     display: flex;
@@ -1480,6 +1481,10 @@ footer .footer-responsivo figure{
     #contato main section div ol li span a{
         font-size: 15px;
     }
+
+    #contato main section div #pc-logo-dti img{
+        width: 28vw;
+    }
     
 }
 
@@ -1621,7 +1626,7 @@ footer .footer-responsivo figure{
     }
 
     /* contato */
-    #contato main section figure #pc-logo-dti{
+    #contato main section div #pc-logo-dti img{
         width: 34vw;
     }
 }
@@ -1635,9 +1640,30 @@ footer .footer-responsivo figure{
 
     /* contato */
 
-    #contato main section figure #pc-logo-dti{
+    #contato main section div #pc-logo-dti{
         display: none;
+        padding-top: 2em;
     }
+
+    #contato main section div{
+        width: 100%;
+        min-height: 11em;
+
+    }
+
+    #contato main section div:last-child{
+        padding: 0;
+    }
+
+    #contato main section div ol{
+        padding-top: 2em;
+    }
+
+    #contato main section{
+        flex-direction: column-reverse;
+    }
+
+
 }
 
 /* mini lista de tutoriais de home - isso aqui quebra muita facil:( */
