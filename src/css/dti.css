@@ -7,9 +7,9 @@
     /* cores */
     --main-bg-branco: #FFFFFF;
     --main-bg--azul-escuro: #081544;
-
     --main-roxo-enfeitado: #9A92FF;
     --main-cinza-claro: #F8F8FF;
+    --main-azul: #4A64C2;
 
     --font-color2-cinza: #82849A;
     --font-color3-branco1: rgba(255, 255, 255, 0.8);
@@ -20,6 +20,7 @@
     /* outros */
 
     --padding-section: 2em 19%;
+    --padding-section-tutorial: 2em 23%;
 }
 *{
     margin:0;
@@ -30,7 +31,7 @@
 
 /*                               pre-definições                               */
 
-p,a, span {font-family: 'Poppins', sans-serif;}
+p,a, span, li {font-family: 'Poppins', sans-serif;}
 
 a{text-decoration: none;}
 li{list-style-type: none;}
@@ -1374,6 +1375,138 @@ footer .footer-responsivo figure{
 }
 #contato main section div .botao p{
     color: #FFFFFF;
+}
+
+/* tutoriais */
+
+#tutorial main .titulo{
+    font-size: 38px;
+    font-family: poppins;
+    font-weight: 500;
+    color: var(--font-color4-lilas);
+    padding-bottom: 0.6em;
+}
+
+#tutorial main .texto{
+    font-weight: 400;
+}
+
+#tutorial main section{padding: var(--padding-section-tutorial);}
+
+#tutorial main .tutorial-titulo{
+    background-image: url(../imagens/backgrounds/section-diagonal.svg);
+    z-index: 2;
+    position: relative;
+    
+    height: auto;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 410px;
+}
+
+#tutorial main .tutorial-titulo .titulo{
+    position: relative;
+    font-size: 50px;
+    color: var(--main-roxo-enfeitado);
+    font-family: 'Anton', sans-serif;
+    font-weight: 500;
+    z-index: 2;
+    padding-bottom: 0;
+
+}
+
+#tutorial main .tutorial-titulo .detalhes{
+    display: flex;
+    justify-content: space-between;
+    max-width: 380px;
+}
+
+#tutorial main .tutorial-titulo .detalhes li{
+    padding: 1em;
+    border-radius: 30px;
+    max-height: 42px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#tutorial main .tutorial-titulo .detalhes li{
+    font-size: 14.4px;
+    font-weight: 600;
+}
+
+#tutorial main .tutorial-titulo .detalhes li:nth-child(1){background-color: #F4EED8;}
+
+#tutorial main .tutorial-titulo .detalhes li:nth-child(1) p{color: #FF7A00;}
+
+#tutorial main .tutorial-titulo .detalhes li:nth-child(2){background-color: #D0DAFF;}
+
+#tutorial main .tutorial-titulo .detalhes li:nth-child(2) p{color: #4A64C2;}
+
+#tutorial main .tutorial-titulo .detalhes li:nth-child(3) p{color: var(--font-color2-cinza);}
+
+#tutorial main .tutorial-titulo .aviso{
+    display: flex;
+    padding-top: 3em;
+}
+#tutorial main .tutorial-titulo .aviso p{
+    padding-left: 0.5em;
+    color: #FF0000;
+    font-weight: 400;
+}
+
+#tutorial main .sessao-1-imagem div{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#tutorial main .sessao-1-imagem div figure{
+    padding-right: 1em;
+}
+
+#tutorial main .sessao-1-imagem div span .texto{
+    color: var(--font-color4-lilas);
+}
+
+#tutorial main .sessao-1-imagem div span p{
+    padding-bottom: 1em;
+}
+
+
+#tutorial main .sessao-2-imagens{
+    background-color: var(--main-bg-branco);
+}
+
+#tutorial main .sessao-2-imagens .titulo{
+    color: var(--main-azul);
+}
+
+#tutorial main .sessao-2-imagens ol {
+    padding-left: 1.5em;
+    padding-top: 2em;
+}
+#tutorial main .sessao-2-imagens ol li{
+    
+    list-style: disc;
+}
+
+#tutorial main .sessao-2-imagens p{
+    color: var(--font-color2-cinza);
+    
+}
+
+#tutorial main .sessao-2-imagens figure{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3em;
+}
+
+#tutorial main .sessao-2-imagens figure img{
+    width: 48%;
 }
 
 /*                               responsividade                               */
