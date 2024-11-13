@@ -20,7 +20,7 @@
     /* outros */
 
     --padding-section: 2em 19%;
-    --padding-section-tutorial: 2em 23%;
+    --padding-section-tutorial: 4em 24%;
 }
 *{
     margin:0;
@@ -380,7 +380,6 @@ main #destaque-home div h1 span{
     font-family: 'Anton', sans-serif;
 }
 
-
 main #destaque-home div .botao:hover{
     background-color: #8780e9;
 }
@@ -388,7 +387,6 @@ main #destaque-home div .botao:hover{
 main #destaque-home div .botao p{
     color: var(--font-color5-branco2);
 }
-
 
 /*                               home(sessão 2)                               */
 
@@ -404,7 +402,6 @@ main #tutoriais-home .background-bolhas{
     top: -37%;
     position: absolute;
 }
-
 
 main #tutoriais-home .subtitulo{
     color: var(--font-color4-lilas);
@@ -467,7 +464,6 @@ main .lista-tutoriais li a div:hover p {
     transform: scale(1.04); 
 }
 
-
 main .lista-tutoriais li a div figure{
     height: 63px;
     width: 63px;
@@ -477,6 +473,7 @@ main .lista-tutoriais li a div figure{
     align-items: center;
     border-radius: 11.7px;
 }
+
 main .lista-tutoriais li a div h2{
     font-size: 24.3px;
     color: var(--font-color6-ciano);
@@ -491,9 +488,6 @@ main .lista-tutoriais li a .figure-seta{
     justify-content: end;
     align-items: center;
 }
-
-
-
 
 main #tutoriais-home .botao{
     z-index: 1;
@@ -510,7 +504,6 @@ main #tutoriais-home .botao{
     border-radius: 25px;
 }
 
-
 main #tutoriais-home .botao:hover{
     transform: scale(1.05);
 }
@@ -518,11 +511,6 @@ main #tutoriais-home .botao:hover{
 main #tutoriais-home .botao p{
     color: var(--main-roxo-enfeitado);
 }
-
-
-
-
-
 
 /*                               home(sessão 3)                               */
 
@@ -554,8 +542,6 @@ main #servicos-prestados ol li{
     height: auto;
     border-radius: 50px;
 }
-
-
 
 main #servicos-prestados ol li div{
     display: flex;
@@ -602,6 +588,7 @@ main #sec-numeros .background-bolhas-superior{
     right: 0;
     top: -20%;
 }
+
 main #sec-numeros .background-bolhas-inferior img{
     position: absolute;
     left: -4%;
@@ -629,7 +616,6 @@ main #sec-numeros ol li {
 main #sec-numeros p{
     color: var(--font-color4-lilas);
 }
-
 
 main #sec-numeros ol li figure {
     display: flex;
@@ -663,10 +649,22 @@ main #sec-numeros ol li p {
 
 main #conheca-campus{
     padding: var(--padding-section);
+    background-image: url("../imagens/backgrounds/mapa.png");
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-main #conheca-campus div .subtitulo{
-    color: var(--font-color4-lilas);
+main #conheca-campus div .titulo, main #conheca-campus div .subtitulo{
+    color: #ffffff;
+}
+
+main #conheca-campus .texto{
+    color: #ffffff;
+    width: 350px;
+    font-size: 15px;
+
 }
 
 main #conheca-campus .botao{
@@ -782,7 +780,6 @@ footer .div-superior nav .nav-principal ol li a{
     transition: background-color 0.25s ease;
 }
 
-
 footer .div-superior nav .nav-principal ol li:hover a{
     background-color: var(--main-roxo-enfeitado);
     color: var(--main-bg-branco);
@@ -876,8 +873,7 @@ footer .footer-responsivo figure{
     align-items: center;
     padding-bottom: 5em;
     padding: var(--padding-section);
-    padding-right: 0;
-    
+    padding-right: 0; 
 }
 
 #sobre main #sobre-dti #dti-superior .subtitulo{
@@ -935,7 +931,6 @@ footer .footer-responsivo figure{
     width: 140px;
     padding-top: 0.5em;
 }
-
 
 #sobre main .servicos-gerais li .subtitulo{
     color: var(--font-color2-cinza);
@@ -1005,8 +1000,6 @@ footer .footer-responsivo figure{
 #sobre main #sobre-colabinf #colabinf-superior .texto{
     color: var(--font-color4-lilas);
 }
-
-
 
 #sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li p{
     color: var(--font-color4-lilas);
@@ -1150,7 +1143,6 @@ footer .footer-responsivo figure{
     border-radius: 30px 30px 0 0;
 }
 
-
 #equipe main section ol li div{
     padding: 0.2em 1.3em 1.3em 1.3em;
     box-sizing: border-box;
@@ -1163,16 +1155,11 @@ footer .footer-responsivo figure{
     font-weight: 400;
 }
 
-
-
 #equipe main section ol li div h2{
     font-size: 24.3px;
     color: var(--font-color6-ciano);
     margin-top: -6px;
 }
-
-
-
 
 #equipe main section ol li div p{
     font-weight: 400;
@@ -1247,8 +1234,6 @@ footer .footer-responsivo figure{
     cursor: pointer;
 }
 
-
-
 /* contato */
 
 #contato main section{
@@ -1260,8 +1245,6 @@ footer .footer-responsivo figure{
     
 
 }
-
-
 
 #contato main section div ol li{
     display: flex;
@@ -1285,7 +1268,6 @@ footer .footer-responsivo figure{
 #contato main section div:last-child{
     padding-left: 1em;
 }
-
 
 #contato main section div ol li figure{
     width: 62px;
@@ -1377,7 +1359,7 @@ footer .footer-responsivo figure{
     color: #FFFFFF;
 }
 
-/* tutoriais */
+/*                               tutoriais                               */
 
 #tutorial main .titulo{
     font-size: 38px;
@@ -1391,19 +1373,23 @@ footer .footer-responsivo figure{
     font-weight: 400;
 }
 
-#tutorial main section{padding: var(--padding-section-tutorial);}
+#tutorial main section{
+    padding: var(--padding-section-tutorial);
+    height: auto;
+    
+}
 
 #tutorial main .tutorial-titulo{
     background-image: url(../imagens/backgrounds/section-diagonal.svg);
     z-index: 2;
     position: relative;
-    
     height: auto;
     box-sizing: border-box;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 410px;
+    padding-bottom: 7em;
+    margin-top: -2px;
 }
 
 #tutorial main .tutorial-titulo .titulo{
@@ -1454,7 +1440,7 @@ footer .footer-responsivo figure{
 #tutorial main .tutorial-titulo .aviso p{
     padding-left: 0.5em;
     color: #FF0000;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 #tutorial main .sessao-1-imagem div{
@@ -1464,7 +1450,14 @@ footer .footer-responsivo figure{
 }
 
 #tutorial main .sessao-1-imagem div figure{
+    width: 171%;
     padding-right: 1em;
+}
+
+#tutorial main .sessao-1-imagem div figure img{
+    width: 100%;
+    min-width: 210px;
+    max-width: 600px;
 }
 
 #tutorial main .sessao-1-imagem div span .texto{
@@ -1474,7 +1467,6 @@ footer .footer-responsivo figure{
 #tutorial main .sessao-1-imagem div span p{
     padding-bottom: 1em;
 }
-
 
 #tutorial main .sessao-2-imagens{
     background-color: var(--main-bg-branco);
@@ -1488,6 +1480,7 @@ footer .footer-responsivo figure{
     padding-left: 1.5em;
     padding-top: 2em;
 }
+
 #tutorial main .sessao-2-imagens ol li{
     
     list-style: disc;
@@ -1495,7 +1488,6 @@ footer .footer-responsivo figure{
 
 #tutorial main .sessao-2-imagens p{
     color: var(--font-color2-cinza);
-    
 }
 
 #tutorial main .sessao-2-imagens figure{
@@ -1503,10 +1495,35 @@ footer .footer-responsivo figure{
     display: flex;
     justify-content: space-between;
     padding-top: 3em;
+    padding-bottom: 2em;
 }
 
 #tutorial main .sessao-2-imagens figure img{
     width: 48%;
+    max-width: 433px;
+}
+
+#tutorial main .sessao-azul{
+    background-color: var(--main-azul);
+}
+
+#tutorial main .sessao-azul .titulo{
+    color: #ffffff;
+}
+
+#tutorial main .sessao-azul .texto{
+    color: rgb(255, 255, 255, 0.8);
+}
+
+#tutorial main .sessao-azul div{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding-bottom: 3em;
+}
+
+#tutorial main .sessao-azul div figure img{
+    min-width: 300px;
 }
 
 /*                               responsividade                               */
@@ -1685,6 +1702,12 @@ footer .footer-responsivo figure{
 @media screen and (max-width: 1100px){
     :root{
         --padding-section: 2em 10%;
+        --padding-section-tutorial: 2em 10%;
+
+    }
+
+    .texto{
+        font-size: 17px;
     }
 
     main #tutoriais-home #background-bolhas{
@@ -1950,6 +1973,7 @@ footer .footer-responsivo figure{
 @media screen and (max-width: 428px){
     :root{
         --padding-section: 2em 7%;
+        --padding-section-tutorial: 2em 7%;
     }
 
     main #destaque-home div h1{
