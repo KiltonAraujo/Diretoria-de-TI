@@ -123,24 +123,72 @@ searchInput.addEventListener('input', (event) => {
     noResultsMessage.style.display = anyFound ? 'none' : 'block';
 });
 
-// servidor de emails
+
+// dark / light theme
 
 
-function formSubmit(event) {
-    event.preventDefault(); // Previne o comportamento padrão de envio do formulário
+// Definindo temas globais para reutilização
+const darkTheme = {
+    '--main-bg-branco': '#181818',
+    '--main-bg--azul-escuro': '#101828',
+    '--main-roxo-enfeitado': '#6750A4',
+    '--main-cinza-claro': '#242424',
+    '--main-azul': '#1E3A8A',
+    '--font-color2-cinza': '#B0B3C1',
+    '--font-color3-branco1': 'rgba(255, 255, 255, 0.7)',
+    '--font-color4-lilas': '#C8B6FF',
+    '--font-color5-branco2': '#E5E5E5',
+    '--font-color6-ciano': '#99AAB5'
+};
 
-    // Verifique se a biblioteca EmailJS foi inicializada corretamente
-    if (typeof emailjs !== "undefined") {
-      // Envia os dados para o EmailJS
-      emailjs.sendForm('service_ihzda68', 'template_8uqvnzh', event.target)
-        .then(function(response) {
-          console.log('Sucesso:', response);
-          alert('Mensagem enviada com sucesso!');
-        }, function(error) {
-          console.error('Erro:', error);
-          alert('Erro ao enviar mensagem! Detalhes no console.');
-        });
+const lightTheme = {
+    '--main-bg-branco': '#FFFFFF',
+    '--main-bg--azul-escuro': '#081544',
+    '--main-roxo-enfeitado': '#9A92FF',
+    '--main-cinza-claro': '#F8F8FF',
+    '--main-azul': '#4A64C2',
+    '--font-color2-cinza': '#82849A',
+    '--font-color3-branco1': 'rgba(255, 255, 255, 0.8)',
+    '--font-color4-lilas': '#EDDBFE',
+    '--font-color5-branco2': '#FFFFFF',
+    '--font-color6-ciano': '#475070'
+};
+
+// Inicializa o valor de `isDarkMode` com tema claro como padrão
+var isDarkMode = localStorage.getItem('darkMode');
+if (isDarkMode === null) {
+    isDarkMode = false;
+    localStorage.setItem('darkMode', 'false');
+} else {
+    isDarkMode = isDarkMode === 'true';
+}
+
+// Aplica o tema armazenado no localStorage
+function applyStoredTheme() {
+    var theme = isDarkMode ? darkTheme : lightTheme;
+    const root = document.documentElement;
+
+    Object.keys(theme).forEach(variable => {
+        root.style.setProperty(variable, theme[variable]);
+    });
+}
+
+// Alterna o tema e armazena a preferência
+function toggleDarkmode() {
+    isDarkMode = !isDarkMode;
+    localStorage.setItem('darkMode', isDarkMode);
+    applyStoredTheme();
+}
+
+// Quando o documento estiver pronto, configura o tema e o botão
+document.addEventListener('DOMContentLoaded', () => {
+    applyStoredTheme();  // Aplica o tema assim que a página carrega
+
+    const button = document.getElementById('toggle-button');
+    if (button) {
+        button.addEventListener('click', toggleDarkmode);
     } else {
-      alert("Erro: a biblioteca do EmailJS não foi carregada corretamente.");
+        console.error('Botão não encontrado.');
     }
-  }
+});
+
