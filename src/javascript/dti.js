@@ -54,13 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* menu hamburguer */
 
-
-
-var hamburguer = false;
-var botao_lateral = document.getElementById("botao-lateral")
-var menu_hamburger = document.getElementById("menu-hamburguer")
-var sombra_hamburguer = document.getElementById("sombra-menu-hamburguer")
-var background_bolhas = document.getElementById("bolhas")
+    var hamburguer = false;
+    var botao_lateral = document.getElementById("botao-lateral")
+    var menu_hamburger = document.getElementById("menu-hamburguer")
+    var sombra_hamburguer = document.getElementById("sombra-menu-hamburguer")
+    var background_bolhas = document.getElementById("bolhas")
 
 function menuHamburger(){
   hamburguer = !hamburguer;
@@ -122,73 +120,3 @@ searchInput.addEventListener('input', (event) => {
 
     noResultsMessage.style.display = anyFound ? 'none' : 'block';
 });
-
-
-// dark / light theme
-
-
-// Definindo temas globais para reutilização
-const darkTheme = {
-    '--main-bg-branco': '#181818',
-    '--main-bg--azul-escuro': '#101828',
-    '--main-roxo-enfeitado': '#6750A4',
-    '--main-cinza-claro': '#242424',
-    '--main-azul': '#1E3A8A',
-    '--font-color2-cinza': '#B0B3C1',
-    '--font-color3-branco1': 'rgba(255, 255, 255, 0.7)',
-    '--font-color4-lilas': '#C8B6FF',
-    '--font-color5-branco2': '#E5E5E5',
-    '--font-color6-ciano': '#99AAB5'
-};
-
-const lightTheme = {
-    '--main-bg-branco': '#FFFFFF',
-    '--main-bg--azul-escuro': '#081544',
-    '--main-roxo-enfeitado': '#9A92FF',
-    '--main-cinza-claro': '#F8F8FF',
-    '--main-azul': '#4A64C2',
-    '--font-color2-cinza': '#82849A',
-    '--font-color3-branco1': 'rgba(255, 255, 255, 0.8)',
-    '--font-color4-lilas': '#EDDBFE',
-    '--font-color5-branco2': '#FFFFFF',
-    '--font-color6-ciano': '#475070'
-};
-
-// Inicializa o valor de `isDarkMode` com tema claro como padrão
-var isDarkMode = localStorage.getItem('darkMode');
-if (isDarkMode === null) {
-    isDarkMode = false;
-    localStorage.setItem('darkMode', 'false');
-} else {
-    isDarkMode = isDarkMode === 'true';
-}
-
-// Aplica o tema armazenado no localStorage
-function applyStoredTheme() {
-    var theme = isDarkMode ? darkTheme : lightTheme;
-    const root = document.documentElement;
-
-    Object.keys(theme).forEach(variable => {
-        root.style.setProperty(variable, theme[variable]);
-    });
-}
-
-// Alterna o tema e armazena a preferência
-function toggleDarkmode() {
-    isDarkMode = !isDarkMode;
-    localStorage.setItem('darkMode', isDarkMode);
-    applyStoredTheme();
-}
-
-// Quando o documento estiver pronto, configura o tema e o botão
-document.addEventListener('DOMContentLoaded', () => {
-    applyStoredTheme();  // Aplica o tema assim que a página carrega
-
-    const button = document.getElementById('toggle-button');
-    if (button) {
-        button.addEventListener('click', toggleDarkmode);
-    } else {
-        console.error('Botão não encontrado.');
-    }
-});
-

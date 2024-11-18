@@ -22,6 +22,7 @@
     --padding-section: 2em 19%;
     --padding-section-tutorial: 4em 24%;
 }
+
 *{
     margin:0;
     padding:0;
@@ -117,8 +118,8 @@ header h1 a{
 
 header {
     background-color: var(--main-bg-branco);
-    display: grid;
-    grid-template-columns: 1fr auto 1fr; /* Três coisinhos */
+    display: flex;
+    justify-content: space-between;
     height: 70px;
     box-sizing: border-box;
     padding: 0 5em;
@@ -131,9 +132,6 @@ header {
 
 header a{color: var(--main-roxo-enfeitado)}
 
-header h1 {justify-self: start;}
-header nav {justify-self: center;}
-header #dark-light-mode:last-child {justify-self: end;}
 
 header nav .nav-principal {
     list-style: none;
@@ -1722,13 +1720,8 @@ footer .footer-responsivo figure{
     main #sec-numeros ol li {
         width: calc(27% - 1em);
     }
-    body #menu-hamburguer{
-        display: block;
-    }
-
-    header{
-        display: none;}
-
+    
+    
     footer .footer-responsivo figure{
         width: 40%;
         padding: 1em;
@@ -1790,6 +1783,14 @@ footer .footer-responsivo figure{
 /*  caso especifico pra não quebrar a lista de pessoas */
 
 @media screen and (max-width: 870px){
+    header{
+        display: none;}
+
+    body #menu-hamburguer{
+        display: block;
+    }
+    
+
     #equipe main section ol li{
         width: 48%;
     }
