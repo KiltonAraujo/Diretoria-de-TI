@@ -1,5 +1,15 @@
 /*                               responsividade tutoriais                                */
 
+
+main section:nth-child(2) .texto{
+    color: var(--font-color4-lilas);
+}
+
+.fundo-branco{
+    background-color: var(--main-bg-branco);
+}
+
+
 @media  screen and (max-width: 1850px){
 
     
@@ -26,11 +36,11 @@
 
 }
 @media screen and (max-width: 870px){
-    #tutorial main .sessao-1-imagem div{
+    #tutorial main .imagem-texto{
         flex-direction: column;
     }
 
-    #tutorial main .sessao-1-imagem div figure{
+    #tutorial main .imagem-texto figure{
         width: 100%;
         padding-bottom: 1em;
     }
@@ -38,7 +48,7 @@
 
 /* mini lista de tutoriais de home - isso aqui quebra muita facil:( */
 @media screen and (max-width: 718px){
-    #tutorial main .sessao-azul div figure, #tutorial main .sessao-azul div figure img{
+    #tutorial main .imagem-texto figure, #tutorial main .imagem.texto figure img{
         width: 100%;
         padding: 0;
     }

@@ -1441,54 +1441,52 @@ footer .footer-responsivo figure{
     font-weight: 500;
 }
 
-#tutorial main .sessao-1-imagem div{
+#tutorial main .sessao-1{
+    background-color: var(--main-bg--azul-escuro);
+}
+
+#tutorial main .sessao-1 div{
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-#tutorial main .sessao-1-imagem div figure{
+#tutorial main .imagem-texto figure{
     width: 171%;
     padding-right: 1em;
 }
 
-#tutorial main .sessao-1-imagem div figure img{
+#tutorial main .imagem-texto figure img{
     width: 100%;
     min-width: 210px;
     max-width: 600px;
 }
 
-#tutorial main .sessao-1-imagem div span .texto{
-    color: var(--font-color4-lilas);
-}
-
-#tutorial main .sessao-1-imagem div span p{
+#tutorial main .imagem-texto p{
     padding-bottom: 1em;
 }
-
-#tutorial main .sessao-2-imagens{
+#tutorial main .sessao-2{
     background-color: var(--main-bg-branco);
 }
 
-#tutorial main .sessao-2-imagens .titulo{
+#tutorial main .sessao-2 .titulo{
     color: var(--main-azul);
 }
 
-#tutorial main .sessao-2-imagens ol {
+#tutorial main .sessao-2 ol {
     padding-left: 1.5em;
     padding-top: 2em;
 }
 
-#tutorial main .sessao-2-imagens ol li{
-    
+#tutorial main .sessao-2 ol li{
     list-style: disc;
 }
 
-#tutorial main .sessao-2-imagens p{
+#tutorial main .sessao-2 p{
     color: var(--font-color2-cinza);
 }
 
-#tutorial main .sessao-2-imagens figure{
+#tutorial main .duas-imagens{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -1496,33 +1494,51 @@ footer .footer-responsivo figure{
     padding-bottom: 2em;
 }
 
-#tutorial main .sessao-2-imagens figure img{
-    width: 48%;
-    max-width: 433px;
+#tutorial main .imagem-grande, #tutorial main .imagem-grande img{
+    width: 100%;
 }
 
-#tutorial main .sessao-azul{
+#tutorial main .coluna-imagens{
+    flex-direction: column;
+    align-items: center;
+}
+
+#tutorial main .coluna-imagens figure, #tutorial main .coluna-imagens figure img{
+    width: 100%;
+}
+
+#tutorial main .duas-imagens img{
+    width: 48%;
+    max-width: 433px;
+    min-height: none;
+}
+
+#tutorial main .sessao-3{
     background-color: var(--main-azul);
 }
 
-#tutorial main .sessao-azul .titulo{
+#tutorial main .sessao-3 .titulo{
     color: #ffffff;
 }
 
-#tutorial main .sessao-azul .texto{
+#tutorial main .sessao-3 .texto{
     color: rgb(255, 255, 255, 0.8);
 }
 
-#tutorial main .sessao-azul div{
+#tutorial main .sessao-3 div{
     display: flex;
     justify-content: space-between;
     gap: 1em;
     padding-bottom: 3em;
 }
 
-#tutorial main .sessao-azul div figure img{
+#tutorial main .sessao-3 div figure img{
     min-width: 300px;
 }
+
+/* cores dos fundos pre definido */
+
+
 
 /*                               responsividade                               */
 
