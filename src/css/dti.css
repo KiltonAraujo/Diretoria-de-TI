@@ -1465,11 +1465,11 @@ footer .footer-responsivo figure{
 #tutorial main .imagem-texto p{
     padding-bottom: 1em;
 }
-#tutorial main .sessao-2{
+#tutorial main .sessao-2, #tutorial main .sessao-4{
     background-color: var(--main-bg-branco);
 }
 
-#tutorial main .sessao-2 .titulo{
+#tutorial main .sessao-2 .titulo, #tutorial main .sessao-4 .titulo{
     color: var(--main-azul);
 }
 
@@ -1482,7 +1482,7 @@ footer .footer-responsivo figure{
     list-style: disc;
 }
 
-#tutorial main .sessao-2 p{
+#tutorial main .sessao-2 p, #tutorial main .sessao-4 p{
     color: var(--font-color2-cinza);
 }
 
@@ -1496,6 +1496,7 @@ footer .footer-responsivo figure{
 
 #tutorial main .imagem-grande, #tutorial main .imagem-grande img{
     width: 100%;
+    padding-top: 1em;
 }
 
 #tutorial main .coluna-imagens{
