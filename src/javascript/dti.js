@@ -54,13 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* menu hamburguer */
 
-
-
-var hamburguer = false;
-var botao_lateral = document.getElementById("botao-lateral")
-var menu_hamburger = document.getElementById("menu-hamburguer")
-var sombra_hamburguer = document.getElementById("sombra-menu-hamburguer")
-var background_bolhas = document.getElementById("bolhas")
+    var hamburguer = false;
+    var botao_lateral = document.getElementById("botao-lateral")
+    var menu_hamburger = document.getElementById("menu-hamburguer")
+    var sombra_hamburguer = document.getElementById("sombra-menu-hamburguer")
+    var background_bolhas = document.getElementById("bolhas")
 
 function menuHamburger(){
   hamburguer = !hamburguer;
@@ -71,7 +69,8 @@ function menuHamburger(){
     sombra_hamburguer.style.right = "0";
     sombra_hamburguer.style.opacity = "1";
     background_bolhas.style.transform = "translateX(0)"
-  } 
+  }
+  
   else {
     menu_hamburger.style.transform = "translateX(-301px";
     botao_lateral.style.transform = "rotateY(180deg)";
