@@ -33,7 +33,15 @@ main section:nth-child(2) .texto{
     }
 
 @media screen and (max-width: 1100px){
-
+    #tutorial main .tutorial-titulo .background-bolhas1{
+        top: -50px;
+        left: -142px;
+    }
+    
+    #tutorial main .tutorial-titulo .background-bolhas2{
+        right: -120px;
+        top: -30px;
+    }
 }
 @media screen and (max-width: 870px){
     #tutorial main .imagem-texto{
@@ -52,6 +60,16 @@ main section:nth-child(2) .texto{
         width: 100%;
         padding: 0;
     }
+
+    #tutorial main .tutorial-titulo .background-bolhas1{
+        top: -80px;
+        left: -182px;
+    }
+    
+    #tutorial main .tutorial-titulo .background-bolhas2{
+        right: -80px;
+        top: -30px;
+    }
 }
 
 @media screen and (max-width: 520px){
@@ -63,11 +81,16 @@ main section:nth-child(2) .texto{
     #tutorial main .tutorial-titulo .detalhes li{
         transform: scale(0.78);
         width: auto;
+        margin-right: 0;
+        
     }
 }
 
 
 @media screen and (max-width: 428px){
-
+    #tutorial main .tutorial-titulo .background-bolhas2{
+        right: -190px;
+        top: -30px;
+    }
 
 }

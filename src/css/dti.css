@@ -1390,21 +1390,35 @@ footer .footer-responsivo figure{
     margin-top: -2px;
 }
 
+#tutorial main .tutorial-titulo .background-bolhas1{
+    position: absolute;
+    top: -46px;
+    left: -72px;
+    z-index: 0;
+}
+
+#tutorial main .tutorial-titulo .background-bolhas2{
+    right: -50px;
+    position: absolute;
+    top: 0;
+}
+
 #tutorial main .tutorial-titulo .titulo{
     position: relative;
+    z-index: 2;
     font-size: 50px;
     color: var(--main-roxo-enfeitado);
     font-family: 'Anton', sans-serif;
     font-weight: 500;
-    z-index: 2;
     padding-bottom: 0;
 
 }
 
 #tutorial main .tutorial-titulo .detalhes{
     display: flex;
-    justify-content: space-between;
-    max-width: 380px;
+    position: relative;
+    z-index: 2;
+
 }
 
 #tutorial main .tutorial-titulo .detalhes li{
@@ -1414,6 +1428,7 @@ footer .footer-responsivo figure{
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    margin-right: 1.5em;
 }
 
 #tutorial main .tutorial-titulo .detalhes li{
@@ -1434,6 +1449,8 @@ footer .footer-responsivo figure{
 #tutorial main .tutorial-titulo .aviso{
     display: flex;
     padding-top: 3em;
+    position: relative;
+    z-index: 2;
 }
 #tutorial main .tutorial-titulo .aviso p{
     padding-left: 0.5em;
@@ -1443,9 +1460,11 @@ footer .footer-responsivo figure{
 
 #tutorial main .sessao-1{
     background-color: var(--main-bg--azul-escuro);
+    position: relative;
+    z-index: 3;
 }
 
-#tutorial main .sessao-1 div{
+#tutorial main .imagem-texto{
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -1454,6 +1473,7 @@ footer .footer-responsivo figure{
 #tutorial main .imagem-texto figure{
     width: 171%;
     padding-right: 1em;
+    max-width: 450px;
 }
 
 #tutorial main .imagem-texto figure img{
@@ -1534,6 +1554,11 @@ footer .footer-responsivo figure{
 
 #tutorial main .sessao-3 div figure img{
     min-width: 300px;
+}
+
+
+#tutorial main .sessao-4 p{
+    color: var(--font-color4-lilas);
 }
 
 /* cores dos fundos pre definido */
