@@ -20,7 +20,7 @@ main section:nth-child(2) .texto{
 }
 
 @media screen and (max-width: 1580px){
-    #tutorial main .sessao-azul div{
+    #tutorial main .imagem-texto{
         flex-direction: column;
         align-items: center;
         padding-bottom: 1em;
