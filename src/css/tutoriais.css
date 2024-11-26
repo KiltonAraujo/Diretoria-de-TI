@@ -25,6 +25,21 @@ main section:nth-child(2) .texto{
         align-items: center;
         padding-bottom: 1em;
     }
+
+    #tutorial main .imagem-texto p{
+        padding-left: 0;
+    }
+    
+    #tutorial main .imagem-texto-invertido{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 1em;
+    }
+
+    #tutorial main .imagem-texto-invertido p{
+        padding-left: 0;
+    }
+
     
 }
 
@@ -44,9 +59,6 @@ main section:nth-child(2) .texto{
     }
 }
 @media screen and (max-width: 870px){
-    #tutorial main .imagem-texto{
-        flex-direction: column;
-    }
 
     #tutorial main .imagem-texto figure{
         width: 100%;

@@ -1364,7 +1364,7 @@ footer .footer-responsivo figure{
     font-family: poppins;
     font-weight: 500;
     color: var(--font-color4-lilas);
-    padding-bottom: 0.6em;
+    padding-bottom: 0.3em;
 }
 
 #tutorial main .texto{
@@ -1464,27 +1464,28 @@ footer .footer-responsivo figure{
     z-index: 3;
 }
 
-#tutorial main .imagem-texto{
+#tutorial main .imagem-texto, #tutorial main .imagem-texto-invertido{
     display: flex;
     justify-content: space-between;
     position: relative;
+    gap: 1.3em;
 }
 
-#tutorial main .imagem-texto figure{
+#tutorial main .imagem-texto figure, #tutorial main .imagem-texto-invertido figure{
     width: 171%;
     padding-right: 1em;
     max-width: 450px;
 }
 
-#tutorial main .imagem-texto figure img{
+#tutorial main .imagem-texto figure img, #tutorial main .imagem-texto-invertido figure img{
     width: 100%;
     min-width: 210px;
     max-width: 600px;
 }
 
-#tutorial main .imagem-texto p{
-    padding-bottom: 1em;
-}
+
+
+
 #tutorial main .sessao-2, #tutorial main .sessao-4{
     background-color: var(--main-bg-branco);
 }
