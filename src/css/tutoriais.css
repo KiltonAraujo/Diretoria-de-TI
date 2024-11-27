@@ -1,5 +1,8 @@
 /*                               responsividade tutoriais                                */
 
+a{
+    color: --main-roxo-enfeitado;
+}
 
 main section:nth-child(2) .texto{
     color: var(--font-color4-lilas);
@@ -44,7 +47,9 @@ main section:nth-child(2) .texto{
 }
 
 @media screen and (max-width: 1200px){
-    
+    #tutorial main .imagem-grande figure, #tutorial main .imagem-grande figure img{
+        width: 100%;
+    }
     }
 
 @media screen and (max-width: 1100px){

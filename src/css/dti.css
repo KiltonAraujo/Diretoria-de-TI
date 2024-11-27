@@ -1374,7 +1374,6 @@ footer .footer-responsivo figure{
 #tutorial main section{
     padding: var(--padding-section-tutorial);
     height: auto;
-    
 }
 
 #tutorial main .tutorial-titulo{
@@ -1458,13 +1457,19 @@ footer .footer-responsivo figure{
     font-weight: 500;
 }
 
-#tutorial main .sessao-1{
+#tutorial main .sessao-1, #tutorial main .sessao-5{
     background-color: var(--main-bg--azul-escuro);
     position: relative;
     z-index: 3;
 }
 
+#tutorial main .sessao-1 p, #tutorial main .sessao-5 p{
+    color: var(--font-color4-lilas);
+    
+}
+
 #tutorial main .imagem-texto, #tutorial main .imagem-texto-invertido{
+    padding-bottom: 1.3em;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -1486,11 +1491,11 @@ footer .footer-responsivo figure{
 
 
 
-#tutorial main .sessao-2, #tutorial main .sessao-4{
+#tutorial main .sessao-2, #tutorial main .sessao-4, #tutorial main .sessao-2, #tutorial main .sessao-6{
     background-color: var(--main-bg-branco);
 }
 
-#tutorial main .sessao-2 .titulo, #tutorial main .sessao-4 .titulo{
+#tutorial main .sessao-2 .titulo, #tutorial main .sessao-4 .titulo, #tutorial main .sessao-6 .titulo{
     color: var(--main-azul);
 }
 
@@ -1515,8 +1520,16 @@ footer .footer-responsivo figure{
     padding-bottom: 2em;
 }
 
-#tutorial main .imagem-grande, #tutorial main .imagem-grande img{
+#tutorial main .imagem-grande{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.3em;
+    padding-top: 1.3em;
+}
+
+#tutorial main .imagem-grande figure, #tutorial main .imagem-grande figure img{
+    width: 90%;
     padding-top: 1em;
 }
 
@@ -1531,8 +1544,6 @@ footer .footer-responsivo figure{
 
 #tutorial main .duas-imagens img{
     width: 48%;
-    max-width: 433px;
-    min-height: none;
 }
 
 #tutorial main .sessao-3{
