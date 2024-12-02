@@ -871,7 +871,10 @@ footer .footer-responsivo figure{
     align-items: center;
     padding-bottom: 5em;
     padding: var(--padding-section);
-    padding-right: 0; 
+}
+
+#sobre main #sobre-dti #dti-superior .titulo img{
+    padding-right: 0.2em;
 }
 
 #sobre main #sobre-dti #dti-superior .subtitulo{
@@ -887,67 +890,94 @@ footer .footer-responsivo figure{
     height: 50%;
     display: flex;
     align-items: center;
-    background-color: var(--main-bg--azul-escuro);
-    padding: 3em;
-    border-radius: 300px 0 0 300px;
     box-sizing: border-box;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding: 0 19% 0 10%;
+    z-index: 2;
 }
 
-#sobre main #sobre-dti #dti-superior figure img{
-    padding: 2.4em;
-    height: 226px;
-}
 
 #sobre main #sobre-dti #dti-inferior{
     padding: var(--padding-section);
     padding-bottom: 3em;
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+#sobre main #sobre-dti #dti-inferior span .titulo{
+    font-size: 32px;
+    font-weight: 600;
+    font-family:'Poppins', sans-serif;
 }
 
-#sobre main #sobre-dti #dti-inferior .servicos-gerais li p{
+#sobre main #sobre-dti #dti-inferior span .titulo img{
+    height: 24px;
+    
+}
+
+#sobre main #sobre-dti #dti-inferior span{
+    background-color: var(--main-bg--azul-escuro);
+    display: block;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+}
+
+#sobre main #sobre-dti #dti-inferior span .texto{
+    color: var(--font-color4-lilas);
+}
+
+#sobre main #sobre-dti #dti-inferior ol li p{
     color: var(--font-color2-cinza);
 }
 
-#sobre main .servicos-gerais{
+#sobre main ol{
     display: flex;
-    width: 100%;
+    width: 64%;
     justify-content: space-between;
-    padding-top: 2em;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 539px;
+    min-width: 500px;
+    z-index: 2;
 }
 
-#sobre main .servicos-gerais li{
+#sobre main ol li{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    max-width: 162px;
     text-align: center;
+    background-color: var(--main-cinza-claro);
+    border-radius: 130px;
+    width: 43%;
+    min-width: 240px;
+    height: 69.84px;
 }
 
-#sobre main .servicos-gerais li p{
-    width: 140px;
-    padding-top: 0.5em;
+#sobre main ol li p{
+    text-align: left ;
+    min-width: 130px;
+    font-size: 14px;
+    color: var(--font-color2-cinza);
 }
 
-#sobre main .servicos-gerais li .subtitulo{
+#sobre main ol li .subtitulo{
     color: var(--font-color2-cinza);
     padding-top: 0.6em;
 }
 
-#sobre main .servicos-gerais figure{
-    width: 90px;
-    height: 90px;
+#sobre main ol figure{
+    width: 69.84px;
+    height: 69.84px;
+    min-width: 69.84px;
+    min-height: 69.84px;
     border-radius: 100px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--main-bg--azul-escuro);
+    margin-right: 12px;
 }
-
-#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(1) figure{background-color: #8681FF;}
-#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(2) figure{background-color: #FF9281;}
-#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(3) figure{background-color: #61AD92;}
-#sobre main #sobre-dti #dti-inferior .servicos-gerais li:nth-child(4) figure{background-color: #A3B4E8;}
 
 /*                                  sobre (2)                               */
 
@@ -956,6 +986,8 @@ footer .footer-responsivo figure{
     background-color: var(--main-bg--azul-escuro);
     position: relative;
     z-index: 1;
+    padding-bottom: 5em;
+    padding-top: 4em;
 }
 
 #sobre main #sobre-colabinf .background-bolhas{
@@ -963,50 +995,35 @@ footer .footer-responsivo figure{
     top: -101px;
 }
 
-
-#sobre main #sobre-colabinf #colabinf-superior{
+#sobre main #sobre-colabinf div{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5em;
-    padding-top: 4em;
+    flex-direction: row-reverse;
+    gap: 1em;
 }
 
-#sobre main #sobre-colabinf #colabinf-superior div{
-    width: 55%;
-}
 
-#sobre main #sobre-colabinf #colabinf-superior figure{
-    display: flex;
-    align-items: center;
-    width: 45%;
-    padding-right: 1em;
-}
-
-#sobre main #sobre-colabinf #colabinf-superior figure img{
-    width: 100%;
-}
-
-#sobre main #sobre-colabinf #colabinf-inferior{
+#sobre main #sobre-colabinf{
     padding-bottom: 4em;
 }
 
-#sobre main #sobre-colabinf #colabinf-superior .subtitulo, #sobre main #sobre-colabinf #colabinf-inferior .subtitulo{
+#sobre main #sobre-colabinf .subtitulo, #sobre main #sobre-colabinf .subtitulo{
     color: var(--font-color4-lilas);
     padding-bottom: 1em;
 }
 
-#sobre main #sobre-colabinf #colabinf-superior .texto{
+#sobre main #sobre-colabinf  .texto{
     color: var(--font-color4-lilas);
 }
 
-#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li p{
-    color: var(--font-color4-lilas);
+#sobre main #sobre-colabinf ol li p{
+    color: var(--font-color2-cinza);
 }
 
-#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(4) figure{background-color: #8681FF;}
-#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(3) figure{background-color: #FF9281;}
-#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(2) figure{background-color: #61AD92;}
-#sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li:nth-child(1) figure{background-color: #A3B4E8;}
+#sobre main #sobre-colabinf ol li figure{
+    background-color: var(--main-roxo-enfeitado);
+}
+
 
 
 /*                                tutoriais                                */
@@ -1397,7 +1414,7 @@ footer .footer-responsivo figure{
 }
 
 #tutorial main .tutorial-titulo .background-bolhas2{
-    right: -50px;
+    right: -10px;
     position: absolute;
     top: 0;
 }
@@ -1453,8 +1470,8 @@ footer .footer-responsivo figure{
 }
 #tutorial main .tutorial-titulo .aviso p{
     padding-left: 0.5em;
-    color: #FF0000;
-    font-weight: 500;
+    color: #FFC63B;
+    font-weight: 400;
 }
 
 #tutorial main .sessao-1, #tutorial main .sessao-5{
@@ -1651,15 +1668,6 @@ footer .footer-responsivo figure{
         box-sizing: border-box;
     }
 
-    #sobre main #sobre-dti #dti-superior figure{
-        height: 200px;
-        padding: 0 10% 0 5%;
-        box-sizing: border-box;
-    }
-    #sobre main #sobre-dti #dti-superior figure img{
-        height: 100%;
-    }
-
     /* sobre nós - (1 - dti) */
 
     #sobre main #sobre-dti .background-bolhas2 img{
@@ -1685,6 +1693,30 @@ footer .footer-responsivo figure{
     }
     
 }
+
+@media screen and (max-width: 1300px){
+    #sobre main #sobre-dti #dti-inferior{
+        flex-direction: column;
+    }
+
+    #sobre main #sobre-colabinf div {
+        flex-direction: column;
+    }
+
+    #sobre main ol{
+        display: flex;
+        width: 64%;
+        gap: 1em;
+        width: 100%;
+        min-width: none;
+    }
+
+    #sobre main ol li {
+        width: 47%;
+        height: 69.84px;
+
+    
+}}
 
 @media screen and (max-width: 1200px){
 
@@ -1804,10 +1836,6 @@ footer .footer-responsivo figure{
         width: 100%;}
     
 
-    #sobre main #sobre-dti #dti-superior figure img{
-        height: 180px;
-        padding: 2em;
-    }
 
     /* equipe */
 
@@ -1843,6 +1871,10 @@ footer .footer-responsivo figure{
 
     #equipe main section ol li{
         width: 48%;
+    }
+
+    #sobre main #sobre-dti figure #destaque{
+        display: none;
     }
 
     /* contato */
@@ -1959,9 +1991,7 @@ footer .footer-responsivo figure{
         width: 30%;
     }
 
-    #sobre main #sobre-dti #dti-superior figure, #sobre main #sobre-colabinf #colabinf-superior figure{
-        display: none;
-    }
+    
 
     #sobre main #sobre-dti #dti-inferior .servicos-gerais, #sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais{
         flex-wrap: wrap;
@@ -1977,11 +2007,19 @@ footer .footer-responsivo figure{
         max-width: 160px;
     }
 
+    #sobre main ol li{
+        width: 100%;
+        min-width: 100px;
+    }
+
+    #sobre main ol{
+        min-width: 100%;
+    }
+    
+
     /* pagina sobre nós - (2 - colabinf) */
 
-    #sobre main #sobre-colabinf #colabinf-superior div{
-        width: 100%;
-    }
+
 
     #sobre main #sobre-colabinf .background-bolhas{
         right: -80px;
