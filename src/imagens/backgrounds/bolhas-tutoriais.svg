@@ -2,7 +2,7 @@
 <circle opacity="0.7" cx="320.006" cy="534.62" r="23.2191" transform="rotate(-19.1408 320.006 534.62)" fill="#8681FF"/>
 <circle opacity="0.7" cx="464.6" cy="413.288" r="17.1088" transform="rotate(-19.1408 464.6 413.288)" fill="#559BDD"/>
 <circle opacity="0.7" cx="321.768" cy="677.595" r="17.1088" transform="rotate(-19.1408 321.768 677.595)" fill="#559BDD"/>
-<circle opacity="0.7" cx="373.637" cy="307.74" r="17.1088" transform="rotate(-19.1408 373.637 307.74)" fill="#4F4296"/>
+<circle opacity="0.7" cx="373.637" cy="307.74" r="17.1088" transform="rotate(-19.1408 373.637 307.74)" fill="#FFCE3F"/>
 <circle opacity="0.7" cx="264.545" cy="445.64" r="17.1088" transform="rotate(-19.1408 264.545 445.64)" fill="#8681FF"/>
 <circle opacity="0.7" cx="462.863" cy="146.267" r="17.1088" transform="rotate(-19.1408 462.863 146.267)" fill="#8681FF"/>
 <circle opacity="0.7" cx="354.934" cy="496.645" r="17.1088" transform="rotate(72.0051 354.934 496.645)" fill="#559BDD"/>
@@ -22,7 +22,7 @@
 <circle opacity="0.7" cx="158.398" cy="257.831" r="38.6985" transform="rotate(-19.1408 158.398 257.831)" fill="#9BACF2"/>
 <circle opacity="0.7" cx="111.263" cy="94.9112" r="15.8561" transform="rotate(83.6628 111.263 94.9112)" fill="#8681FF"/>
 <circle opacity="0.7" cx="170.177" cy="209.559" r="11.6834" transform="rotate(83.6628 170.177 209.559)" fill="#559BDD"/>
-<circle opacity="0.7" cx="15.788" cy="74.4471" r="11.6834" transform="rotate(83.6628 15.788 74.4471)" fill="#559BDD"/>
+<circle opacity="0.7" cx="15.788" cy="74.4471" r="11.6834" transform="rotate(83.6628 15.788 74.4471)" fill="#FFCE3F"/>
 <circle opacity="0.7" cx="254.228" cy="164.959" r="11.6834" transform="rotate(83.6628 254.228 164.959)" fill="#4F4296"/>
 <circle opacity="0.7" cx="178.909" cy="71.4449" r="11.6834" transform="rotate(83.6628 178.909 71.4449)" fill="#8681FF"/>
 <circle opacity="0.7" cx="348.251" cy="248.812" r="11.6834" transform="rotate(83.6628 348.251 248.812)" fill="#8681FF"/>
@@ -32,7 +32,7 @@
 <circle opacity="0.7" cx="337.662" cy="175.285" r="11.6834" transform="rotate(83.6628 337.662 175.285)" fill="#9BACF2"/>
 <circle opacity="0.7" cx="287.898" cy="130.432" r="11.6834" transform="rotate(83.6628 287.898 130.432)" fill="#9BACF2"/>
 <circle opacity="0.7" cx="146.28" cy="150.638" r="11.6834" transform="rotate(83.6628 146.28 150.638)" fill="#9BACF2"/>
-<circle opacity="0.7" cx="214.597" cy="216.382" r="11.6834" transform="rotate(83.6628 214.597 216.382)" fill="#9BACF2"/>
+<circle opacity="0.7" cx="214.597" cy="216.382" r="11.6834" transform="rotate(83.6628 214.597 216.382)" fill="#FFCE3F"/>
 <circle opacity="0.7" cx="154.272" cy="66.3443" r="11.6834" transform="rotate(83.6628 154.272 66.3443)" fill="#9BACF2"/>
 <circle opacity="0.7" cx="330.903" cy="220.067" r="11.6834" transform="rotate(83.6628 330.903 220.067)" fill="#9BACF2"/>
 <circle opacity="0.7" cx="271.868" cy="26.4151" r="11.6834" transform="rotate(83.6628 271.868 26.4151)" fill="#8681FF"/>
@@ -42,6 +42,6 @@
 <circle opacity="0.7" cx="39.5025" cy="93.9242" r="26.4268" transform="rotate(83.6628 39.5025 93.9242)" fill="#9BACF2"/>
 <circle opacity="0.7" cx="320.036" cy="29.1823" r="26.4268" transform="rotate(83.6628 320.036 29.1823)" fill="#9BACF2"/>
 <circle opacity="0.7" cx="515.893" cy="671.201" r="49.3298" transform="rotate(-19.1408 515.893 671.201)" fill="#4F4296"/>
-<circle opacity="0.7" cx="431.148" cy="682.028" r="17.5581" transform="rotate(-19.1408 431.148 682.028)" fill="#8681FF"/>
+<circle opacity="0.7" cx="431.148" cy="682.028" r="17.5581" transform="rotate(-19.1408 431.148 682.028)" fill="#FFCE3F"/>
 <circle opacity="0.7" cx="419.162" cy="610.519" r="39.7147" transform="rotate(-19.1408 419.162 610.519)" fill="#9BACF2"/>
 </svg>

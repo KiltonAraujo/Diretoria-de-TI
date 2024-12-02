@@ -1,0 +1,113 @@
+/*                               responsividade tutoriais                                */
+
+a{
+    color: --main-roxo-enfeitado;
+}
+
+main section:nth-child(2) .texto{
+    color: var(--font-color4-lilas);
+}
+
+.fundo-branco{
+    background-color: var(--main-bg-branco);
+}
+
+
+@media  screen and (max-width: 1850px){
+
+    
+}
+
+@media screen and (max-width: 1730px){
+
+}
+
+@media screen and (max-width: 1580px){
+    #tutorial main .imagem-texto{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1em;
+    }
+
+    #tutorial main .imagem-texto p{
+        padding-left: 0;
+    }
+    
+    #tutorial main .imagem-texto-invertido{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 1em;
+    }
+
+    #tutorial main .imagem-texto-invertido p{
+        padding-left: 0;
+    }
+
+    
+}
+
+@media screen and (max-width: 1200px){
+    #tutorial main .imagem-grande figure, #tutorial main .imagem-grande figure img{
+        width: 100%;
+    }
+    }
+
+@media screen and (max-width: 1100px){
+    #tutorial main .tutorial-titulo .background-bolhas1{
+        top: -50px;
+        left: -142px;
+    }
+    
+    #tutorial main .tutorial-titulo .background-bolhas2{
+        right: -120px;
+        top: -30px;
+    }
+}
+@media screen and (max-width: 870px){
+
+    #tutorial main .imagem-texto figure{
+        width: 100%;
+        padding-bottom: 1em;
+    }
+}
+
+/* mini lista de tutoriais de home - isso aqui quebra muita facil:( */
+@media screen and (max-width: 718px){
+    #tutorial main .imagem-texto figure, #tutorial main .imagem.texto figure img{
+        width: 100%;
+        padding: 0;
+    }
+
+    #tutorial main .tutorial-titulo .background-bolhas1{
+        top: -80px;
+        left: -182px;
+    }
+    
+    #tutorial main .tutorial-titulo .background-bolhas2{
+        right: -80px;
+        top: -30px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    #tutorial main .tutorial-titulo{
+        width: 100%;
+        align-items: start;
+    }
+
+    #tutorial main .tutorial-titulo .detalhes li{
+        transform: scale(0.78);
+        width: auto;
+        margin-right: 0;
+        
+    }
+}
+
+
+@media screen and (max-width: 428px){
+    #tutorial main .tutorial-titulo .background-bolhas2{
+        right: -190px;
+        top: -30px;
+    }
+
+}

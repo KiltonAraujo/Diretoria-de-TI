@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Diretoria de TI</title>
+        <link rel="icon" type="image/x-icon" href="../src/imagens/logos/icone-DTI.svg">
+        <link rel="stylesheet" href="../src/css/dti.css"/>
+        <link rel="stylesheet" href="../src/css/tutoriais.css"/>
+
+    </head>
+    <body id="tutorial">
+        <div id="header"></div> 
+        <main>
+            <section class="tutorial-titulo">
+                <figure>
+                    <img class="background-bolhas1" src="../src/imagens/backgrounds/bolhas-tutoriais-titulo1.svg">
+                    <img class="background-bolhas2" src="../src/imagens/backgrounds/bolhas-tutoriais-titulo2.svg">
+                </figure>
+                <h1 class="titulo">Como conectar-se ao WI-FI EDUROAM manualmente</h1>
+                <ol class="detalhes">
+                    <li><p>Principais</p></li>
+                    <li><p>Menos de 3 min</p></li>
+                    <li><p>nov 12, 2024</p></li>
+                </ol>
+                <span class="aviso">
+                    <figure><img src="src-tutoriais/icons/alert-icon.svg" alt="alerta"></figure>
+                    <p class="texto">Antes de começarmos, tenha em mãos a sua matricula e senha do SUAP.</p>
+                </span>
+            </section>
+
+            <section class="sessao-1">
+                <h1 class="titulo">1. Ative o Wi-Fi e Selecione a Rede EDUROAM</h1>
+                <div class="imagem-texto">
+                    <figure><img src="src-tutoriais/imagens/print1.png" alt="print-internet"></figure>
+                    <span>
+                        <p class="texto">A primeira coisa a fazer é ativar a conexão Wi-Fi do seu dispositivo. Isso pode ser feito acessando as configurações de rede do seu celular, tablet ou laptop</p>
+                        <p class="texto">Dica: Em dispositivos Android, vá para "Configurações" > "Conexões" > "Wi-Fi". Em dispositivos iOS, vá para "Ajustes" > "Wi-Fi".</p>
+                    </span>
+                </div>
+            </section>
+
+            <section class="sessao-2">
+                <h1 class="titulo">2. Ative o Wi-Fi e Selecione a Rede EDUROAM</h1>
+                <p class="texto">Uma vez selecionada a rede, será necessário preencher as configurações específicas para garantir que seu dispositivo possa se conectar corretamente. Siga as instruções abaixo:</p>
+                <ol>
+                    <li><p class="texto">Método EAP: Selecione PEAP.</p></li>
+                    <li><p class="texto">Autenticação da Fase 2: Escolha MSCHAPV2.</p></li>
+                    <li><p class="texto">Certificado CA: Defina como Usar Certificados do Sistema.</p></li>
+                    <li><p class="texto">Status de Certificação on-line: Escolha Não validar.</p></li>
+                    <li><p class="texto">Domínio: Insira ifrn.edu.br.</p></li>
+                    <li><p class="texto">Identidade: Digite sua matrícula do SUAP seguida de @ifrn.edu.br (por exemplo: 1234567@ifrn.edu.br).</p></li>
+                    <li><p class="texto">Identidade Anônima: Este campo pode ser deixado em branco.</p></li>
+                    <li><p class="texto">Senha: Insira a senha do seu SUAP.</p></li>
+                </ol>
+                <figure class="duas-imagens">
+                    <img src="src-tutoriais/imagens/print-3-wifi.png" alt="tela da internet em si.">
+                    <img src="src-tutoriais/imagens/print-4-wifi.png" alt="tela das configurações do wifi.">   
+                </figure>
+                <p class="texto">Essas configurações garantem que sua conexão seja segura e esteja de acordo com os padrões do IFRN.</p>
+            </section>
+
+            <section class="sessao-3">
+                <h1 class="titulo">3. Conecte-se e Aproveite o Acesso Seguro à Internet</h1>
+                <div class="imagem-texto">
+                    <p class="texto">Depois de preencher todas as configurações, clique em Conectar. Se todas as informações forem inseridas corretamente, seu dispositivo se conectará à rede EDUROAM, permitindo que você navegue na internet e acesse os recursos do IFRN com segurança.</p>
+                    <figure><img src="src-tutoriais/imagens/printConectado.png" alt="rede conectada"></figure>
+                </div>
+                <p class="texto">Caso encontre dificuldades para se conectar, verifique se a senha do SUAP está correta e se os campos foram preenchidos exatamente como descrito.</p>
+            </section>
+
+            <section class="sessao-4">
+                <h1 class="titulo">4. Exceções</h1>
+                <p class="texto">Em alguns celulares pode acontecer de algumas configurações serem diferentes, então, se após o passos anteriores você ainda não conseguir conectar a rede, tente mudar as seguintes configurações:</p>
+                <ol>
+                    <li><p class="texto" ><b>Certificado CA:</b> Não validar.</p></li>
+                    <li><p class="texto"><b>Identidade Anônima:</b> Verifique se esta realmente em branco (vazio).</p></li>
+                </ol>
+                <figure class="duas-imagens">
+                    <img src="src-tutoriais/imagens/config-rede.png" alt="configurações de exceções">
+                    <img src="src-tutoriais/imagens/excecao-rede.png" alt="Identidade anônima">
+                </figure>
+                <p class="texto">Após finalizar os passos acima, a internet já devera estar disponível para o uso. Caso tenha alguma dúvida ou problema durante a configuração da rede, procure o setor de Tecnologia da Informação (DTI).</p>
+            </section>
+
+        </main>
+        <div id="footer"></div>
+
+    </body>
+</html>
+<script src="../src/javascript/dti.js"></script>
+<script src="../src/javascript/componentes.js"></script>
