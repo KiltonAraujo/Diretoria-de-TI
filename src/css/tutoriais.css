@@ -1,7 +1,7 @@
 /*                               responsividade tutoriais                                */
 
-a{
-    color: --main-roxo-enfeitado;
+img{
+    max-width: 1850px;
 }
 
 main section:nth-child(2) .texto{
