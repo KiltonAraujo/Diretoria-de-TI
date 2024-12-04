@@ -1388,13 +1388,13 @@ footer .footer-responsivo figure{
     font-weight: 400;
 }
 
-#tutorial a{
+#tutorial main a{
     color: var(--main-roxo-enfeitado);
     font-weight: 600;
     
 }
 
-#tutorial a:hover{
+#tutorial main a:hover{
     text-decoration: underline;
 }
 
