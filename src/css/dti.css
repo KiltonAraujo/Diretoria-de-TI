@@ -1097,7 +1097,16 @@ footer .footer-responsivo figure{
 
 #tutoriais main section #pesquisar input[type=search]:focus{
     outline: none;
+    background-color: var(--main-cinza-claro);
+
 }
+
+
+main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
 
 #tutoriais main section #mensagem-erro{
     display: none;
@@ -1106,6 +1115,8 @@ footer .footer-responsivo figure{
     margin-top: -30px;
     padding-bottom: 90px;
     transition: all 0.5s ease; 
+    position: relative;
+    z-index: 3;
 
 }
 
@@ -1615,9 +1626,7 @@ footer .footer-responsivo figure{
     #tutoriais .lista-tutoriais li{
         width: 31%;
     }
-    #tutoriais .lista-tutoriais > li:nth-last-child(1), #tutoriais .lista-tutoriais > li:nth-last-child(2){
-        width: 49%;
-    }
+   
 
     main #servicos-prestados .lista-tutoriais li{
         width: 23.5%;
@@ -2057,6 +2066,16 @@ footer .footer-responsivo figure{
     #tutoriais main section figure .background-bolhas3{
         top: 1900px;
 
+    }
+
+    /* tutoriais error */
+
+    #tutoriais main section #mensagem-erro .titulo{
+        font-size: 140px;
+    }
+
+    #tutoriais main section #mensagem-erro .subtitulo{
+        font-size: 16px;
     }
 
 }
