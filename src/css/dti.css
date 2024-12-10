@@ -416,6 +416,11 @@ main .lista-tutoriais{
     padding-top: 2em;
 }
 
+main .lista-tutoriais.filtered {
+    justify-content: flex-start;
+}
+
+
 main .lista-tutoriais li {
     width: 23%;
     min-height: 328.5px;
@@ -1087,6 +1092,15 @@ footer .footer-responsivo figure{
     height: 100%;
 }
 
+
+#tutoriais main section #pesquisar input[type=search]:-webkit-autofill {
+    background-color: var(--main-cinza-claro) !important;
+    color: inherit;
+    box-shadow: 0 0 0 100px var(--main-cinza-claro) inset !important; /* Força o fundo desse newba */
+    -webkit-text-fill-color: inherit !important; 
+}
+
+
 #tutoriais main section #pesquisar input[type=search]{
     margin-left: 10px;
     border-radius: 50px;
@@ -1101,12 +1115,10 @@ footer .footer-responsivo figure{
 
 }
 
-
 main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
     -webkit-appearance: none;
     appearance: none;
 }
-
 
 #tutoriais main section #mensagem-erro{
     display: none;

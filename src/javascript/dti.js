@@ -105,6 +105,7 @@ const searchInput = document.getElementById('pesq_input');
 const divs = document.querySelectorAll('.card');
 const noResultsMessage = document.getElementById('mensagem-erro');
 
+const listaTutoriais = document.querySelector('.lista-tutoriais');
 searchInput.addEventListener('input', (event) => {
     const searchTerms = event.target.value.toLowerCase().split(' ').filter(Boolean);
     let anyFound = false;
@@ -120,4 +121,11 @@ searchInput.addEventListener('input', (event) => {
     });
 
     noResultsMessage.style.display = anyFound ? 'none' : 'block';
+
+    // Adicionar ou remover a classe filtered
+    if (anyFound) {
+        listaTutoriais.classList.add('filtered');
+    } else {
+        listaTutoriais.classList.remove('filtered');
+    }
 });
