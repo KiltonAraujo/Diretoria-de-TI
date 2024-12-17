@@ -1591,6 +1591,7 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
     justify-content: space-between;
     padding-top: 3em;
     padding-bottom: 2em;
+    align-items: start;
 }
 
 #tutorial main .imagem-grande{
@@ -1601,8 +1602,8 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
     padding-top: 1.3em;
 }
 
-#tutorial main .imagem-grande figure, #tutorial main .imagem-grande figure img{
-    width: 90%;
+#tutorial main .imagem-grande, #tutorial main .imagem-grande img{
+    width: 100%;
     padding-top: 1em;
 }
 
