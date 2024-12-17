@@ -1495,7 +1495,7 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
 #tutorial main .tutorial-titulo .detalhes li{
     padding: 1em;
     border-radius: 30px;
-    max-height: 42px;
+    max-height: 38px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
