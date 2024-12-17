@@ -1,5 +1,5 @@
 <img width="230px" alt="Logotipo do projeto" src="./documentos/logotipo-dti.png">
-O objetivo do site da Diretoria de TI (DTI) é aumentar o contato com o público em relação à nossa equipe e, ao mesmo tempo, mitigar as dúvidas tecnológicas dos docentes da instituição, oferecendo tutoriais simples e didáticos para facilitar a utilização de ferramentas tecnológicas essenciais.
+O objetivo do site da Diretoria de TI (DTI - IFRN) é aumentar o contato com o público em relação à nossa equipe e, ao mesmo tempo, mitigar as dúvidas tecnológicas dos docentes da instituição, oferecendo tutoriais simples e didáticos para facilitar a utilização de ferramentas tecnológicas essenciais.
 
 > [!IMPORTANT]\
 > O site ainda está em desenvolvimento.
