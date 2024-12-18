@@ -55,12 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
 /* menu hamburguer */
 
     var hamburguer = false;
+    
+
+function menuHamburger(){
     var botao_lateral = document.getElementById("botao-lateral")
     var menu_hamburger = document.getElementById("menu-hamburguer")
     var sombra_hamburguer = document.getElementById("sombra-menu-hamburguer")
     var background_bolhas = document.getElementById("bolhas")
-
-function menuHamburger(){
   hamburguer = !hamburguer;
   if (hamburguer) {
     menu_hamburger.style.transform = "translateX(0)";

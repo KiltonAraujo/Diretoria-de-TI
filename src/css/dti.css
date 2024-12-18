@@ -1172,23 +1172,6 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
     border-radius: 33px;
 }
 
-#equipe main section ol li:hover{
-    background-color: var(--main-roxo-enfeitado);
-    
-}
-
-#equipe main section ol li:hover div span{
-    color: white;
-}
-
-#equipe main section ol li:hover div .titulo{
-    color: white;
-}
-
-#equipe main section ol li:hover div p{
-    color: white;
-}
-
 #equipe main section ol li .perfil{
     width: 100%;
 }
@@ -1243,6 +1226,7 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
 
 #equipe main section ol #diretor div span{
     color: var(--main-bg--azul-escuro);
+    font-weight: 600;
 }
 
 /* contato */
