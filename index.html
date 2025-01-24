@@ -12,8 +12,8 @@
         <div id="header"></div>
 
         <main>
-            <section id="destaque-home">
-                <figure class="background-bolhas"><img src="src/imagens/backgrounds/bolhas-detalhes-1.svg" alt="detalhes de bolhas lindas."></figure>
+            <section id="destaque-home" class="visible">
+                <figure class="background-bolhas" ><img draggable="false" src="src/imagens/backgrounds/bolhas-detalhes-1.svg" alt="detalhes de bolhas lindas."></figure>
                 <div>
                     <h1>TECNOLOGIA <br><span>E SUPORTE</span></h1>
                     <p class="subtitulo">Garantimos o suporte tecnológico da instituição,<br> gerenciando e mantendo sistemas e equipamentos. </p>
@@ -23,13 +23,13 @@
 
             </section>
 
-            <section id="tutoriais-home">
-                <figure class="background-bolhas"><img src="src/imagens/backgrounds/bolhas-detalhes.svg"></figure>
+            <section id="tutoriais-home" class="hidden">
+                <figure class="background-bolhas"><img draggable="false" src="src/imagens/backgrounds/bolhas-detalhes.svg"></figure>
                 <h1 class="titulo">TUTORIAIS DE SUPORTE</h1>
-                <p class="subtitulo">Temos uma grande gama de conteúdos didáticos para você<br> dominar as ferramentas tecnológicas  da instituição.</p>
+                <p class="subtitulo">Temos uma grande gama de conteúdos didáticos para você dominar as ferramentas tecnológicas  da instituição.</p>
                 <ol class="lista-tutoriais">
                     <li class="card | wifi eduroam | Um tutorial passo a passo para conectar ao wifi do IFRN">
-                        <a href="tutoriais-paginas/base.html">
+                        <a href="tutoriais-paginas/EDUROAM.html">
                             <div>
                                 <figure><img src="tutoriais-paginas/src-tutoriais/icons/wifi.png"></figure>
                                 <h2>Wifi<br>Eduroam</h2>
@@ -75,7 +75,7 @@
                 <a class="botao" href="tutoriais.html"><p>Ver todos</p><img alt="Seta roxa para direita" src="src/imagens/icons/seta-roxa.png"></a>
             </section>
 
-            <section id="servicos-prestados">
+            <section id="servicos-prestados" class="hidden">
                 <h1 class="titulo">SERVIÇOS PRESTADOS</h1>
                 <p class="subtitulo">Descubra nossos principais serviços</p>
 
@@ -114,17 +114,13 @@
                 </ol>
             </section>
 
-            <section id="sec-numeros">
-                <figure class="background-bolhas-superior"><img src="src/imagens/backgrounds/bolhas-detalhes-superior.svg" alt="detalhes de bolhas lindas."></figure>
-                <figure class="background-bolhas-inferior"><img src="src/imagens/backgrounds/bolhas-detalhes-inferior.svg" alt="detalhes de bolhas lindas."></figure>
+            <section id="sec-numeros" class="hidden">
+                <figure class="background-bolhas-superior"><img draggable="false" src="src/imagens/backgrounds/bolhas-detalhes-superior.svg" alt="detalhes de bolhas lindas."></figure>
+                <figure class="background-bolhas-inferior"><img draggable="false" src="src/imagens/backgrounds/bolhas-detalhes-inferior.svg" alt="detalhes de bolhas lindas."></figure>
                 <h1 class="titulo">NOSSO TRABALHO EM NÚMEROS</h1>
                 <p>Dados de 2024</p>
                 <ol>
-                    <li>
-                        <figure> <img src="src/imagens/icons/pessoas.png" alt="icone de pessoas"> </figure>
-                        <h2 id="setores">0</h2>
-                        <p>Setores de TI</p>
-                    </li>
+                    
                     <li>
                         <figure> <img src="src/imagens/icons/headset.png" alt="icone de headset"> </figure>
                         <h2 id="atendentes">0</h2>
@@ -137,7 +133,7 @@
                     </li>
                     <li>
                         <figure> <img src="src/imagens/icons/right.png"alt="icone de certo"> </figure>
-                        <h2><span id="chamados-milhares">0</span>.<span id="chamados-centenas">-</span></h2>
+                        <h2><span id="chamados-milhares">0</span><span id="chamados-centenas">-</span></h2>
                         <p>Chamados resolvidos</p>
                     </li>
                     <li>
@@ -148,7 +144,7 @@
                 </ol>
             </section>
 
-            <section id="conheca-campus">
+            <section id="conheca-campus" class="hidden">
                 <div>
                     <h1 class="titulo" >Conheça o campus</h1>
                     <p class="subtitulo">Veja o mapa completo do IFRN Natal Central</p>
@@ -164,5 +160,6 @@
     </body>
     </html>
 
-    <script src="src/javascript/dti.js"></script>
+ 
     <script src="src/javascript/componentes.js"></script>
+    <script src="src/javascript/dti.js"></script>

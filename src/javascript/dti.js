@@ -1,5 +1,42 @@
-// Animação dos numeros da home - sec-numeros
 
+// animação de aparecer e sumir com scroll
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll("section");
+    const listaveis = document.querySelectorAll("li");
+    let lastScrollTop = 0;
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const isScrollingDown = currentScrollTop > lastScrollTop;
+  
+        if (entry.isIntersecting) {
+          if (isScrollingDown) {
+            entry.target.classList.add("visible-down");
+            entry.target.classList.remove("visible-up");
+          } else {
+            entry.target.classList.add("visible-up");
+            entry.target.classList.remove("visible-down");
+          }
+        } else {
+          entry.target.classList.remove("visible-up", "visible-down");
+        }
+  
+        lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+      });
+    }, { threshold: 0.1 });
+  
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+    listaveis.forEach(li => {
+        observer.observe(li);
+      });
+  });
+  
+
+
+// Animação dos numeros da home - sec-numeros
 let contadoresAnimados = false;
 
 function animarContador(valorFinal, idElemento, duracaoTotal) {
@@ -29,25 +66,23 @@ function elementoVisivelNaTela(elemento) {
 
 window.addEventListener('scroll', () => {
     if (!contadoresAnimados) {
-        animarContador(2, 'setores', 5000);
-        animarContador(21, 'atendentes', 5000);
-        animarContador(49, 'servicos', 5000);
-        animarContador(13, 'chamados-milhares', 5000);
-        animarContador(981, 'chamados-centenas', 5000);
-        animarContador(97 , 'porcentagem-dezena', 5000);
-        animarContador(7 , 'porcentagem-unidade', 5000);
+        animarContador(21, 'atendentes', 3000);
+        animarContador(107, 'servicos', 3000);
+        animarContador(23, 'chamados-milhares', 3000);
+        animarContador(73, 'chamados-centenas', 3000);
+        animarContador(97 , 'porcentagem-dezena', 3000);
+        animarContador(7 , 'porcentagem-unidade', 3000);
     }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     if (!contadoresAnimados) {
-        animarContador(2, 'setores', 5000);
-        animarContador(21, 'atendentes', 5000);
-        animarContador(49, 'servicos', 5000);
-        animarContador(13, 'chamados-milhares', 5000);
-        animarContador(981, 'chamados-centenas', 5000);
-        animarContador(97 , 'porcentagem-dezena', 5000);
-        animarContador(7 , 'porcentagem-unidade', 5000);
+        animarContador(21, 'atendentes', 3000);
+        animarContador(107, 'servicos', 3000);
+        animarContador(23, 'chamados-milhares', 3000);
+        animarContador(73, 'chamados-centenas', 3000);
+        animarContador(97 , 'porcentagem-dezena', 3000);
+        animarContador(7 , 'porcentagem-unidade', 3000);
     }
 });
 
@@ -112,7 +147,8 @@ searchInput.addEventListener('input', (event) => {
     let anyFound = false;
 
     divs.forEach(div => {
-        const divClasses = Array.from(div.classList).map(className => className.toLowerCase());
+
+        const divClasses = Array.from(div.classList) .map(className => className.toLowerCase()) .filter(className => !["card", "hidden", "visible-up", "visible-down"].includes(className));
         const found = searchTerms.every(term => divClasses.some(className => className.includes(term)));
 
         div.style.display = found ? 'block' : 'none';
@@ -130,3 +166,5 @@ searchInput.addEventListener('input', (event) => {
         listaTutoriais.classList.remove('filtered');
     }
 });
+
+
