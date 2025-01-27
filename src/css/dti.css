@@ -19,7 +19,7 @@
 
     /* outros */
 
-    --padding-section: 2em 19%;
+    --padding-section: 2em 15%;
     --padding-section-tutorial: 4em 24%;
 }
 
@@ -71,6 +71,8 @@ li{list-style-type: none;}
     z-index: 0;
     position: absolute;
     pointer-events: none;
+    max-width: none; /* Garante que não sejam limitadas pela largura */
+
 }
 
 .background-bolhas img{
@@ -106,7 +108,9 @@ li{list-style-type: none;}
 body{
     height: 100%;
     position: relative;
+    
 }
+
 
 /* classes para a animação das sections */
 .hidden {
@@ -197,7 +201,6 @@ header nav .nav-principal ol li a{
     display: block;
     transition: background-color 0.25s ease;
 }
-
 
 header nav .nav-principal ol li:hover a{
     background-color: var(--main-roxo-enfeitado);
@@ -347,6 +350,8 @@ main{
     min-height: 30em;
     font-weight: 300;
     width: 100%;
+    max-width: 180em;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -619,7 +624,7 @@ main #sec-numeros .background-bolhas-superior{
 
 main #sec-numeros .background-bolhas-inferior img{
     position: absolute;
-    left: -4%;
+    left: 0;
     bottom: -15%;
     z-index: 0;
 }
@@ -677,6 +682,8 @@ main #sec-numeros ol li p {
 main #conheca-campus{
     padding: var(--padding-section);
     background-image: url("../imagens/backgrounds/mapa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 330px;
     display: flex;
     align-items: center;
@@ -895,7 +902,7 @@ footer .footer-responsivo figure{
     transform: rotate(87px);
 }
 
-#sobre main section #dti-superior{
+#sobre main .sobre-texto-imagem{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -903,10 +910,11 @@ footer .footer-responsivo figure{
     
 }
 
-#sobre main section  div #destaque{
+#sobre main section #destaque{
     position: relative;
     z-index: 3;
     padding-left: 1em;
+    max-width: 700px;
 }
 
 #sobre main section .subtitulo{
@@ -917,8 +925,21 @@ footer .footer-responsivo figure{
     color: var(--font-color2-cinza);
 }
 
-/* little slider */
-#sobre main section .carousel {
+#sobre main .sobre-texto-imagem #tecnicos{
+    position: relative;
+    z-index: 3;
+    padding-right: 2em;
+
+    max-width: 700px;
+}
+
+#sobre main .sobre-texto-imagem h2{
+    font-size: 40px;
+}
+
+
+/* little slider que não é slider */
+#sobre main .carousel {
     position: relative;
     width: 100%;
     height: 270px;
@@ -927,26 +948,28 @@ footer .footer-responsivo figure{
     align-items: center;
     gap: 3em;
     overflow-y: hidden;
+    margin-bottom: 3em;
+    padding-bottom: 2em;
 
 }
 
-#sobre main section .carousel::-webkit-scrollbar {
-    height: 8px; /* Altura da barra */
+#sobre main .carousel::-webkit-scrollbar {
+    height: 5px; /* Altura da barra */
+    max-width: 100%;
 }
 
-#sobre main section .carousel::-webkit-scrollbar-track {
+#sobre main .carousel::-webkit-scrollbar-track {
     background: var(--font-color2-cinza);
     background: var(--main-cinza-claro);
     border-radius: 4px;
 }
 
-#sobre main section .carousel::-webkit-scrollbar-thumb {
-    
+#sobre main .carousel::-webkit-scrollbar-thumb {
     background: var(--font-color2-cinza);
     border-radius: 4px;
 }
 
-#sobre main section .carousel .slide {
+#sobre main .carousel .slide {
 width: 356px;
 border-radius: 50px;
 height: 230px;
@@ -960,68 +983,23 @@ border-bottom: 3px solid var(--main-roxo-enfeitado);
 
 }
 
-#sobre main section .carousel .slide span{
+#sobre main .carousel .slide span{
     height: 50px;
 }
 
-#sobre main section .carousel .slide span h3{
-font-size: 15px;
-font-weight: 500;
-padding-bottom: 7px;
+#sobre main .carousel .slide span h3{
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 6px;
 }
 
-#sobre main section .carousel .slide p{
-font-size: 14px;
-font-weight: 400;
+#sobre main .carousel .slide p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    
 }
 
-
-
-
-/*                                  sobre (2)                               */
-
-#sobre main #sobre-colabinf{
-    padding: var(--padding-section);
-    background-color: var(--main-bg--azul-escuro);
-    position: relative;
-    z-index: 1;
-    padding-bottom: 5em;
-    padding-top: 4em;
-}
-
-#sobre main #sobre-colabinf .background-bolhas{
-    right: 0;
-    top: -101px;
-}
-
-#sobre main #sobre-colabinf div{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    gap: 1em;
-}
-
-
-#sobre main #sobre-colabinf{
-    padding-bottom: 4em;
-}
-
-#sobre main #sobre-colabinf .subtitulo, #sobre main #sobre-colabinf .subtitulo{
-    color: var(--font-color4-lilas);
-    padding-bottom: 1em;
-}
-
-#sobre main #sobre-colabinf  .texto{
-    color: var(--font-color4-lilas);
-}
-
-#sobre main #sobre-colabinf ol li p{
-    color: var(--font-color2-cinza);
-}
-
-#sobre main #sobre-colabinf ol li figure{
-    background-color: var(--main-roxo-enfeitado);
-}
 
 
 
@@ -1743,7 +1721,7 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
 }
 
 @media screen and (max-width: 1300px){
-    #sobre main section  div #destaque{
+    #sobre main section #destaque{
         width:424.01px;
     }
 
@@ -1759,11 +1737,6 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
         right: -150px;
         width: 70%;
     }
-
-    #sobre main #sobre-colabinf .background-bolhas{
-        right: -30px;
-    }
-    
 
     footer{
         background-color: var(--main-bg-branco);
@@ -1849,18 +1822,20 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
 
     /* pagina sobre nós - (1 - dti)*/
 
-    #sobre main #sobre-dti .background-bolhas{
+    #sobre main section .background-bolhas{
         left: -106px;
     }
 
-    #sobre main #sobre-dti .background-bolhas2 {
+    #sobre main section .background-bolhas2 {
         display: block;
         width: 30%;
         right: -31px;
     }
+    #sobre main .sobre-texto-imagem #tecnicos{
+        width: 90%;
+        min-width: 300px;
+    }
     
-    #sobre main #sobre-dti #dti-superior p {
-        width: 100%;}
     
 
 
@@ -1909,13 +1884,29 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
         width: 47%;
     }
 
-    #sobre main section  #dti-superior{
+
+    #sobre main .sobre-texto-imagem{
         flex-direction: column;
-        padding-bottom: 1em
     }
-    #sobre main section #dti-superior #destaque{
+
+    /* sessão com as imagens do tecnicos, mesma classe porem com esta adicional */
+    #sobre main .reverse{
+        flex-direction: column-reverse;
+    }
+
+    #sobre main .sobre-texto-imagem #tecnicos{
         width: 100%;
         padding: 0;
+        padding-top: 1em;
+    }
+
+    #sobre main section .reverse{
+        flex-direction: column-reverse;
+    }
+    #sobre main section #destaque{
+        width: 100%;
+        padding: 0;
+        padding-top: 1em;
     }
 
     #equipe main section ol li{
@@ -1925,6 +1916,8 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
     #sobre main #sobre-dti figure #destaque{
         display: none;
     }
+
+    #sobre main section
 
     /* contato */
 
