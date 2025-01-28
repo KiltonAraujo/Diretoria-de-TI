@@ -55,7 +55,7 @@ li{list-style-type: none;}
     font-family: 'Poppins', sans-serif;
     color: var(--font-color2-cinza);
     z-index: 1;
-    margin-top: -0.5em;
+    margin-top: -0.1em;
     font-weight: 400;
 }
 
