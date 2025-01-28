@@ -13,6 +13,7 @@ O site da Diretoria de TI foi criado com o propósito de facilitar a comunicaç�
 - Central de tutoriais para docentes.
 - Informações detalhadas sobre diretoria de TI.
 - Acesso rápido aos serviços prestados pela diretoria.
+- Acesso a um mapa do Instituto Federal do Rio Grande do Norte - Natal Central
 - Layout responsivo para dispositivos móveis e desktops.
 
 ---
