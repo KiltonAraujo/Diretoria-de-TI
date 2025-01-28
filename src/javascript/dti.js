@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
         lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.29});
   
     sections.forEach(section => {
       observer.observe(section);

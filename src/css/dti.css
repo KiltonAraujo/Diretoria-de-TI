@@ -906,7 +906,6 @@ footer .footer-responsivo figure{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 5em;
     
 }
 
@@ -935,6 +934,26 @@ footer .footer-responsivo figure{
 
 #sobre main .sobre-texto-imagem h2{
     font-size: 40px;
+}
+
+#sobre main #proposito>div{
+    width: 100%;
+    height: auto;
+    background-color: var(--main-bg--azul-escuro);
+    border-radius: 30px;
+    padding: 2em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sobre main #proposito div h3{
+    font-size: 40px;
+}
+
+#sobre main #proposito div .texto{
+    color: #CDB1EF;
 }
 
 
@@ -1820,7 +1839,7 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
         height: 37px;
     }
 
-    /* pagina sobre nós - (1 - dti)*/
+    /* pagina sobre nós */
 
     #sobre main section .background-bolhas{
         left: -106px;
@@ -1835,11 +1854,16 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
         width: 90%;
         min-width: 300px;
     }
+
+    
+    #sobre main #proposito>div figure img{
+        width: 290px;
+    }
     
     
 
 
-    /* equipe */
+    /* min-width: 339px;*/
 
     #equipe main section ol li{
         min-height: 300px;
@@ -1913,11 +1937,12 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
         width: 48%;
     }
 
-    #sobre main #sobre-dti figure #destaque{
+
+    #sobre main #proposito>div figure img{
         display: none;
     }
 
-    #sobre main section
+    
 
     /* contato */
 
@@ -2015,7 +2040,7 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
 
 
 
-    /* pagina sobre nós - (1 - dti) */
+    /* pagina sobre nós */
 
     #sobre main section .background-bolhas{
         left: -142px;
@@ -2025,6 +2050,8 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
     #sobre main section .background-bolhas2{
         right: -190px;
     }
+
+    
 
     
     
