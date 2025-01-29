@@ -327,7 +327,6 @@ body #menu-hamburguer #botao-lateral{
     right: -26px;
     top: 350px;
     transition: transform 0.5s ease;
-    z-index: 100;
 }
 
 body #menu-hamburguer #bolhas{
