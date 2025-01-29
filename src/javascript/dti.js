@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll("section");
     const listaveis = document.querySelectorAll("li");
-    const divs = document.querySelectorAll("div");
+    const divs = document.querySelectorAll("#mensagem-erro");
     let lastScrollTop = 0;
   
     const observer = new IntersectionObserver((entries) => {
@@ -27,15 +27,19 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }, { threshold: 0.29});
   
-    sections.forEach(section => {
+    if (sections) {
+      sections.forEach(section => {
       observer.observe(section);
     });
-    listaveis.forEach(li => {
+  }
+    if (listaveis){listaveis.forEach(li => {
         observer.observe(li);
       });
-    divs.forEach(div => {
+    }
+    if (divs){divs.forEach(div => {
       observer.observe(div);
     });
+  }
   });
   
 
