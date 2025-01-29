@@ -710,10 +710,10 @@ main #conheca-campus div{
 
 main #conheca-campus div figure{
     background-color: var(--main-roxo-enfeitado);
-    width: 30px;
-    min-width: 30px;
-    height: 30px;
-    border-radius: 30px;
+    width: 37px;
+    min-width: 37px;
+    height: 37px;
+    border-radius: 37px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1147,25 +1147,26 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
     display: none;
     width: 100%;
     text-align: center;
-    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: -30px; */
     padding-bottom: 90px;
-    transition: all 0.5s ease; 
+    transition: all 0.5s ease;
     position: relative;
     z-index: 3;
 
 }
 
-#tutoriais main section #mensagem-erro .titulo{
-    font-size: 290px;
-    font-weight: 500;
-    color: var(--main-roxo-enfeitado);
-    opacity: 0.6;
+#tutoriais main section #mensagem-erro figure, #tutoriais main section #mensagem-erro figure img{
+    width: 100%;
+    max-width: 500px;
 }
 
 #tutoriais main section #mensagem-erro .subtitulo{
     font-size: 40px;
     color: var(--main-roxo-enfeitado);
-    margin-top: -1.6em;
+    margin-top: 0.6em;
     margin-bottom: 0.3em;
 }
 
@@ -1785,8 +1786,8 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
 
     #tutoriais main section figure .background-bolhas{
         top: 100px;
-        right: -150px;
-        width: 70%;
+        right: -250px;
+        width: 50%;
     }
 
     footer{
@@ -1981,6 +1982,12 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
         display: none;
     }
 
+    /* tutoriais */
+    #tutoriais main section figure .background-bolhas3{
+        top: 1900px;
+
+    }
+
     
 
     /* contato */
@@ -2097,21 +2104,13 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
 
     /* pagina tutoriais */
 
-    #tutoriais main section figure .background-bolhas{
-        top: 300px;
-        right: -150px;
-        width: 70%;
-    }
 
     #tutoriais main section figure .background-bolhas2{
         top: 800px;
 
     }
 
-    #tutoriais main section figure .background-bolhas3{
-        top: 1900px;
-
-    }
+    
 
     /* tutoriais error */
 

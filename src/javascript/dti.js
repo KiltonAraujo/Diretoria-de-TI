@@ -3,6 +3,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll("section");
     const listaveis = document.querySelectorAll("li");
+    const divs = document.querySelectorAll("div");
     let lastScrollTop = 0;
   
     const observer = new IntersectionObserver((entries) => {
@@ -32,6 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
     listaveis.forEach(li => {
         observer.observe(li);
       });
+    divs.forEach(div => {
+      observer.observe(div);
+    });
   });
   
 
@@ -157,7 +161,7 @@ searchInput.addEventListener('input', (event) => {
         }
     });
 
-    noResultsMessage.style.display = anyFound ? 'none' : 'block';
+    noResultsMessage.style.display = anyFound ? 'none' : 'flex';
 
     // Adicionar ou remover a classe filtered
     if (anyFound) {
