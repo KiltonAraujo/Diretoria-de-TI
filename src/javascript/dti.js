@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll("section");
     const listaveis = document.querySelectorAll("li");
-    const divs = document.querySelectorAll("div");
+    const divs = document.querySelectorAll("#mensagem-erro");
     let lastScrollTop = 0;
   
     const observer = new IntersectionObserver((entries) => {

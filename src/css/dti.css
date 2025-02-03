@@ -804,6 +804,7 @@ footer .div-superior nav .nav-principal {
     list-style: none;
     display: flex;
     gap: 1.5em;
+    z-index: 1000;
 }
 
 footer .div-superior nav .nav-principal li {
