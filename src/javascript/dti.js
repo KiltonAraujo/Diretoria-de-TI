@@ -3,7 +3,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll("section");
     const listaveis = document.querySelectorAll("li");
-    const divs = document.querySelectorAll("#mensagem-erro");
+    const noResultsMessage = document.querySelectorAll('#mensagem-erro');
+    
     let lastScrollTop = 0;
   
     const observer = new IntersectionObserver((entries) => {
@@ -15,33 +16,36 @@ document.addEventListener("DOMContentLoaded", function() {
           if (isScrollingDown) {
             entry.target.classList.add("visible-down");
             entry.target.classList.remove("visible-up");
+            
           } else {
             entry.target.classList.add("visible-up");
             entry.target.classList.remove("visible-down");
           }
+
         } else {
           entry.target.classList.remove("visible-up", "visible-down");
         }
   
         lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
       });
-    }, { threshold: 0.29});
+    }, { threshold: 0.1});
   
     if (sections) {
       sections.forEach(section => {
       observer.observe(section);
     });
   }
-    if (listaveis){listaveis.forEach(li => {
+    if (listaveis){
+      listaveis.forEach(li => {
         observer.observe(li);
       });
-    }
-    if (divs){divs.forEach(div => {
-      observer.observe(div);
-    });
   }
+  if (noResultsMessage)
+    {noResultsMessage.forEach(div => {
+    observer.observe(div);
+  });}
   });
-  
+
 
 
 // Animação dos numeros da home - sec-numeros
@@ -149,6 +153,7 @@ const searchInput = document.getElementById('pesq_input');
 const divs = document.querySelectorAll('.card');
 const noResultsMessage = document.getElementById('mensagem-erro');
 
+
 const listaTutoriais = document.querySelector('.lista-tutoriais');
 searchInput.addEventListener('input', (event) => {
     const searchTerms = event.target.value.toLowerCase().split(' ').filter(Boolean);
@@ -164,6 +169,7 @@ searchInput.addEventListener('input', (event) => {
             anyFound = true;
         }
     });
+    
 
     noResultsMessage.style.display = anyFound ? 'none' : 'flex';
 
