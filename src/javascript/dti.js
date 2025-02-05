@@ -1,50 +1,77 @@
+// animação de aparecer e desaparecer
 
-// animação de aparecer e sumir com scroll
 document.addEventListener("DOMContentLoaded", function() {
-    const sections = document.querySelectorAll("section");
-    const listaveis = document.querySelectorAll("li");
-    const noResultsMessage = document.querySelectorAll('#mensagem-erro');
-    
-    let lastScrollTop = 0;
+  const listaveis = document.querySelectorAll("li");
   
-    const observer = new IntersectionObserver((entries) => {
+  let lastScrollTop = 0;
+
+  const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const isScrollingDown = currentScrollTop > lastScrollTop;
-  
-        if (entry.isIntersecting) {
+          const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const isScrollingDown = currentScrollTop > lastScrollTop;
+
           if (isScrollingDown) {
             entry.target.classList.add("visible-down");
             entry.target.classList.remove("visible-up");
-            
-          } else {
+        } else {
             entry.target.classList.add("visible-up");
             entry.target.classList.remove("visible-down");
-          }
-
-        } else {
-          entry.target.classList.remove("visible-up", "visible-down");
         }
-  
-        lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
       });
-    }, { threshold: 0.1});
-  
-    if (sections) {
-      sections.forEach(section => {
-      observer.observe(section);
-    });
-  }
-    if (listaveis){
+  }, { threshold: 0.1 });
+
+  if (listaveis) {
       listaveis.forEach(li => {
-        observer.observe(li);
+          observer.observe(li);
       });
   }
-  if (noResultsMessage)
-    {noResultsMessage.forEach(div => {
-    observer.observe(div);
-  });}
-  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll("section");
+  const noResultsMessage = document.querySelectorAll('#mensagem-erro');
+  
+  let lastScrollTop = 0;
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const isScrollingDown = currentScrollTop > lastScrollTop;
+
+          // Verifique se o elemento já foi animado (para evitar looping)
+          if (!entry.target.classList.contains('animado')) {
+              if (entry.isIntersecting) {
+                  if (isScrollingDown) {
+                      entry.target.classList.add("visible-down");
+                      entry.target.classList.remove("visible-up");
+                  } else {
+                      entry.target.classList.add("visible-up");
+                      entry.target.classList.remove("visible-down");
+                  }
+
+                  // Marcar o elemento como animado
+                  entry.target.classList.add('animado');
+              }
+          }
+      });
+  }, { threshold: 0.14 });
+
+  if (sections) {
+      sections.forEach(section => {
+          observer.observe(section);
+      });
+  }
+
+  if (noResultsMessage) {
+      noResultsMessage.forEach(div => {
+          observer.observe(div);
+      });
+  }
+});
+
+
+
 
 
 
