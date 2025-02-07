@@ -1,4 +1,4 @@
-<img width="230px" alt="Logotipo do projeto" src="./documentos/logotipo-dti.png">
+<img width="230px" alt="Logotipo do projeto" src="./documentos/imagens/logotipo-dti.png">
 
 # **Site da Diretoria de TI (DTI - IFRN CNAT)**
 
@@ -13,6 +13,7 @@ O site da Diretoria de TI foi criado com o propósito de facilitar a comunicaç�
 - Central de tutoriais para docentes.
 - Informações detalhadas sobre diretoria de TI.
 - Acesso rápido aos serviços prestados pela diretoria.
+- Acesso a um mapa do Instituto Federal do Rio Grande do Norte - Natal Central
 - Layout responsivo para dispositivos móveis e desktops.
 
 ---
@@ -25,12 +26,12 @@ O site da Diretoria de TI foi criado com o propósito de facilitar a comunicaç�
 ## **Layout**
 **Algumas telas do projeto:**
 
-![Imagem da home do projeto.](./documentos/print-home.svg)
+![Imagem da home do projeto.](./documentos/imagens/print-home.svg)
 
 <div align="center">
-  <img width="27%" alt="Print da home." src="./documentos/Home-Celular.png">
-  <img width="27%" alt="Print da parte inferior da home." src="./documentos/Home-Celular2.png">
-  <img width="27%" alt="Print da tela de sobre." src="./documentos/Sobre-Celular.png">
+  <img width="27%" alt="Print da home." src="./documentos/imagens/Home-Celular.png">
+  <img width="27%" alt="Print da parte inferior da home." src="./documentos/imagens/Home-Celular2.png">
+  <img width="27%" alt="Print da tela de sobre." src="./documentos/imagens/Sobre-Celular.png">
 </div>
 
 ---

@@ -19,7 +19,7 @@
 
     /* outros */
 
-    --padding-section: 2em 19%;
+    --padding-section: 2em 15%;
     --padding-section-tutorial: 4em 24%;
 }
 
@@ -55,7 +55,7 @@ li{list-style-type: none;}
     font-family: 'Poppins', sans-serif;
     color: var(--font-color2-cinza);
     z-index: 1;
-    margin-top: -0.5em;
+    margin-top: -0.1em;
     font-weight: 400;
 }
 
@@ -71,6 +71,8 @@ li{list-style-type: none;}
     z-index: 0;
     position: absolute;
     pointer-events: none;
+    max-width: none; /* Garante que não sejam limitadas pela largura */
+
 }
 
 .background-bolhas img{
@@ -106,7 +108,9 @@ li{list-style-type: none;}
 body{
     height: 100%;
     position: relative;
+    
 }
+
 
 /* classes para a animação das sections */
 .hidden {
@@ -197,7 +201,6 @@ header nav .nav-principal ol li a{
     display: block;
     transition: background-color 0.25s ease;
 }
-
 
 header nav .nav-principal ol li:hover a{
     background-color: var(--main-roxo-enfeitado);
@@ -347,6 +350,8 @@ main{
     min-height: 30em;
     font-weight: 300;
     width: 100%;
+    max-width: 180em;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -619,7 +624,7 @@ main #sec-numeros .background-bolhas-superior{
 
 main #sec-numeros .background-bolhas-inferior img{
     position: absolute;
-    left: -4%;
+    left: 0;
     bottom: -15%;
     z-index: 0;
 }
@@ -676,15 +681,17 @@ main #sec-numeros ol li p {
 
 main #conheca-campus{
     padding: var(--padding-section);
-    background-image: url("../imagens/backgrounds/mapa.png");
-    height: 330px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    background-image: url("../imagens/backgrounds/mapa.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-main #conheca-campus div .titulo, main #conheca-campus div .subtitulo{
+main #conheca-campus .titulo, main #conheca-campus .subtitulo{
     color: #ffffff;
 }
 
@@ -692,14 +699,46 @@ main #conheca-campus .texto{
     color: #ffffff;
     width: 350px;
     font-size: 15px;
-
 }
 
-main #conheca-campus .botao{
+main #conheca-campus div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+main #conheca-campus div figure{
+    background-color: var(--main-roxo-enfeitado);
+    width: 37px;
+    min-width: 37px;
+    height: 37px;
+    border-radius: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #conheca-campus div figure img{
+    width: 16px;
+}
+
+main #conheca-campus div .botao{
     background-color: var(--main-bg-branco);
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.2em;
+    align-items: center;
+    box-sizing: border-box;
+    width: 240px;
+    min-width: 240px;
+    height: 50px;
+    border-radius: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-main #conheca-campus .botao p{
+main #conheca-campus div .botao p{
     color: var(--main-roxo-enfeitado);
 }
 
@@ -765,6 +804,7 @@ footer .div-superior nav .nav-principal {
     list-style: none;
     display: flex;
     gap: 1.5em;
+    z-index: 1000;
 }
 
 footer .div-superior nav .nav-principal li {
@@ -872,187 +912,146 @@ footer .footer-responsivo figure{
 }
 
 /*                               Sobre nós                               */
-/*                               sobre main                               */
 
 #sobre main{
     background-color: var(--main-bg-branco);
 }
-/*                                  sobre (1)                               */
-#sobre main #sobre-dti{
+
+#sobre main section{
     position: relative;
+    padding: var(--padding-section);
 }
 
-#sobre main #sobre-dti .background-bolhas{
+#sobre main section .background-bolhas{
     left: 0;
     top: 368px;
     width: 200px;
 }
 
-#sobre main #sobre-dti .background-bolhas2{
+#sobre main section .background-bolhas2{
     z-index: 0;
     top: 0;
     right: 0;
     transform: rotate(87px);
 }
 
-#sobre main #sobre-dti #dti-superior{
+#sobre main .sobre-texto-imagem{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 5em;
-    padding: var(--padding-section);
-}
-
-#sobre main #sobre-dti #dti-superior .titulo img{
-    padding-right: 0.2em;
-}
-
-#sobre main #sobre-dti #dti-superior .subtitulo{
-    padding-bottom: 1em;
-}
-
-#sobre main #sobre-dti #dti-superior .texto{
-    color: var(--font-color2-cinza);
-    width: 95%;
-}
-
-#sobre main #sobre-dti #dti-superior figure{
-    height: 50%;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    z-index: 2;
-}
-
-
-#sobre main #sobre-dti #dti-inferior{
-    padding: var(--padding-section);
-    padding-bottom: 3em;
-    display: flex;
-    gap: 1em;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-}
-#sobre main #sobre-dti #dti-inferior span .titulo{
-    font-size: 32px;
-    font-weight: 600;
-    font-family:'Poppins', sans-serif;
-}
-
-#sobre main #sobre-dti #dti-inferior span .titulo img{
-    height: 24px;
     
 }
 
-#sobre main #sobre-dti #dti-inferior span{
-    background-color: var(--main-bg--azul-escuro);
-    display: block;
-    padding: 2em;
-    border-radius: 30px;
-    width: 100%;
-}
-
-#sobre main #sobre-dti #dti-inferior span .texto{
-    color: var(--font-color4-lilas);
-}
-
-#sobre main #sobre-dti #dti-inferior ol li p{
-    color: var(--font-color2-cinza);
-}
-
-#sobre main ol{
-    display: flex;
-    width: 64%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1em;
-    width: 539px;
-    min-width: 500px;
-    z-index: 2;
-}
-
-#sobre main ol li{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background-color: var(--main-cinza-claro);
-    border-radius: 130px;
-    width: 43%;
-    min-width: 240px;
-    height: 69.84px;
-}
-
-#sobre main ol li p{
-    text-align: left ;
-    min-width: 130px;
-    font-size: 14px;
-    color: var(--font-color2-cinza);
-}
-
-#sobre main ol li .subtitulo{
-    color: var(--font-color2-cinza);
-    padding-top: 0.6em;
-}
-
-#sobre main ol figure{
-    width: 69.84px;
-    height: 69.84px;
-    min-width: 69.84px;
-    min-height: 69.84px;
-    border-radius: 100px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--main-bg--azul-escuro);
-    margin-right: 12px;
-}
-
-/*                                  sobre (2)                               */
-
-#sobre main #sobre-colabinf{
-    padding: var(--padding-section);
-    background-color: var(--main-bg--azul-escuro);
+#sobre main section #destaque{
     position: relative;
-    z-index: 1;
-    padding-bottom: 5em;
-    padding-top: 4em;
+    z-index: 3;
+    padding-left: 1em;
+    max-width: 700px;
 }
 
-#sobre main #sobre-colabinf .background-bolhas{
-    right: 0;
-    top: -101px;
-}
-
-#sobre main #sobre-colabinf div{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    gap: 1em;
-}
-
-
-#sobre main #sobre-colabinf{
-    padding-bottom: 4em;
-}
-
-#sobre main #sobre-colabinf .subtitulo, #sobre main #sobre-colabinf .subtitulo{
-    color: var(--font-color4-lilas);
+#sobre main section .subtitulo{
     padding-bottom: 1em;
 }
 
-#sobre main #sobre-colabinf  .texto{
-    color: var(--font-color4-lilas);
-}
-
-#sobre main #sobre-colabinf ol li p{
+#sobre main section .texto{
     color: var(--font-color2-cinza);
 }
 
-#sobre main #sobre-colabinf ol li figure{
-    background-color: var(--main-roxo-enfeitado);
+#sobre main .sobre-texto-imagem #tecnicos{
+    position: relative;
+    z-index: 3;
+    padding-right: 2em;
+
+    max-width: 700px;
 }
+
+#sobre main .sobre-texto-imagem h2{
+    font-size: 40px;
+}
+
+#sobre main #proposito>div{
+    width: 100%;
+    height: auto;
+    background-color: var(--main-bg--azul-escuro);
+    border-radius: 30px;
+    padding: 2em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sobre main #proposito div h3{
+    font-size: 40px;
+}
+
+#sobre main #proposito div .texto{
+    color: #CDB1EF;
+}
+
+
+/* little slider que não é slider */
+#sobre main .carousel {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    overflow-y: hidden;
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+
+}
+
+#sobre main .carousel::-webkit-scrollbar {
+    height: 5px; /* Altura da barra */
+    max-width: 100%;
+}
+
+#sobre main .carousel::-webkit-scrollbar-track {
+    background: var(--font-color2-cinza);
+    background: var(--main-cinza-claro);
+    border-radius: 4px;
+}
+
+#sobre main .carousel::-webkit-scrollbar-thumb {
+    background: var(--font-color2-cinza);
+    border-radius: 4px;
+}
+
+#sobre main .carousel .slide {
+width: 356px;
+border-radius: 50px;
+height: 230px;
+flex-shrink: 0;
+object-fit: cover;
+background-color: var(--main-cinza-claro);
+box-sizing: border-box;
+padding: 1.4em 1.5em;
+text-align: center;
+border-bottom: 3px solid var(--main-roxo-enfeitado);
+
+}
+
+#sobre main .carousel .slide span{
+    height: 50px;
+}
+
+#sobre main .carousel .slide span h3{
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 6px;
+}
+
+#sobre main .carousel .slide p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    
+}
+
 
 
 
@@ -1149,25 +1148,24 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
     display: none;
     width: 100%;
     text-align: center;
-    margin-top: -30px;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 90px;
-    transition: all 0.5s ease; 
     position: relative;
     z-index: 3;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 
 }
 
-#tutoriais main section #mensagem-erro .titulo{
-    font-size: 290px;
-    font-weight: 500;
-    color: var(--main-roxo-enfeitado);
-    opacity: 0.6;
+#tutoriais main section #mensagem-erro figure, #tutoriais main section #mensagem-erro figure img{
+    width: 100%;
+    max-width: 500px;
 }
 
 #tutoriais main section #mensagem-erro .subtitulo{
     font-size: 40px;
     color: var(--main-roxo-enfeitado);
-    margin-top: -1.6em;
+    margin-top: 0.6em;
     margin-bottom: 0.3em;
 }
 
@@ -1267,6 +1265,7 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
 
 #equipe main section ol #diretor div span{
     color: var(--main-bg--azul-escuro);
+    font-weight: 600;
 }
 
 /* contato */
@@ -1773,28 +1772,12 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
 }
 
 @media screen and (max-width: 1300px){
-    #sobre main #sobre-dti #dti-inferior{
-        flex-direction: column;
+    #sobre main section #destaque{
+        width:424.01px;
     }
-
-    #sobre main #sobre-colabinf div {
-        flex-direction: column;
-    }
-
-    #sobre main ol{
-        display: flex;
-        width: 64%;
-        gap: 1em;
-        width: 100%;
-        min-width: none;
-    }
-
-    #sobre main ol li {
-        width: 47%;
-        height: 69.84px;
 
     
-}}
+}
 
 @media screen and (max-width: 1200px){
 
@@ -1802,14 +1785,9 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
 
     #tutoriais main section figure .background-bolhas{
         top: 100px;
-        right: -150px;
-        width: 70%;
+        right: -250px;
+        width: 50%;
     }
-
-    #sobre main #sobre-colabinf .background-bolhas{
-        right: -30px;
-    }
-    
 
     footer{
         background-color: var(--main-bg-branco);
@@ -1893,24 +1871,31 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
         height: 37px;
     }
 
-    /* pagina sobre nós - (1 - dti)*/
+    /* pagina sobre nós */
 
-    #sobre main #sobre-dti .background-bolhas{
+    #sobre main section .background-bolhas{
         left: -106px;
     }
 
-    #sobre main #sobre-dti .background-bolhas2 {
+    #sobre main section .background-bolhas2 {
         display: block;
         width: 30%;
         right: -31px;
     }
+    #sobre main .sobre-texto-imagem #tecnicos{
+        width: 90%;
+        min-width: 300px;
+    }
+
     
-    #sobre main #sobre-dti #dti-superior p {
-        width: 100%;}
+    #sobre main #proposito>div figure img{
+        width: 290px;
+    }
+    
     
 
 
-    /* equipe */
+    /* min-width: 339px;*/
 
     #equipe main section ol li{
         min-height: 300px;
@@ -1954,15 +1939,55 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
     main #sec-numeros ol li{
         width: 47%;
     }
-    
+    main #conheca-campus div{
+        gap: 10px;
+    }
+
+    main #conheca-campus div .botao{
+        margin: 0;
+    }
+
+
+    #sobre main .sobre-texto-imagem{
+        flex-direction: column;
+    }
+
+    /* sessão com as imagens do tecnicos, mesma classe porem com esta adicional */
+    #sobre main .reverse{
+        flex-direction: column-reverse;
+    }
+
+    #sobre main .sobre-texto-imagem #tecnicos{
+        width: 100%;
+        padding: 0;
+        padding-top: 1em;
+    }
+
+    #sobre main section .reverse{
+        flex-direction: column-reverse;
+    }
+    #sobre main section #destaque{
+        width: 100%;
+        padding: 0;
+        padding-top: 1em;
+    }
 
     #equipe main section ol li{
         width: 48%;
     }
 
-    #sobre main #sobre-dti figure #destaque{
+
+    #sobre main #proposito>div figure img{
         display: none;
     }
+
+    /* tutoriais */
+    #tutoriais main section figure .background-bolhas3{
+        top: 1900px;
+
+    }
+
+    
 
     /* contato */
 
@@ -2060,74 +2085,33 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
 
 
 
-    /* pagina sobre nós - (1 - dti) */
+    /* pagina sobre nós */
 
-    #sobre main #sobre-dti .background-bolhas{
+    #sobre main section .background-bolhas{
         left: -142px;
         top: 38%;
     }
 
-    #sobre main #sobre-dti .background-bolhas2{
-        width: 30%;
+    #sobre main section .background-bolhas2{
+        right: -190px;
     }
 
     
 
-    #sobre main #sobre-dti #dti-inferior .servicos-gerais, #sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais{
-        flex-wrap: wrap;
-        gap: 1em;
-    }
-
-    #sobre main #sobre-dti #dti-inferior .servicos-gerais li, #sobre main #sobre-colabinf #colabinf-inferior .servicos-gerais li{
-        width: 45%;
-        max-width: none;
-    }
-
-    #sobre main #sobre-dti #dti-inferior .servicos-gerais li p{
-        max-width: 160px;
-    }
-
-    #sobre main ol li{
-        width: 100%;
-        min-width: 100px;
-    }
-
-    #sobre main ol{
-        min-width: 100%;
-    }
     
-
-    /* pagina sobre nós - (2 - colabinf) */
-
-
-
-    #sobre main #sobre-colabinf .background-bolhas{
-        right: -80px;
-    }
+    
 
     /* pagina tutoriais */
 
-    #tutoriais main section figure .background-bolhas{
-        top: 300px;
-        right: -150px;
-        width: 70%;
-    }
 
     #tutoriais main section figure .background-bolhas2{
         top: 800px;
 
     }
 
-    #tutoriais main section figure .background-bolhas3{
-        top: 1900px;
-
-    }
+    
 
     /* tutoriais error */
-
-    #tutoriais main section #mensagem-erro .titulo{
-        font-size: 140px;
-    }
 
     #tutoriais main section #mensagem-erro .subtitulo{
         font-size: 16px;
