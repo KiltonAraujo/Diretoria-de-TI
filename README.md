@@ -1,8 +1,8 @@
 <img width="230px" alt="Logotipo do projeto" src="./documentos/imagens/logotipo-dti.png">
 
-# **Site da Diretoria de TI (DTI - IFRN CNAT)**
+# ** Diretoria de TI (IFRN CNAT)**
 
-O site da Diretoria de TI foi criado com o propósito de facilitar a comunicação com o público e atender às necessidades tecnológicas dos docentes do IFRN. Ele oferece tutoriais simples e didáticos, promovendo um ambiente acadêmico mais eficiente e solucionando dúvidas relacionadas ao uso de ferramentas tecnológicas essenciais.
+O intuito do projeto é facilitar a comunicação com o público e atender às necessidades tecnológicas dos docentes do IFRN. Ele oferece tutoriais simples e didáticos, promovendo um ambiente acadêmico mais eficiente e solucionando dúvidas relacionadas ao uso de ferramentas tecnológicas essenciais.
 
 > **⚠️ Importante:**  
 > Este site ainda está em desenvolvimento e pode passar por alterações.
