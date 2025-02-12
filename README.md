@@ -4,9 +4,6 @@
 
 O intuito do projeto é facilitar a comunicação com o público e atender às necessidades tecnológicas dos docentes do IFRN. Ele oferece tutoriais simples e didáticos, promovendo um ambiente acadêmico mais eficiente e solucionando dúvidas relacionadas ao uso de ferramentas tecnológicas essenciais.
 
-> **⚠️ Importante:**  
-> Este site ainda está em desenvolvimento e pode passar por alterações.
-
 ---
 
 ## **Funcionalidades**
