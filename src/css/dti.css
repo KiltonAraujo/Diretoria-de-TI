@@ -188,6 +188,10 @@ header nav .nav-principal li ol {
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
 }
 
+header nav .nav-principal li:hover{
+    cursor: pointer;
+}
+
 header nav .nav-principal li:hover ol {
     opacity: 1;
     visibility: visible;
@@ -368,6 +372,11 @@ main #destaque-home{
     background-position: center;
     background-image: url('../imagens/backgrounds/destaque-home.svg');
 }
+
+main #destaque-home div .subtitulo {
+    max-width: 538px;
+}
+
 main #destaque-home .background-bolhas{
     position: absolute;
     right: 0;
@@ -1721,9 +1730,7 @@ main section #pesquisar input[type="search"]::-webkit-search-cancel-button{
         display: none;
     }
 
-    main #destaque-home div .subtitulo{
-        width: 70%;
-    }
+
 
     main #tutoriais-home .lista-tutoriais li, #tutoriais main section .lista-tutoriais li{
         width: 46%;
